@@ -2041,3 +2041,4067 @@ padding-bottom: 8px;
 z-index: 109;
 
 }
+
+/* Legacy screen styles: retain original cascade order. */
+@media screen {
+/* CSS RESET =reset */
+/* ------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	line-height: 1em;
+}
+body
+{
+	line-height: 1;
+}
+ol, ul
+{
+	list-style: none;
+}
+strong
+{
+	line-height: 1.5em;
+}
+blockquote, q
+{quotes:""""}
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
+}
+:focus
+{
+	outline: 0;
+}
+ins
+{
+	text-decoration: none;
+}
+del
+{
+	text-decoration: line-through;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GLOBALS =global */
+/* ------------------------------------------------------------------------------------------*/
+p
+{
+	margin-top: 0.2em;
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+br
+{
+	line-height: 1.3em;
+}
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0.5em 0px 1.3em 0px;
+	line-height: 1.1em;
+}
+h1
+{
+	font-size: 2em;
+}
+h2
+{
+	font-size: 14px;
+}
+h3
+{
+	font-size: 1.1em;
+}
+h4
+{
+	font-size: 1em;
+}
+h5
+{
+	font-size: 1em;
+}
+h6
+{
+	font-size: 1em;
+}
+a:link, a:visited
+{
+	color: #3b5ba7;
+	text-decoration: underline;
+}
+a:hover
+{
+	color: #BB8E19;
+}
+li
+{
+	line-height: 1em;
+	margin: 0px 0px 1em 0px;
+}
+fieldset
+{
+	margin-bottom: 1em;
+}
+legend
+{
+	line-height: 2em;
+	font-weight: bold;
+}
+hr
+{
+	margin-top: 1.5em;
+	color: #000000;
+	background: #000000;
+	height: 1px;
+}
+td, th { vertical-align: top; line-height: 1.4em;}
+input, select
+{
+	line-height: 1.5em;
+}
+input[type="text"], textarea
+{
+	width: 100%;
+	padding: 4px 2px 2px 3px;
+	margin-bottom: 0.5em;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/form-text-bg.gif') var(--color-white) repeat-x;
+	border: solid 1px #c6c6c6;
+	font-size: 12px;
+}
+p input[type="text"], p textarea
+{
+	margin-bottom: 0px;
+}
+div#container input[type="text"].halfWidth
+{
+	width: 50%;
+}
+div#container input[type="text"].thirdWidth
+{
+	width: 33%;
+}
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('fonts/myriadprosemiboldwebfont.eot');
+    src: url('fonts/myriadprosemiboldwebfont.eot') format('embedded-opentype'),
+         url('fonts/myriadprosemiboldwebfont.woff2') format('woff2'),
+         url('fonts/myriadprosemiboldwebfont.woff') format('woff'),
+         url('fonts/myriadprosemiboldwebfont.ttf') format('truetype'),
+         url('fonts/myriadprosemiboldwebfont.svg#myriadprosemiboldwebfont') format('svg');
+}
+@font-face {
+	font-family: 'MyriadProRegular';
+	src: url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.eot');
+	src: local('☺'), url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.woff') format('woff'), url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.ttf') format('truetype'), url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.svg#webfontIn9CBMlh') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*@font-face {
+	font-family: 'MyriadProSemibold';
+	src: url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.eot');
+	src: local('☺'), url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.woff') format('woff'), url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.ttf') format('truetype'), url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.svg#webfontAnxPAEz3') format('svg');
+}*/
+.paddingRight
+{
+	padding-right: 30px;
+}
+/* UTILITY =utility */
+/* ------------------------------------------------------------------------------------------*/
+.left 			{ float: left }
+.right 			{ float: right }
+.clear 			{ clear: both; }
+.ralign			{ text-align: right; }
+.lalign			{ text-align: left; }
+.centered		{ text-align: center; }
+.bold 			{ font-weight: bold; }
+.formRequired 	{ color: #bb8d09; }
+.noMargin		{ margin: 0px; }
+.underline		{ text-decoration: underline; }
+.canceled { text-decoration: line-through!important; }
+
+/* MAIN =main */
+/* ------------------------------------------------------------------------------------------*/
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	text-align: center;
+	/*background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/body-bg.jpg') center top #ffffff; */
+	font: 12px verdana,arial,helvetica;
+	-webkit-background-size: 2618px 1200px;
+}
+#container
+{
+	position: relative;
+	margin: auto;
+	margin-top: 87px;
+	margin-bottom: 87px;
+	width: 942px;
+	min-height: 740px;
+	text-align: left;
+	line-height: 1em;
+	color: var(--color-dark-blue);
+}
+#header
+{
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#headerLogo{
+padding-top: 30px;
+position: relative;
+}
+#site-title
+{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	margin: 0px;
+	}
+.counter{
+position: absolute;
+top: -30px;
+left: 300px;
+width: 400px;
+z-index: 9999999999;
+text-align: center;
+}
+.counter h3{
+	color: var(--color-primary);
+	line-height: 1.8em;
+	font-size: 13px;
+	font-weight:100;
+	margin-bottom: 1px;
+
+}
+#numbers1{
+color: var(--color-primary);
+font-size: 18px;
+align: center;
+
+
+}
+
+#closingtag1{
+color: var(--color-primary);
+margin-top: 5px;
+align: center;
+font-size: 13px;
+letter-spacing: 1px;
+}
+
+goldtext{
+color: var(--color-yellow);
+}
+
+
+#LogoText{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 210px;
+height: 20px;
+z-index: 9999999999;
+
+}
+#search-box
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 203px;
+	height: 23px;
+	margin: 0px;
+	padding: 0px 0px 0px 25px;
+	color: #8a8989;
+	font-size: 13px;
+	font-family: verdana;
+	border: none;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/search-bg.gif');
+}
+
+/* NAVIGATION =nav */
+/* ------------------------------------------------------------------------------------------*/
+ul#nav
+{
+	position: absolute;
+	top: 40px;
+	left: 95px;
+	width: 846.5px;
+	height: 104px;
+	border-top: solid 1px var(--color-gray-300);
+}
+	ul#nav a:link, ul#nav a:visited
+	{
+		color: var(--color-dark-blue);
+		text-decoration: none;
+	}
+	ul#nav > li > a
+	{
+		display: block;
+		padding: 12px 16px 14px 16px;
+		color: var(--color-dark-blue);
+	}
+	ul#nav > li:last-child > a {
+		padding-left: 18px;
+		padding-right: 19px;
+	}
+	ul#nav a:hover
+	{
+		color: #bb8d09;
+
+	}
+
+
+	ul#nav li
+	{
+		float: left;
+		margin-left: 2px;
+		margin-right: 1px;
+		font: bold 13px verdana,arial;
+
+	}
+	ul#nav li#nav-contact-us
+	{
+		position: absolute;
+		right: 0px;
+		margin-right: 0px;
+		padding-right: 0px;
+		z-index: 102;
+	}
+
+p .city {
+width: 20%;
+}
+	ul#nav li#nav-contact-us.here, ul#nav li#nav-contact-us.parent-here
+	{
+		z-index: 100;
+	}
+	ul#nav > li.last
+	{
+		float: right;
+		margin-right: 0px;
+		padding-right: 0px
+	}
+/* General css for Top Nav Items */
+ul#nav > li
+{
+	font: bold 13px;
+	font-family: verdana;
+}
+ul#nav li#nav-construction-phases		{ margin-left: 0px; }
+
+ul#nav li#nav-construction-phases-construction-updates a
+{
+
+	color: var(--color-dark-blue);
+	border: solid 1px var(--color-dark-blue); padding: 4px;
+	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
+	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
+    border-top-right-radius: 8px; /* for browsers who support CSS3 */
+	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
+	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-top-left-radius: 8px; /* for browsers who support CSS3 */
+	-moz-border-radius-bottomright: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-right-radius: 8px;	/* for Konqueror (linux browser) */
+    border-bottom-right-radius: 8px; /* for browsers who support CSS3 */
+	-moz-border-radius-bottomleft: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-bottom-left-radius: 8px; /* for browsers who support CSS3 */
+}
+ul#nav li#nav-construction-phases-construction-updates a:hover		{ color: #bb8d09; }
+ul#nav > li:hover
+{
+	border-radius: 7px 7px 0 0;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
+}
+ul#nav > li.parent-here, ul#nav > li.here, div.homePage li#nav-construction-phases
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
+}
+ul#nav > li.parent-here > li.class
+{
+	font-weight: bold;
+}
+/* Rounded Right Corners for Menu Items */
+li#nav-construction-phases, li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us
+{
+	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
+	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
+    border-top-right-radius: 8px; /* for browsers who support CSS3 */
+}
+/* Rounded Left Corners for Menu Items */
+li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us, li#nav-contact-us
+{
+	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
+	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-top-left-radius: 8px; /* for browsers who support CSS3 */
+}
+ul#nav li ul
+{
+	position: absolute;
+	top: 37px;
+	left: 0px;
+	width: 824px;
+	height: 32px;
+	margin: 0px;
+	padding: 15px 0px 0px 22px;
+	z-index: 102;
+	display: none;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-bg.jpg') no-repeat;
+}
+ul#nav li#nav-contact-us ul
+{
+	/*left: -742px;*/ /* was -724px */
+	left: auto;
+	right: 0;
+}
+ul#nav li:hover ul, ul#nav li:hover #funding
+{
+	display: block;
+	z-index: 102;
+}
+
+
+ul#nav > li.parent-here ul, ul#nav > li.here ul, div.homePage li#nav-construction-phases ul
+{
+	display: block;
+	z-index: 100;
+}
+ul#nav li ul li
+{
+	font-weight: normal;
+	height: 1em;
+	margin: 0px;
+	padding: 0px 22px 0.4em 0px;
+	font-size: 12px;
+}
+ul#nav > li ul li.last
+{
+	padding-right: 0px;
+}
+ul#nav li ul li.here, ul#nav li ul li.parent-here
+{
+	font-weight: bold;
+	background: none;
+}
+/* Cut off the menu after 2 levels */
+ul#nav > li > ul ul
+{
+	display: none !important;
+}
+/* Special Look for Cities/Stations sub-nav */
+ul#nav li#nav-cities-stations ul
+{
+	height: 40px;
+	padding-top: 7px;
+}
+ul#nav li#nav-cities-stations li
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 105px;
+}
+ul#nav li#nav-cities-stations li#nav-cities-stations-pasadena	{ width: 94px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-san-dimas	{ width: 94px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-south-pasadena	{ width: 116px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-azusa	{ width: 115px; }
+
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-arcadia		{ width: 92px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-pomona		{ width: 105px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-irwindale		{ width: 105px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-ontario		{ width: 95px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-gold-line-bridge { width: 95px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-claremont		{ width: 110px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-duarte		{ width: 88px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-montclair		{ width: 88px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-la-verne		{ width: 93px; }
+
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-glendora	{ width: 95px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-operations-campus		{ width: 110px; }
+
+/* TABS =tabs */
+/* ------------------------------------------------------------------------------------------*/
+div.tabs
+{
+	float: left;
+	width: 467px;
+	height: 282px;
+	margin: 0px 0px 5px 0px;
+	color: var(--color-dark-blue);
+}
+div.tabs li a:link, div.tabs li a:visited
+{
+	color: var(--color-dark-blue);
+	text-decoration: none;
+}
+div.tabs li a:hover
+{
+	color: #BA8D16;
+}
+div.tabs ul.tabLabels li
+{
+	float: left;
+	text-align: center;
+	padding: 2px 0px 0px 0px;
+	margin: 0px 0px 2px 0px;
+	height: 20px;
+}
+div.tabs ul.tabLabels a
+{
+	font: bold 13px verdana;
+}
+div.tabs ul.tabLabels a:hover
+{
+	color: #BA8D16;
+}
+div.tabs ul.tabLabels li.ui-tabs-selected a:hover { color: var(--color-dark-blue); }
+div.tabs ul.tabLabels li.tabLabel1	{ width: 156px; }
+div.tabs ul.tabLabels li.tabLabel2	{ width: 155px; }
+div.tabs ul.tabLabels li.tabLabel3	{ width: 156px; }
+div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-1-active.jpg') no-repeat; }
+div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-2-active.jpg') no-repeat; }
+div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-3-active.jpg') no-repeat; }
+div.tabsPanel
+{
+	position: absolute;
+	top: 24px;
+	left: 0px;
+	width: 467px;
+	height: 258px;
+	overflow: auto;
+}
+div.tabsPanel li
+{
+	line-height: 1.2em;
+}
+.ui-tabs { position: relative;  zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0px 0px 0px 0px; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { display: block; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0;  background: none;}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+/* HOME =home */
+/* ------------------------------------------------------------------------------------------*/
+div#homeTabs
+{
+	position: relative;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-tab-section.jpg') no-repeat;
+}
+.newsPanel li, .eventsPanel li
+{
+	clear: both;
+	margin: 0px;
+	padding: 17px 57px 12px 34px;
+	border-bottom: solid 1px var(--color-gray-border);
+}
+.newsPanel li:last-child, .eventsPanel li:last-child, .videoPanel li:last-child
+{
+	padding-bottom: 8px;
+	border: none;
+}
+.videoPanel li
+{
+	clear: both;
+	margin: 0px;
+	padding: 10px 20px 8px 20px;
+	border-bottom: solid 1px var(--color-gray-border);
+}
+.videoPanel img
+{
+	float: left;
+	clear: left;
+	margin: 0px 17px 0px 0px;
+}
+.videoPanel p
+{
+	float: left;
+	width: 290px;
+	padding-top: 5px;
+	line-height: 1.3em;
+}
+.videoPanel a:link.underline, .videoPanel a:visited.underline
+{
+	text-decoration: underline;
+}
+div#homeRightContent
+{
+	float: right;
+	position: relative;
+	width: 466px;
+	height: 282px;
+	margin: 0px 0px 0px 0px;
+}
+	div#homeRightContent img
+	{
+		float: right;
+	}
+div#newsletterSignupBox
+{
+	position: absolute;
+	display: block;
+	top: 210px;
+	left: 120px;
+	z-index: 1000;
+}
+	div#newsletterSignupBox .closeEnewsBtn
+	{
+		position: absolute;
+		right: 0px;
+		width: 24px;
+		height: 24px;
+	}
+	div#newsletterSignupBox .closeEnewsBtn:hover
+	{
+		background: #000000;
+		opacity: 0.1;
+		cursor: pointer;
+	}
+div#homePhaseMap
+{
+	clear: both;
+	width: 942px;
+	height: 246px;
+}
+	div#homePhaseMap a,
+	div#homePhaseMap span
+	{
+		float: left;
+		display: block;
+	}
+	/*div#homePhaseMap span
+	{
+		display: none;
+	}*/
+#homeMapPhase1
+{
+	width: 271px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/la-to-pasadena-map-homepage-updated-3_6_25.jpg') 0px 0px no-repeat;
+}
+#homeMapPhase2a
+{
+	width: 232px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-map-pasadena-to-azusa.jpg') 0px 0px no-repeat;
+}
+#homeMapPhase2b
+{
+	width: 234px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-map-azusa-to-montclair.jpg') 0px -246px no-repeat;
+}
+#homeMapPhase2c
+{
+	width: 204px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-map-ontario-airport-extension.jpg') 0px 0px no-repeat;
+}
+	/*#homeMapPhase1:hover, #homeMapPhase2b:hover { background-position:  0px -246px; }*/
+
+/* CONTENT =content */
+/* ------------------------------------------------------------------------------------------*/
+div#contentArea
+{
+	position: relative;
+	line-height: 0.3em;
+	width: 942px;
+	height: 536px;
+}
+div#content
+{
+	padding: 13px 23px 23px 23px;
+	height: 500px;
+	overflow: auto;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/content-default-bg.gif') no-repeat;
+}
+div#content ol, div#content ul, div#contentLeft ol, div#contentLeft ul, div#contentRight ol, div#contentRight ul
+{
+	margin-top: 1em;
+	margin-left: 2em;
+}
+div#content ol, div#contentLeft ol, div#contentRight ol
+{
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+div#content ul, div#contentLeft ul, div#contentRight ul
+{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+div#content li, div#contentLeft li, div#contentRight li
+{
+	margin-bottom: 0.5em;
+}
+div#contentLeft
+{
+	float: left;
+	overflow: auto;
+	width: 427px;
+	height: 514px;
+	padding: 12px 20px 10px 20px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/content-area-left-bg.jpg') no-repeat;
+}
+div#contentRight
+{
+	float: right;
+	overflow: auto;
+	width: 427px;
+	height: 514px;
+	padding: 12px 20px 10px 20px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/content-area-right-bg.gif') no-repeat;
+	position: relative;
+}
+div#contentRight.contentRightConstPhase {
+	background: url('const-content-area-right-bg.jpg') no-repeat;
+	height: 475px;
+}
+div#contentLeft h1:first-child, div#contentRight h1:first-child, div.halfBtmContent h1:first-child,
+div#contentLeft h2:first-child, div#contentRight h2:first-child, div.halfBtmContent h2:first-child,
+div#contentLeft h3:first-child, div#contentRight h3:first-child, div.halfBtmContent h3:first-child
+{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+div#subNav
+{
+	float: left;
+	width: 942px;
+	height: 32px;
+	margin: 8px 0px 0px 0px;
+	border-top: solid 1px var(--color-gray-300);
+	font: normal 15px 'MyriadProSemibold';
+	text-align: center;
+}
+div#subNav table
+{
+	margin: auto;
+}
+div#subNav li
+{
+	float: left;
+}
+div#subNav li a:link, div#subNav li a:visited
+{
+	display: block;
+	height: 24px;
+	padding: 7px 13px 0px 13px;
+	text-decoration: none;
+	color: var(--color-dark-blue);
+}
+div#subNav li a:hover
+{
+	display: block;
+	height: 24px;
+	padding: 7px 13px 0px 13px;
+	text-decoration: none;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-btn-bg.gif') repeat-x;
+	color: var(--color-white);
+}
+div#subNav a
+{
+	-moz-border-radius-bottomright: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-right-radius: 8px; /* for Konqueror (linux browser) */
+    border-bottom-right-radius: 8px; /* for browsers who support CSS3 */
+}
+div#subNav a
+{
+	-moz-border-radius-bottomleft: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-bottom-left-radius: 8px; /* for browsers who support CSS3 */
+}
+div#subNav li.active a:link, div#subNav li.active a:visited
+{
+	color: var(--color-white);
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-btn-bg.gif') repeat-x;
+}
+table#siteMapTable
+{
+	width: 100%;
+}
+table#siteMapTable td
+{
+	width: 50%;
+}
+/* SUB =sub */
+/* ------------------------------------------------------------------------------------------*/
+div#contentArea div.headlinesPage
+{
+	font-size: 14px;
+	padding-left: 96px;
+	padding-right: 70px;
+}
+div#leftCornerBox
+{
+	float: left;
+	margin: 0px 0px 7px 0px;
+	width: 467px;
+	height: 348px;
+	position: relative;
+}
+.mediaBox
+{
+	position: relative;
+}
+/* image replacement */
+    .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next {
+        margin: 0;
+        padding: 0;
+        display: block;
+        overflow: hidden;
+        text-indent: -8000px;
+        }
+/* // image replacement */
+/* Easy Slider */
+
+	.mediaBox ul, .mediaBox li {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	.mediaBox li {
+		/*
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/
+		/*width: 467px; */
+		/*height: 348px;*/
+		overflow: hidden;
+		}
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev {
+		display: block;
+		width: 29px;
+		height: 44px;
+		position: absolute;
+		top: 50%;
+		margin-top: -22px;
+		z-index: 1000;
+	}
+	/* Home Page's Slideshow */
+	div.homePage #prevBtn, div.homePage #nextBtn,
+		div.homePage #slider1next, div.homePage #slider1prev
+	{
+		top: 115px;
+	}
+	#prevBtn, #slider1prev {
+		left: 10px;
+	}
+	#nextBtn, #slider1next {
+		left: 428px;
+	}
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a
+	{
+		display: block;
+		position: relative;
+		width: 29px;
+		height: 44px;
+		background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/gallery-previous-arrow.png') no-repeat 0 0;
+	}
+	#nextBtn a, #slider1next a
+	{
+		background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/gallery-next-arrow.png') no-repeat 0 0;
+	}
+
+	/* numeric controls */
+
+	ol#controls {
+		margin:1em 0;
+		padding:0;
+		height:28px;
+		}
+	ol#controls li {
+		margin:0 10px 0 0;
+		padding:0;
+		float:left;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+	ol#controls li a {
+		float:left;
+		height:28px;
+		line-height:28px;
+		border:1px solid #ccc;
+		background:#DAF3F8;
+		color:#555;
+		padding:0 10px;
+		text-decoration:none;
+		}
+	ol#controls li.current a {
+		background:#5DC9E1;
+		color:var(--color-white);
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	td.siteMapCell
+	{
+		padding-right: 15px;
+	}
+/* // Easy Slider */
+
+/* CITIES/STATIONS =cities */
+/* ------------------------------------------------------------------------------------------*/
+div#cityTabs
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 348px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/city-tabs-bg.gif') no-repeat;
+}
+div.cityTabsPanel
+{
+	overflow: auto;
+	width: 425px;
+	height: 304px;
+	padding: 10px 21px 10px 21px;
+}
+	div#cityTabs.IFSTab div.cityTabsPanel
+	{
+		height: 492px;
+	}
+div.cityTabsPanel li
+{
+	line-height: 1.4em;
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 12px;
+}
+div#cityTabs.IFSTab
+{
+	width: 467px;
+	height: 536px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif') no-repeat;
+}
+div.btmContent
+{
+	clear: both;
+	overflow: auto;
+	height: 131px;
+	padding: 7px 17px 2px 21px;
+	background: url("https://foothillgoldline.org/images/fullwidth-btm-bg.jpg") no-repeat;
+}
+/* div.btmContent
+{
+	clear: both;
+	overflow: auto;
+	height: 192px;
+	padding: 7px 17px 2px 21px;
+	background: url("https://foothillgoldline.org/images/fullwidth-btm-bg-medium.jpg") no-repeat;
+} */
+div.halfBtmContent
+{
+	clear: left;
+	overflow: auto;
+	width: 442px;
+	height: 165px;
+	padding: 10px 5px 5px 20px;
+	background: url("https://foothillgoldline.org/images/halfwidth-btm-bg.jpg") no-repeat;
+}
+div.halfBtmContentAuthority
+{
+    background: url("https://foothillgoldline.org/images/halfwidth-btm-bg.jpg") no-repeat scroll 0 0 transparent;
+    height: 170px;
+    margin-top: 7px;
+    overflow: auto;
+    padding: 5px 15px 5px 20px;
+    width: 432px;
+}
+div.halfBtmContent ul, div.halfBtmContentAuthority ul
+{
+	list-style: disc;
+	list-style-position: inside;
+}
+div.halfBtmContent ol, div.halfBtmContentAuthority ol
+{
+	list-style: disc;
+	list-style-position: inside;
+}
+.iebgfix
+{
+/*	position: relative;*/
+/*	clear: both;*/
+}
+#interactiveMap
+{
+	position: absolute;
+	width: 945px;
+	height: 540px;
+	z-index: 1001;
+	display: none;
+}
+#siteplan-container, #rendering-container {
+	position: absolute;
+	width: 945px;
+	height: 500px;
+	z-index: 1001;
+	display: none;
+	background: #777;
+	border: solid 2px #ccc;
+}
+#siteplan-container a, #rendering-container a {
+	color: var(--color-white);
+}
+#siteplan-container a:hover, #rendering-container a:hover {
+	color: #ccc;
+}
+#interactiveMap a.closeMap, #siteplan-container a.closePlan, #rendering-container a.closeRendering
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 10001;
+	display: block;
+	font-size: 18px;
+	color: #ff0000;
+	text-decoration: none;
+}
+#interactiveMap a.closeMap .close-map-text, #siteplan-container a.closePlan .close-map-text, #rendering-container a.closeRendering .close-map-text
+{
+	position: absolute;
+	width: 95px;
+	top: -23px;
+	left: -35px;
+	font-size: 10px;
+	padding: 5px;
+	color: #000000;
+	background: #ffba17;
+	border: solid 1px #000000;
+	display: none;
+	text-decoration: none;
+}
+#interactiveMap a.closeMap:link .close-map-text,
+#siteplan-container a.closePlan:visited .close-map-text,
+#rendering-container a.closeRendering:visited .close-map-text
+{
+	display: none;
+	text-decoration: none;
+}
+#interactiveMap a.closeMap:hover .close-map-text,
+#siteplan-container a.closePlan:hover .close-map-text,
+#rendering-container a.closeRendering:hover .close-map-text
+{
+	display: block;
+	text-decoration: none;
+}
+#flashMap
+{
+	z-index: 900;
+}
+
+#siteplan-container a.closeMap:link .close-map-text,
+#siteplan-container a.closePlan:visited .close-map-text,
+#rendering-container a.closeRendering:link .close-map-text,
+#rendering-container a.closeRendering:visited .close-map-text
+{
+	display: none;
+	text-decoration: none;
+}
+
+.site-plan-dl, .rendering-dl {
+	font-size: 1.5em;
+}
+
+.siteplan, .rendering {
+	z-index: 900;
+}
+
+#siteplans
+{
+	position: absolute;
+	width: 945px;
+	height: 540px;
+	z-index: 1001;
+	display: none;
+}
+#siteplans a.closeMap
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 10001;
+	display: block;
+	font-size: 18px;
+	color: #ff0000;
+	text-decoration: none;
+}
+#siteplans a.closeMap .close-map-text
+{
+	position: absolute;
+	width: 95px;
+	top: -23px;
+	left: -35px;
+	font-size: 10px;
+	padding: 5px;
+	color: #000000;
+	background: #ffba17;
+	border: solid 1px #000000;
+	display: none;
+	text-decoration: none;
+}
+#siteplans a.closeMap:link .close-map-text, #siteplans a.closeMap:visited .close-map-text
+{
+	display: none;
+	text-decoration: none;
+}
+#siteplans a.closeMap:hover .close-map-text
+{
+	display: block;
+	text-decoration: none;
+}
+
+
+
+/* Event =event =calendar */
+/* ------------------------------------------------------------------------------------------*/
+div#calendarArea
+{
+	float: left;
+	width: 465px;
+	height: 426px;
+	margin: 0px 0px 8px 0px;
+	overflow: auto;
+	position: relative;
+	border: solid 1px var(--color-gray-300);
+	-moz-border-radius: 8px;	/* for any version of Firefox */
+	-webkit-border-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-radius: 8px; /* for Konqueror (linux browser) */
+    border-radius: 8px; /* for browsers who support CSS3 */
+}
+div.calendarPage div.halfBtmContent
+{
+	clear: left;
+	overflow: auto;
+	width: 447px;
+	height: 82px;
+	padding: 15px 0px 5px 20px;
+	background: url("https://foothillgoldline.org/images/halfwidth-btm-white-bg.jpg") no-repeat;
+}
+div.calendarPage div#contentRight
+{
+	float: right;
+	overflow: auto;
+	width: 427px;
+	height: 536px;
+	padding: 15px 20px 10px 20px;
+	background: url("https://foothillgoldline.org/images/content-area-left-bg.jpg") no-repeat;
+}
+table#calendarTable
+{
+	width: 465px;
+	height: 426px;
+	border-collapse: collapse;
+/*	background: url("https://foothillgoldline.org/images/calendar-bg-2.gif") no-repeat;*/
+}
+tr.calendarHeader th
+{
+	height: 35px;
+	padding: 0px 0px 0px 0px;
+    text-align: center;
+	vertical-align: middle;
+	color: #000000;
+}
+tr.calendarDaysHeader td
+{
+	border-bottom: solid 1px var(--color-gray-300);
+}
+tr.calRow td
+{
+	border-top: solid 1px var(--color-gray-300);
+}
+tr.calFirstRow
+{
+	border-top: none;
+}
+table#calendarTable td
+{
+	border-left: solid 1px var(--color-gray-300);
+}
+table#calendarTable tr.calendarDaysHeader td, table#calendarTable .calRow td:first-child
+{
+	border-left: none !important;
+}
+table#calendarTable td.calendarDayHeading
+{
+	height: 14px;
+    font-size: 10px;
+    color: #000000;
+	vertical-align: top;
+    text-align:  center;
+}
+	#leftArrowCol
+	{
+		text-align: right;
+	}
+	#rightArrowCol
+	{
+		text-align: left;
+	}
+table#calendarTable a
+{
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+}
+table#calendarTable a.canceled, table#calendarMeetingTable a.canceled {
+	text-decoration: line-through!important;
+}
+
+
+table#calendarTable td
+{
+	width: 65px;
+	height: 74px;
+	text-align: right;
+}
+table#calendarTable td div
+{
+	position: relative;
+}
+table#calendarTable td.firstColumn, table#calendarTable td.lastColumn
+{
+	width: 67px !important;
+}
+.calendarCell
+{
+    font-size: 9px !important;
+    letter-spacing: .1em !important;
+	color: #000000;
+	vertical-align: top;
+}
+.calendarBlank
+{
+	text-align: right;
+}
+.calendarToday
+{
+	font-weight: bold;
+	background: #efefef;
+}
+.calNumber
+{
+	position: absolute;
+	width: 20px;
+	right: 4px;
+	margin-top: 2px;
+	z-index: 100;
+}
+div.daysCalendarEvents
+{
+	position: relative;
+}
+	a.eventLink
+	{
+		position: absolute;
+		width: 62px;
+		padding: 6px 0px 0px 4px;
+		text-align: left;
+		color: #000000;
+		font-size: 9px;
+		letter-spacing: .05px;
+		font-weight: normal;
+	}
+	td.firstColumn .eventLink, td.lastColumn .eventLink
+	{
+		width: 63px !important;
+		padding-left: 4px !important;
+	}
+	a.yellowEvent
+	{
+		height: 18px;
+		top: 0px;
+		left: 0px;
+		background: #eaddb5;
+	}
+	a.blueEvent
+	{
+		height: 18px;
+		top: 24px;
+		left: 0px;
+		background: #c3c4d7;
+		border-top: solid 1px #cbccdc;
+	}
+	a.grayEvent
+	{
+		height: 18px;
+		top: 49px;
+		left: 0px;
+		background: #cccccc;
+		border-top: solid 1px #d1d1d1;
+	}
+
+/* Bottom Area Calendar Content - Today's Events */
+div.calendarPage div#contentRight
+{
+	width: 467px;
+/*	padding-right: 6px;*/
+	padding: 0px;
+}
+.calendarPage #contentRight h3
+{
+	padding: 15px 0 0 0px !important;
+}
+table#calendarTodayTable
+{
+	font-size: 12px;
+}
+	table#calendarTodayTable td
+	{
+		padding: 0px 20px 10px 0px;
+	}
+	table#calendarTodayTable td.calTodayDateCol
+	{
+		width: 100px;
+	}
+	table#calendarTodayTable td.calTodayTypeCol
+	{
+		width: 100px;
+	}
+
+/* Right Area */
+div#contentRightEventsContent
+{
+	clear: both;
+	padding: 0px 20px 10px 20px;
+}
+table#calendarMeetingTable
+{
+	width: 465px;
+/*	width: 425px;*/
+	margin-left: 1px;
+	margin-bottom: 20px;
+}
+table#calendarMeetingTable th
+{
+	text-align: left;
+	height: 30px;
+	padding-bottom: 5px;
+}
+#calendarMeetingTable tr th:first-child,
+#calendarMeetingTable tr td:first-child
+{
+	padding-left: 20px;
+}
+#calendarMeetingTable td
+{
+	line-height: 1.8em;
+	padding-right: 0px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+#calendarMeetingTable td.calEventTitleCol
+{
+	padding-bottom: 10px;
+	font-size: 11px;
+}
+#calendarMeetingTable .highlight td
+{
+	background-color: var(--color-white);
+/*	background-color: rgba(255,255,255,.8);*/
+	border-top: 1px solid var(--color-gray-300);
+}
+#calendarMeetingTable tr.highlight.moreinfo td
+{
+	background-color: var(--color-white);
+	border-top: none ;
+}
+#calendarMeetingTable .mi
+{
+	background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-off.gif) no-repeat;
+	display: block;
+	height: 19px;
+	padding-left: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 18px;
+}
+#calendarMeetingTable .mi.on
+{
+	background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-on.gif) no-repeat 0 6px;
+}
+#calendarMeetingTable tr.moreinfo td
+{
+	padding: 0;
+}
+#calendarMeetingTable tr.moreinfo div
+{
+	padding: 10px 20px;
+/*	background-color: rgba(255,255,255,.7);*/
+/*	background-color: #F2F4EE; */
+	border-bottom: dotted 1px #d3b670;
+}
+#calendarMeetingTable td.calEventTitleCol strong
+{
+	line-height: 1.8em;
+}
+
+th.calDateCol
+{
+	width: 95px;
+}
+th.calDateTime
+{
+	width: 65px;
+}
+/* Videos =videos */
+/* ------------------------------------------------------------------------------------------*/
+div#videosListingArea
+{
+	float: left;
+	width: 467px;
+	height: 282px;
+	margin: 0px 0px 8px 0px;
+	background: url("https://foothillgoldline.org/images/half-width-yellow-bg.jpg") no-repeat
+}
+div#videosListing
+{
+	float: left;
+	overflow: auto;
+	width: 467px;
+	height: 258px;
+}
+div#videosListingArea h2, div#videoArchive h2
+{
+	height: 19px;
+	margin: 0px 0px 0px 130px;
+	padding: 5px 0px 0px 0px;
+	font-size: 12px;
+	line-height: 1em;
+}
+div.videosPage div#videoArchive h2
+{
+	margin: 0px 0px 0px 107px;
+}
+div#videosListing li
+{
+	line-height: 1.2em;
+}
+div#videoBox
+{
+	float: right;
+	background: var(--color-white);
+}
+div.homePage div#videoBox
+{
+	position: absolute;
+	top: 0px;
+	right: 1px;
+	z-index: 1000;
+}
+div#videoArchive
+{
+	clear: both;
+	width: 942px;
+	height: 246px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url("https://foothillgoldline.org/images/full-width-titled-bg.jpg") no-repeat;
+}
+div#videoArchiveBox
+{
+	overflow: auto;
+	width: 919px;
+	height: 220px;
+	padding: 1px 0px 0px 23px;
+}
+div#videoArchive table
+{
+	width: 900px;
+	margin: 15px 0px 0px 0px;
+}
+div#videoArchive td
+{
+	width: 50%;
+	padding: 0px 30px 30px 0px;
+}
+div#videoArchive td.bottomRow
+{
+	padding-bottom: 0px;
+}
+.hide {display: none;}
+#videoArchive {}
+#videoArchive .videos {width: 900px; height: 170px; padding: 15px 0px 0px 0px; margin: 0px 0 0;}
+#videoArchive .row .item {float: left; width: 420px; padding: 0 30px 5px 0;}
+#videoArchive .paginator {clear: both;}
+#videosListing li
+{
+	clear: both;
+	overflow: auto;
+	margin: 0px;
+	padding: 7px 20px 7px 20px;
+	border-bottom: solid 1px var(--color-gray-border);
+}
+#videosListing li:last-child
+{
+	padding-bottom: 8px;
+	border: none;
+}
+#videosListing li a:link, #videosListing li a:visited, #videoArchive a:link, #videoArchive a:visited
+{
+	color: var(--color-dark-blue);
+	text-decoration: none;
+}
+#videosListing li a:link.underline, #videosListing li a:visited.underline
+{
+	text-decoration: underline;
+}
+#videosListing li a:hover, #videoArchive a:hover
+{
+	color: #BA8D16;
+}
+#videosListing img, #videoArchive img
+{
+	float: left;
+	clear: left;
+	margin: 0px 17px 0px 0px;
+}
+#videosListing p, #videoArchive p
+{
+	float: left;
+	width: 290px;
+	padding-top: 5px;
+	line-height: 1.4em;
+}
+#videoArchive p
+{
+	padding-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Contracting Opportunities */
+/* ------------------------------------------------------------------------------------------*/
+table.proposalTable
+{
+	margin: 0px 0px 10px 0px;
+}
+table.proposalTable td
+{
+	vertical-align: top;
+	padding: 0px 0px 10px 0px;
+}
+.proposalArrowLink
+{
+
+}
+td.rfpIdColumn
+{
+	width: 50px;
+}
+td.rfpFirstColumn
+{
+	vertical-align: bottom;
+	width: 27px;
+}
+.rfpFirstColumn img
+{
+	vertical-align: bottom;
+	margin: 0px 0px 0px 0px;
+}
+table.proposalTable p a
+{
+	line-height: 1.5em
+}
+table.proposalTable p
+{
+	margin: 0px;
+}
+tr.proposalFilesArea
+{
+	display: none;
+}
+
+
+
+/* new pixo */
+
+table.proposalTable2
+{
+	margin: 0px 0px 10px 0px;
+}
+table.proposalTable2 td
+{
+	vertical-align: top;
+	padding: 0px 0px 10px 0px;
+}
+table.proposalTable2 p a
+{
+	line-height: 1.5em
+}
+table.proposalTable2 p
+{
+	margin: 0px;
+}
+
+
+/* end new pixo */
+
+
+/* STAFF =staff */
+/* ------------------------------------------------------------------------------------------*/
+.bios{
+width: 900px;}
+.bios tr td {
+	padding-bottom: 20px;
+}
+div.staffPage div#content, div.boardPage div#content
+{
+	padding-left: 20px;
+	padding-right: 0px;
+}
+table.biosTable
+{
+	font-size: 11px;
+	width: 950px;
+	margin: 0px 0px 0px 0px;
+}
+table.boardTable
+{
+	font-size: 11px;
+	width: 300px;
+	height: 170px;
+	margin: 0px 0px 0px 0px;
+}
+.biosTable td
+{
+	vertical-align: top;
+	padding: 0px 0px 30px 0px;
+width: 950px;
+}
+table.boardTable td
+{
+	padding: 0px 0px 20px 0px;
+}
+table.biosTable td.bioPictureCell
+{
+	width: 110px;
+	padding-right: 0px;
+}
+table.biosTable td.bioInfoCell
+{
+	padding-right: 8px;
+}
+
+/* Phases =phases */
+/* ------------------------------------------------------------------------------------------*/
+div#phasePageMap
+{
+	float: left;
+	position: relative;
+	width: 467px;
+	height: 496px;
+	margin: 0px 0px 7px 0px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-content-left-bg.jpg') no-repeat;
+}
+div#phasePageMap h2
+{
+	font-size: 1.1em;
+	line-height: 1em;
+	border: none;
+	margin: 5px 0px 6px 23px;
+}
+div#phaseTabs
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 496px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-tabs-bg.jpg') no-repeat;
+}
+div#phaseTabs.phaseTabsDualContent {
+	height: 535px;
+	background: url('phase-tabs-bg-large.jpg') no-repeat;
+}
+div.phaseTabsPanel
+{
+	width: 424px;
+	height: 452px;
+	padding: 10px 21px 10px 21px;
+	overflow: auto;
+}
+#phaseTabs.phaseTabsDualContent div.phaseTabsPanel {
+	height: 485px;
+}
+div.phaseTabsPanel li
+{
+	line-height: 1em;
+}
+div.phaseTabsPanel ul
+{
+	list-style: disc;
+	list-style-position: inside;
+}
+div.phaseTabsPanel ol
+{
+	list-style: decimal;
+	list-style-position: inside;
+}
+div.phaseMapArea
+{
+	width: 466px;
+	height: 472px;
+}
+.phasesMapRollover
+{
+	position: absolute;
+	display: block;
+}
+div.phaseTabsPanel ul.phaseEventList
+{
+	list-style: none;
+	list-style-position: outside;
+}
+div.phaseTabsPanel ul.phaseEventList li
+{
+	line-height: 1.4em;
+}
+/*** PHASE 1 MAP ***/
+div#phase1Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-1-bg.jpg') right bottom no-repeat;
+}
+#phase1MapPasadena		{ top: 94px; left: 286px;}
+a.activeMapItem#phase1MapPasadena		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-pasadena.gif') no-repeat;}
+#phase1MapAllen			{ top: 110px; left: 340px;}
+a.activeMapItem#phase1MapAllen		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-allen.gif') no-repeat;}
+#phase1MapChinatown		{ top: 317px; left: 83px;}
+a.activeMapItem#phase1MapChinatown		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-chinatown.gif') no-repeat;}
+#phase1MapLake			{ top: 111px; left: 301px;}
+a.activeMapItem#phase1MapLake		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-lake.gif') no-repeat;}
+#phase1MapDelMar		{ top: 159px; left: 251px;}
+a.activeMapItem#phase1MapDelMar		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-delmar.gif') no-repeat;}
+#phase1MapFillmore		{ top: 180px; left: 249px;}
+a.activeMapItem#phase1MapFillmore		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-fillmore.gif') no-repeat;}
+#phase1MapMemorialPark	{ top: 141px; left: 222px;}
+a.activeMapItem#phase1MapMemorialPark		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-memorialpark.gif') no-repeat;}
+#phase1MapHeritage		{ top: 269px; left: 58px;}
+a.activeMapItem#phase1MapHeritage		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-heritage.gif') no-repeat;}
+#phase1MapHighlandPark	{ top: 224px; left: 122px;}
+a.activeMapItem#phase1MapHighlandPark		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-highlandpark.gif') no-repeat;}
+#phase1MapLincoln		{ top: 287px; left: 19px;}
+a.activeMapItem#phase1MapLincoln		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-lincolnheights.gif') no-repeat;}
+#phase1MapMission		{ top: 205px; left: 219px;}
+a.activeMapItem#phase1MapMission		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-mission.gif') no-repeat;}
+#phase1MapSierraMadre	{ top: 135px; left: 335px;}
+a.activeMapItem#phase1MapSierraMadre		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-sierramadre.gif') no-repeat;}
+#phase1MapSouthPasadena	{ top: 232px; left: 263px;}
+a.activeMapItem#phase1MapSouthPasadena		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-southpasadena.gif') no-repeat;}
+#phase1MapSWMuseum		{ top: 251px; left: 84px;}
+a.activeMapItem#phase1MapSWMuseum		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-swmuseum.gif') no-repeat;}
+#phase1MapUnionStation	{ top: 340px; left: 52px;}
+a.activeMapItem#phase1MapUnionStation		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-unionstation.gif') no-repeat;}
+
+/*** PHASE 2 MAP ***/
+div#phase2Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-2-bg.gif') right bottom no-repeat;
+}
+#phase2MapI210Bridge		{ top: 173px; left: 47px;}
+a.activeMapItem#phase2MapI210Bridge		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-i210bridge.gif') no-repeat;}
+#phase2MapArcadia		{ top: 193px; left: 91px;}
+a.activeMapItem#phase2MapArcadia		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-arcadia.gif') no-repeat;}
+#phase2MapMonrovia		{ top: 177px; left: 160px;}
+a.activeMapItem#phase2MapMonrovia		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-monrovia.gif') no-repeat;}
+
+#phase2MapCampus		{ top: 210px; left: 191px;}
+a.activeMapItem#phase2MapCampus		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-OpsCampus.gif') no-repeat;}
+
+#phase2MapDuarte		{ top: 179px; left: 247px;}
+a.activeMapItem#phase2MapDuarte		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-duarte.gif') no-repeat;}
+#phase2MapIrwindale		{ top: 220px; left: 304px;}
+a.activeMapItem#phase2MapIrwindale		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-irwindale.gif') no-repeat;}
+#phase2MapAlameda	{ top: 197px; left: 320px;}
+a.activeMapItem#phase2MapAlameda		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-alameda.gif') no-repeat;}
+#phase2MapCitrus	{ top: 183px; left: 340px;}
+a.activeMapItem#phase2MapCitrus		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-citrus.gif') no-repeat;}
+#phase2MapAzusa	{ top: 162px; left: 361px;}
+a.activeMapItem#phase2MapAzusa		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-azusa.gif') no-repeat;}
+
+/*** PHASE 3 MAP ***/
+div#phase3Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-3-bg.gif') right bottom no-repeat;
+}
+
+#phase3MapGlendora		{ top: 127px; left: 34px;}
+a.activeMapItem#phase3MapGlendora		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-glendora.gif') no-repeat;}
+#phase3MapSanDimas		{ top: 208px; left: 144px;}
+a.activeMapItem#phase3MapSanDimas		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-sandimas.gif') no-repeat;}
+#phase3MapLaVerne		{ top: 213px; left: 233px;}
+a.activeMapItem#phase3MapLaVerne		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-laverne.gif') no-repeat;}
+#phase3MapPomona		{ top: 249px; left: 277px;}
+a.activeMapItem#phase3MapPomona		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-pomona.gif') no-repeat;}
+#phase3MapClaremont		{ top: 230px; left: 334px;}
+a.activeMapItem#phase3MapClaremont		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-claremont.gif') no-repeat;}
+#phase3MapMontclair		{ top: 253px; left: 372px;}
+a.activeMapItem#phase3MapMontclair		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-montclair.gif') no-repeat;}
+
+
+/*** PHASE 4 MAP ***/
+div#phase4Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-4-bg.gif') right bottom no-repeat;
+}
+/* FOOTER =footer */
+/* ------------------------------------------------------------------------------------------*/
+#footer
+{
+	clear: both;
+	position: relative;
+	width: 942px;
+	height: 57px;
+	padding: 9px 0px 0px 0px;
+	font-size: 11px;
+	color: var(--color-dark-blue);
+}
+	#footer  li
+	{
+		display: inline;
+	}
+	#footer p
+	{
+		padding-top: 8px;
+		text-align: center;
+		margin-left: 35px;
+	}
+	#footerLeftIconList
+	{
+		position: absolute;
+		top: 9px;
+		left: 0px;
+	}
+		#footerLeftIconList li
+		{
+			margin-right: 3px;
+		}
+	#footerRightIconList
+	{
+		position: absolute;
+		top: 9px;
+		right: 0px;
+	}
+		#footerRightIconList li
+		{
+			margin-left: 5px;
+		}
+
+/* AJAX STUFF */
+.shield {position: absolute; z-index: 50; background-color: #000; opacity: .6; filter: alpha(opacity=60); -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;}
+.shield .ajax {width: 32px; height: 32px; position: absolute; z-index: 51; top: 50%; left: 50%; margin-left: -16px; margin-top: -16px; background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/ajax.gif) no-repeat;}
+
+
+/* ACCORDION */
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; zoom: 1; margin: 15px 0;}
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat;}
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; top: 50%;}
+.ui-icon-triangle-1-e {background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-off.gif) no-repeat; width: 8px; height: 19px; margin-top: -9px; left: -20px;}
+.ui-icon-triangle-1-s {background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-on.gif) no-repeat; width: 19px; height: 8px; margin-top: -4px; left: -30px;}
+.ui-accordion .ui-accordion-content { padding: 0em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none;}
+.ui-accordion .ui-accordion-content-active { display: block; }
+
+
+/******************
+HOME POPUP
+******************/
+#overlay {
+	display: none;
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     text-align:center;
+     z-index: 99999999999;
+     background: #000;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+     background: rgba(0,0,0, 0.5);
+}
+#homePopup {
+	display: none;
+	position: relative;
+	left: auto;
+	right: auto;
+	margin: 0 auto;
+	top: 10px;
+	width: 890px;
+	height: 690px;
+	padding: 20px 0px 0px 0px;
+	text-align: left;
+	background: var(--color-white);
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	z-index: 100000;
+}
+#industryworkshop, #popupEnterWebsite{
+padding-top: 10px;
+}
+
+
+#popupLogo {
+
+	margin-left: 47px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+
+#homePopup h1 {
+	text-align: left;
+margin-top: 10px;
+margin-left: 150px;
+position: absolute;
+	font-size: 40px;
+	
+}
+
+#homePopup h1 span {
+	color: var(--color-yellow);
+}
+
+#closePopup {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	cursor: pointer;
+}
+
+
+
+#mapHeader h3{
+	color: var(--color-white);
+	line-height: 1.8em;
+	font-size: 21px;
+	font-weight:100;
+
+}
+#mapHeader {
+	clear: both;
+	width: 902px;
+	height: 36px;
+	margin: 20px auto 0;
+	padding-left: 40px;
+	font-size: 21px;
+letter-spacing: 10px;
+font-weight:100;
+	line-height: 1.8em;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: var(--color-yellow);
+	font-color: white;
+
+
+}
+
+#popupMap {
+	clear: both;
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#homePopup div img {
+	margin-right: 7px;
+}
+#popupEnterWebsite {
+	cursor: pointer;
+}
+.SBimg{max-width: 428px; max-height: 295px;
+}
+.imgStaff{
+width: 467px; height: 348px;}
+
+.imgIWR{width: 350px; height: 149px;
+}
+
+.iwillride{width: 500px;
+}
+
+#countdown{
+font-size: 15px;
+align: center;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+
+#numbers{
+color: var(--color-dark-blue);
+font-size: 32px;
+margin-top: 35px;
+align: center;
+margin-bottom: 50px;
+font-weight: 600;
+max-width: 800px;
+margin: 0 auto;
+padding-bottom: 100px;
+}
+
+#closingtag{
+color: var(--color-primary);
+margin-top: 30px;
+align: center;
+margin-bottom: 150px;
+font-size: 20px;
+letter-spacing: 1px;
+}
+
+goldtext{
+color: var(--color-yellow);
+}
+
+#nav-construction-phases-funding-status, #nav-contact-us-funding-status, #nav-about-us-funding-status, #nav-news-funding-status, #nav-meetings-events-funding-status{
+float: right!important;
+margin-right: 22px!important;
+}
+#nav-construction-phases-funding-status{
+float: right!important;
+margin-right: 0px!important;
+}
+
+#nav-construction-phases-funding-status a, #nav-contact-us-funding-status a, #nav-about-us-funding-status a, #nav-news-funding-status a, #nav-meetings-events-funding-status a{
+border: 1px solid var(--color-dark-blue);
+border-radius: 5px;
+color: var(--color-dark-blue);
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 8px;
+padding-bottom: 8px;
+z-index: 109;
+
+}
+}
+
+
+/* Legacy print styles: retain original cascade order. */
+@media print {
+/* CSS RESET =reset */
+/* ------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	line-height: 1em;
+}
+
+
+body
+{
+	line-height: 1;
+}
+ol, ul
+{
+	list-style: none;
+}
+strong
+{
+	line-height: 1.5em;
+}
+blockquote, q
+{
+	quotes:""""
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+	content: '';
+}
+:focus
+{
+	outline: 0;
+}
+ins
+{
+	text-decoration: none;
+}
+del
+{
+	text-decoration: line-through;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GLOBALS =global */
+/* ------------------------------------------------------------------------------------------*/
+p
+{
+	margin-top: 0.2em;
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+br
+{
+	line-height: 1.3em;
+}
+h1, h2, h3, h4, h5, h6
+{
+	margin: 0.5em 0px 1.3em 0px;
+	line-height: 1.1em;
+}
+h1
+{
+	font-size: 2em;
+}
+h2
+{
+	font-size: 14px;
+}
+h3
+{
+	font-size: 1.1em;
+}
+h4
+{
+	font-size: 1em;
+}
+h5
+{
+	font-size: 1em;
+}
+h6
+{
+	font-size: 1em;
+}
+a:link, a:visited
+{
+	color: #3b5ba7;
+	text-decoration: underline;
+}
+a:hover
+{
+	color: #BB8E19;
+}
+li
+{
+	line-height: 1em;
+	margin: 0px 0px 1em 0px;
+}
+fieldset
+{
+	margin-bottom: 1em;
+}
+legend
+{
+	line-height: 2em;
+	font-weight: bold;
+}
+hr
+{
+	margin-top: 1.5em;
+	color: #000000;
+	background: #000000;
+	height: 1px;
+}
+td, th { vertical-align: top; line-height: 1.4em;}
+input, select
+{
+	line-height: 1.5em;
+}
+input[type="text"], textarea
+{
+	width: 100%;
+	padding: 4px 2px 2px 3px;
+	margin-bottom: 0.5em;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/form-text-bg.gif') var(--color-white) repeat-x;
+	border: solid 1px #c6c6c6;
+	font-size: 12px;
+}
+p input[type="text"], p textarea
+{
+	margin-bottom: 0px;
+}
+div#container input[type="text"].halfWidth
+{
+	width: 50%;
+}
+div#container input[type="text"].thirdWidth
+{
+	width: 33%;
+}
+@font-face {
+	font-family: 'MyriadProRegular';
+	src: url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.eot');
+	src: local('☺'), url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.woff') format('woff'), url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.ttf') format('truetype'), url('https://foothillgoldline.org/fonts/myriadpro-regular-webfont.svg#webfontIn9CBMlh') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadProSemibold';
+	src: url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.eot');
+	src: local('☺'), url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.woff') format('woff'), url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.ttf') format('truetype'), url('https://foothillgoldline.org/fonts/myriadpro-semibold-webfont.svg#webfontAnxPAEz3') format('svg');
+}
+.paddingRight
+{
+	padding-right: 30px;
+}
+/* UTILITY =utility */
+/* ------------------------------------------------------------------------------------------*/
+.left 			{ float: left }
+.right 			{ float: right }
+.clear 			{ clear: both; }
+.ralign			{ text-align: right; }
+.lalign			{ text-align: left; }
+.centered		{ text-align: center; }
+.bold 			{ font-weight: bold; }
+.formRequired 	{ color: #bb8d09; }
+.noMargin		{ margin: 0px; }
+.underline		{ text-decoration: underline; }
+.canceled { text-decoration: line-through!important; }
+
+/* MAIN =main */
+/* ------------------------------------------------------------------------------------------*/
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	text-align: center;
+	/*background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/body-bg.jpg') center top #ffffff; */
+	font: 12px verdana,arial,helvetica;
+	-webkit-background-size: 2618px 1200px;
+}
+#container
+{
+	position: relative;
+	margin: auto;
+	margin-top: 87px;
+	margin-bottom: 87px;
+	width: 942px;
+	min-height: 740px;
+	text-align: left;
+	line-height: 1em;
+	color: var(--color-dark-blue);
+}
+#header
+{
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#headerLogo{
+padding-top: 30px;
+position: relative;
+}
+#site-title
+{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	margin: 0px;
+	}
+.counter{
+position: absolute;
+top: -30px;
+left: 300px;
+width: 400px;
+z-index: 9999999999;
+text-align: center;
+}
+.counter h3{
+	color: var(--color-primary);
+	line-height: 1.8em;
+	font-size: 13px;
+	font-weight:100;
+	margin-bottom: 1px;
+
+}
+#numbers1{
+color: var(--color-primary);
+font-size: 18px;
+align: center;
+}
+
+#closingtag1{
+color: var(--color-primary);
+margin-top: 5px;
+align: center;
+font-size: 12px;
+letter-spacing: 10px !important;
+}
+
+goldtext{
+color: var(--color-yellow);
+}
+
+
+#LogoText{
+position: absolute;
+top: 0px;
+left: 0px;
+width: 210px;
+height: 20px;
+z-index: 9999999999;
+
+}
+#search-box
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 203px;
+	height: 23px;
+	margin: 0px;
+	padding: 0px 0px 0px 25px;
+	color: #8a8989;
+	font-size: 13px;
+	font-family: verdana;
+	border: none;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/search-bg.gif');
+}
+
+/* NAVIGATION =nav */
+/* ------------------------------------------------------------------------------------------*/
+ul#nav
+{
+	position: absolute;
+	top: 40px;
+	left: 95px;
+	width: 847px;
+	height: 84px;
+	border-top: solid 1px var(--color-gray-300);
+}
+	ul#nav a:link, ul#nav a:visited
+	{
+		color: var(--color-dark-blue);
+		text-decoration: none;
+	}
+	ul#nav > li > a
+	{
+		display: block;
+		padding: 12px 22px 14px 22px;
+		color: var(--color-dark-blue);
+	}
+	ul#nav a:hover
+	{
+		color: #bb8d09;
+	}
+	ul#nav li
+	{
+		float: left;
+		margin-left: 2px;
+		margin-right: 1px;
+		font: bold 13px verdana,arial;
+	}
+	ul#nav li#nav-contact-us
+	{
+		position: absolute;
+		right: 0px;
+		margin-right: 0px;
+		padding-right: 0px;
+		z-index: 102;
+	}
+	ul#nav li#nav-contact-us.here, ul#nav li#nav-contact-us.parent-here
+	{
+		z-index: 100;
+	}
+	ul#nav > li.last
+	{
+		float: right;
+		margin-right: 0px;
+		padding-right: 0px
+	}
+/* General css for Top Nav Items */
+ul#nav > li
+{
+	font: bold 13px;
+	font-family: verdana;
+}
+ul#nav li#nav-construction-phases		{ margin-left: 0px; }
+ul#nav li#nav-construction-phases-construction-updates a
+{
+	color: var(--color-dark-blue);
+	border: solid 1px var(--color-dark-blue); padding: 4px;
+	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
+	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
+    border-top-right-radius: 8px; /* for browsers who support CSS3 */
+	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
+	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-top-left-radius: 8px; /* for browsers who support CSS3 */
+	-moz-border-radius-bottomright: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-right-radius: 8px;	/* for Konqueror (linux browser) */
+    border-bottom-right-radius: 8px; /* for browsers who support CSS3 */
+	-moz-border-radius-bottomleft: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-bottom-left-radius: 8px; /* for browsers who support CSS3 */
+}
+ul#nav li#nav-construction-phases-construction-updates a:hover		{ color: #bb8d09; }
+ul#nav > li:hover
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
+}
+ul#nav > li.parent-here, ul#nav > li.here, div.homePage li#nav-construction-phases
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
+}
+ul#nav > li.parent-here > li.class
+{
+	font-weight: bold;
+}
+/* Rounded Right Corners for Menu Items */
+li#nav-construction-phases, li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us
+{
+	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
+	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
+    border-top-right-radius: 8px; /* for browsers who support CSS3 */
+}
+/* Rounded Left Corners for Menu Items */
+li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us, li#nav-contact-us
+{
+	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
+	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-top-left-radius: 8px; /* for browsers who support CSS3 */
+}
+ul#nav li ul
+{
+	position: absolute;
+	top: 37px;
+	left: 0px;
+	width: 825px;
+	height: 32px;
+	margin: 0px;
+	padding: 15px 0px 0px 22px;
+	z-index: 100;
+	display: none;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-bg.jpg') no-repeat;
+}
+ul#nav li#nav-contact-us ul
+{
+	/*left: -742px;*/ /* was -724px */
+	left: auto;
+	right: 0;
+}
+ul#nav li:hover ul
+{
+	display: block;
+	z-index: 102;
+}
+ul#nav > li.parent-here ul, ul#nav > li.here ul, div.homePage li#nav-construction-phases ul
+{
+	display: block;
+	z-index: 101;
+}
+ul#nav li ul li
+{
+	font-weight: normal;
+	height: 1em;
+	margin: 0px;
+	padding: 0px 22px 0.4em 0px;
+	font-size: 12px;
+}
+ul#nav > li ul li.last
+{
+	padding-right: 0px;
+}
+ul#nav li ul li.here, ul#nav li ul li.parent-here
+{
+	font-weight: bold;
+	background: none;
+}
+/* Cut off the menu after 2 levels */
+ul#nav > li > ul ul
+{
+	display: none !important;
+}
+/* Special Look for Cities/Stations sub-nav */
+ul#nav li#nav-cities-stations ul
+{
+	height: 40px;
+	padding-top: 7px;
+}
+ul#nav li#nav-cities-stations li
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 105px;
+}
+ul#nav li#nav-cities-stations li#nav-cities-stations-pasadena	{ width: 94px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-san-dimas	{ width: 94px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-south-pasadena	{ width: 116px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-azusa	{ width: 115px; }
+
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-arcadia		{ width: 92px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-pomona		{ width: 105px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-irwindale		{ width: 105px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-ontario		{ width: 95px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-gold-line-bridge { width: 95px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-claremont		{ width: 110px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-duarte		{ width: 88px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-montclair		{ width: 88px; }
+ul#nav li#nav-cities-stations li#nav-cities-stations-la-verne		{ width: 93px; }
+
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-glendora	{ width: 95px; }
+
+ul#nav li#nav-cities-stations li#nav-cities-stations-operations-campus		{ width: 110px; }
+
+/* TABS =tabs */
+/* ------------------------------------------------------------------------------------------*/
+div.tabs
+{
+	float: left;
+	width: 467px;
+	height: 282px;
+	margin: 0px 0px 5px 0px;
+	color: var(--color-dark-blue);
+}
+div.tabs li a:link, div.tabs li a:visited
+{
+	color: var(--color-dark-blue);
+	text-decoration: none;
+}
+div.tabs li a:hover
+{
+	color: #BA8D16;
+}
+div.tabs ul.tabLabels li
+{
+	float: left;
+	text-align: center;
+	padding: 2px 0px 0px 0px;
+	margin: 0px 0px 2px 0px;
+	height: 20px;
+}
+div.tabs ul.tabLabels a
+{
+	font: bold 13px verdana;
+}
+div.tabs ul.tabLabels a:hover
+{
+	color: #BA8D16;
+}
+div.tabs ul.tabLabels li.ui-tabs-selected a:hover { color: var(--color-dark-blue); }
+div.tabs ul.tabLabels li.tabLabel1	{ width: 156px; }
+div.tabs ul.tabLabels li.tabLabel2	{ width: 155px; }
+div.tabs ul.tabLabels li.tabLabel3	{ width: 156px; }
+div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-1-active.jpg') no-repeat; }
+div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-2-active.jpg') no-repeat; }
+div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-3-active.jpg') no-repeat; }
+div.tabsPanel
+{
+	position: absolute;
+	top: 24px;
+	left: 0px;
+	width: 467px;
+	height: 258px;
+	overflow: auto;
+}
+div.tabsPanel li
+{
+	line-height: 1.2em;
+}
+.ui-tabs { position: relative;  zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0px 0px 0px 0px; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { display: block; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0;  background: none;}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+/* HOME =home */
+/* ------------------------------------------------------------------------------------------*/
+div#homeTabs
+{
+	position: relative;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-tab-section.jpg') no-repeat;
+}
+.newsPanel li, .eventsPanel li
+{
+	clear: both;
+	margin: 0px;
+	padding: 17px 57px 12px 34px;
+	border-bottom: solid 1px var(--color-gray-border);
+}
+.newsPanel li:last-child, .eventsPanel li:last-child, .videoPanel li:last-child
+{
+	padding-bottom: 8px;
+	border: none;
+}
+.videoPanel li
+{
+	clear: both;
+	margin: 0px;
+	padding: 10px 20px 8px 20px;
+	border-bottom: solid 1px var(--color-gray-border);
+}
+.videoPanel img
+{
+	float: left;
+	clear: left;
+	margin: 0px 17px 0px 0px;
+}
+.videoPanel p
+{
+	float: left;
+	width: 290px;
+	padding-top: 5px;
+	line-height: 1.3em;
+}
+.videoPanel a:link.underline, .videoPanel a:visited.underline
+{
+	text-decoration: underline;
+}
+div#homeRightContent
+{
+	float: right;
+	position: relative;
+	width: 466px;
+	height: 282px;
+	margin: 0px 0px 0px 0px;
+}
+	div#homeRightContent img
+	{
+		float: right;
+	}
+div#newsletterSignupBox
+{
+	position: absolute;
+	display: block;
+	top: 210px;
+	left: 120px;
+	z-index: 1000;
+}
+	div#newsletterSignupBox .closeEnewsBtn
+	{
+		position: absolute;
+		right: 0px;
+		width: 24px;
+		height: 24px;
+	}
+	div#newsletterSignupBox .closeEnewsBtn:hover
+	{
+		background: #000000;
+		opacity: 0.1;
+		cursor: pointer;
+	}
+div#homePhaseMap
+{
+	clear: both;
+	width: 942px;
+	height: 246px;
+}
+	div#homePhaseMap a
+	{
+		float: left;
+		display: block;
+	}
+	div#homePhaseMap span
+	{
+		display: none;
+	}
+#homeMapPhase1
+{
+	width: 271px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-map-la-to-pasadena.jpg') 0px 0px no-repeat;
+}
+#homeMapPhase2a
+{
+	width: 232px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-map-pasadena-to-azusa.jpg') 0px -246px no-repeat;
+}
+#homeMapPhase2b
+{
+	width: 234px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-map-azusa-to-montclair.jpg') 0px 0px no-repeat;
+}
+#homeMapPhase2c
+{
+	width: 204px;
+	height: 246px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-map-ontario-airport-extension.jpg') 0px 0px no-repeat;
+}
+	#homeMapPhase1:hover, #homeMapPhase2b:hover { background-position:  0px -246px; }
+
+/* CONTENT =content */
+/* ------------------------------------------------------------------------------------------*/
+div#contentArea
+{
+	position: relative;
+	line-height: 0.3em;
+	width: 942px;
+	height: 536px;
+}
+div#content
+{
+	padding: 13px 23px 23px 23px;
+	height: 500px;
+	overflow: auto;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/content-default-bg.gif') no-repeat;
+}
+div#content ol, div#content ul, div#contentLeft ol, div#contentLeft ul, div#contentRight ol, div#contentRight ul
+{
+	margin-top: 1em;
+	margin-left: 2em;
+}
+div#content ol, div#contentLeft ol, div#contentRight ol
+{
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+div#content ul, div#contentLeft ul, div#contentRight ul
+{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+div#content li, div#contentLeft li, div#contentRight li
+{
+	margin-bottom: 0.5em;
+}
+div#contentLeft
+{
+	float: left;
+	overflow: auto;
+	width: 427px;
+	height: 514px;
+	padding: 12px 20px 10px 20px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/content-area-left-bg.jpg') no-repeat;
+}
+div#contentRight
+{
+	float: right;
+	overflow: auto;
+	width: 427px;
+	height: 514px;
+	padding: 12px 20px 10px 20px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/content-area-right-bg.gif') no-repeat;
+	position: relative;
+}
+div#contentLeft h1:first-child, div#contentRight h1:first-child, div.halfBtmContent h1:first-child,
+div#contentLeft h2:first-child, div#contentRight h2:first-child, div.halfBtmContent h2:first-child,
+div#contentLeft h3:first-child, div#contentRight h3:first-child, div.halfBtmContent h3:first-child
+{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+div#subNav
+{
+	float: left;
+	width: 942px;
+	height: 32px;
+	margin: 8px 0px 0px 0px;
+	border-top: solid 1px var(--color-gray-300);
+	font: normal 15px 'MyriadProSemibold';
+	text-align: center;
+}
+div#subNav table
+{
+	margin: auto;
+}
+div#subNav li
+{
+	float: left;
+}
+div#subNav li a:link, div#subNav li a:visited
+{
+	display: block;
+	height: 24px;
+	padding: 7px 13px 0px 13px;
+	text-decoration: none;
+	color: var(--color-dark-blue);
+}
+div#subNav li a:hover
+{
+	display: block;
+	height: 24px;
+	padding: 7px 13px 0px 13px;
+	text-decoration: none;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-btn-bg.gif') repeat-x;
+	color: var(--color-white);
+}
+div#subNav a
+{
+	-moz-border-radius-bottomright: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-right-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-right-radius: 8px; /* for Konqueror (linux browser) */
+    border-bottom-right-radius: 8px; /* for browsers who support CSS3 */
+}
+div#subNav a
+{
+	-moz-border-radius-bottomleft: 8px;	/* for any version of Firefox */
+	-webkit-border-bottom-left-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-bottom-left-radius: 8px; /* for Konqueror (linux browser) */
+    border-bottom-left-radius: 8px; /* for browsers who support CSS3 */
+}
+div#subNav li.active a:link, div#subNav li.active a:visited
+{
+	color: var(--color-white);
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-btn-bg.gif') repeat-x;
+}
+table#siteMapTable
+{
+	width: 100%;
+}
+table#siteMapTable td
+{
+	width: 50%;
+}
+/* SUB =sub */
+/* ------------------------------------------------------------------------------------------*/
+div#contentArea div.headlinesPage
+{
+	font-size: 14px;
+	padding-left: 96px;
+	padding-right: 70px;
+}
+div#leftCornerBox
+{
+	float: left;
+	margin: 0px 0px 7px 0px;
+	width: 467px;
+	height: 348px;
+}
+.mediaBox
+{
+	position: relative;
+}
+/* image replacement */
+    .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next {
+        margin: 0;
+        padding: 0;
+        display: block;
+        overflow: hidden;
+        text-indent: -8000px;
+        }
+/* // image replacement */
+/* Easy Slider */
+
+	.mediaBox ul, .mediaBox li {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	.mediaBox li {
+		/*
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/
+		/*width: 467px; */
+		/*height: 348px;*/
+		overflow: hidden;
+		}
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev {
+		display: block;
+		width: 29px;
+		height: 44px;
+		position: absolute;
+		top: 150px;
+		z-index: 1000;
+	}
+	/* Home Page's Slideshow */
+	div.homePage #prevBtn, div.homePage #nextBtn,
+		div.homePage #slider1next, div.homePage #slider1prev
+	{
+		top: 115px;
+	}
+	#prevBtn, #slider1prev {
+		left: 10px;
+	}
+	#nextBtn, #slider1next {
+		left: 428px;
+	}
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a
+	{
+		display: block;
+		position: relative;
+		width: 29px;
+		height: 44px;
+		background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/gallery-previous-arrow.png') no-repeat 0 0;
+	}
+	#nextBtn a, #slider1next a
+	{
+		background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/gallery-next-arrow.png') no-repeat 0 0;
+	}
+
+	/* numeric controls */
+
+	ol#controls {
+		margin:1em 0;
+		padding:0;
+		height:28px;
+		}
+	ol#controls li {
+		margin:0 10px 0 0;
+		padding:0;
+		float:left;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+	ol#controls li a {
+		float:left;
+		height:28px;
+		line-height:28px;
+		border:1px solid #ccc;
+		background:#DAF3F8;
+		color:#555;
+		padding:0 10px;
+		text-decoration:none;
+		}
+	ol#controls li.current a {
+		background:#5DC9E1;
+		color:var(--color-white);
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	td.siteMapCell
+	{
+		padding-right: 15px;
+	}
+/* // Easy Slider */
+
+/* CITIES/STATIONS =cities */
+/* ------------------------------------------------------------------------------------------*/
+div#cityTabs
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 348px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/city-tabs-bg.gif') no-repeat;
+}
+div.cityTabsPanel
+{
+	overflow: auto;
+	width: 425px;
+	height: 304px;
+	padding: 10px 21px 10px 21px;
+}
+	div#cityTabs.IFSTab div.cityTabsPanel
+	{
+		height: 492px;
+	}
+div.cityTabsPanel li
+{
+	line-height: 1.4em;
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 12px;
+}
+div#cityTabs.IFSTab
+{
+	width: 467px;
+	height: 536px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif') no-repeat;
+}
+div.btmContent
+{
+	clear: both;
+	overflow: auto;
+	height: 131px;
+	padding: 7px 17px 2px 21px;
+	background: url("https://foothillgoldline.org/images/fullwidth-btm-bg.jpg") no-repeat;
+}
+div.halfBtmContent
+{
+	clear: left;
+	overflow: auto;
+	width: 442px;
+	height: 165px;
+	padding: 10px 5px 5px 20px;
+	background: url("https://foothillgoldline.org/images/halfwidth-btm-bg.jpg") no-repeat;
+}
+div.halfBtmContentAuthority
+{
+    background: url("https://foothillgoldline.org/images/halfwidth-btm-bg.jpg") no-repeat scroll 0 0 transparent;
+    height: 170px;
+    margin-top: 7px;
+    overflow: auto;
+    padding: 5px 15px 5px 20px;
+    width: 432px;
+}
+div.halfBtmContent ul, div.halfBtmContentAuthority ul
+{
+	list-style: disc;
+	list-style-position: inside;
+}
+div.halfBtmContent ol, div.halfBtmContentAuthority ol
+{
+	list-style: disc;
+	list-style-position: inside;
+}
+.iebgfix
+{
+/*	position: relative;*/
+/*	clear: both;*/
+}
+#interactiveMap
+{
+	position: absolute;
+	width: 945px;
+	height: 540px;
+	z-index: 1001;
+	display: none;
+}
+#siteplan-container, #rendering-container {
+	position: absolute;
+	width: 945px;
+	height: 500px;
+	z-index: 1001;
+	display: none;
+	background: #777;
+	border: solid 2px #ccc;
+}
+#siteplan-container a, #rendering-container a {
+	color: var(--color-white);
+}
+#siteplan-container a:hover, #rendering-container a:hover {
+	color: #ccc;
+}
+#interactiveMap a.closeMap, #siteplan-container a.closePlan, #rendering-container a.closeRendering
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 10001;
+	display: block;
+	font-size: 18px;
+	color: #ff0000;
+	text-decoration: none;
+}
+#interactiveMap a.closeMap .close-map-text, #siteplan-container a.closePlan .close-map-text, #rendering-container a.closeRendering .close-map-text
+{
+	position: absolute;
+	width: 95px;
+	top: -23px;
+	left: -35px;
+	font-size: 10px;
+	padding: 5px;
+	color: #000000;
+	background: #ffba17;
+	border: solid 1px #000000;
+	display: none;
+	text-decoration: none;
+}
+#interactiveMap a.closeMap:link .close-map-text,
+#siteplan-container a.closePlan:visited .close-map-text,
+#rendering-container a.closeRendering:visited .close-map-text
+{
+	display: none;
+	text-decoration: none;
+}
+#interactiveMap a.closeMap:hover .close-map-text,
+#siteplan-container a.closePlan:hover .close-map-text,
+#rendering-container a.closeRendering:hover .close-map-text
+{
+	display: block;
+	text-decoration: none;
+}
+#flashMap
+{
+	z-index: 900;
+}
+
+#siteplan-container a.closeMap:link .close-map-text,
+#siteplan-container a.closePlan:visited .close-map-text,
+#rendering-container a.closeRendering:link .close-map-text,
+#rendering-container a.closeRendering:visited .close-map-text
+{
+	display: none;
+	text-decoration: none;
+}
+
+.site-plan-dl, .rendering-dl {
+	font-size: 1.5em;
+}
+
+.siteplan, .rendering {
+	z-index: 900;
+}
+
+#siteplans
+{
+	position: absolute;
+	width: 945px;
+	height: 540px;
+	z-index: 1001;
+	display: none;
+}
+#siteplans a.closeMap
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 10001;
+	display: block;
+	font-size: 18px;
+	color: #ff0000;
+	text-decoration: none;
+}
+#siteplans a.closeMap .close-map-text
+{
+	position: absolute;
+	width: 95px;
+	top: -23px;
+	left: -35px;
+	font-size: 10px;
+	padding: 5px;
+	color: #000000;
+	background: #ffba17;
+	border: solid 1px #000000;
+	display: none;
+	text-decoration: none;
+}
+#siteplans a.closeMap:link .close-map-text, #siteplans a.closeMap:visited .close-map-text
+{
+	display: none;
+	text-decoration: none;
+}
+#siteplans a.closeMap:hover .close-map-text
+{
+	display: block;
+	text-decoration: none;
+}
+
+
+
+/* Event =event =calendar */
+/* ------------------------------------------------------------------------------------------*/
+div#calendarArea
+{
+	float: left;
+	width: 465px;
+	height: 426px;
+	margin: 0px 0px 8px 0px;
+	overflow: auto;
+	position: relative;
+	border: solid 1px var(--color-gray-300);
+	-moz-border-radius: 8px;	/* for any version of Firefox */
+	-webkit-border-radius: 8px;	/* for Safari and Google Chrome */
+	-khtml-border-radius: 8px; /* for Konqueror (linux browser) */
+    border-radius: 8px; /* for browsers who support CSS3 */
+}
+div.calendarPage div.halfBtmContent
+{
+	clear: left;
+	overflow: auto;
+	width: 447px;
+	height: 82px;
+	padding: 15px 0px 5px 20px;
+	background: url("https://foothillgoldline.org/images/halfwidth-btm-white-bg.jpg") no-repeat;
+}
+div.calendarPage div#contentRight
+{
+	float: right;
+	overflow: auto;
+	width: 427px;
+	height: 536px;
+	padding: 15px 20px 10px 20px;
+	background: url("https://foothillgoldline.org/images/content-area-left-bg.jpg") no-repeat;
+}
+table#calendarTable
+{
+	width: 465px;
+	height: 426px;
+	border-collapse: collapse;
+/*	background: url("https://foothillgoldline.org/images/calendar-bg-2.gif") no-repeat;*/
+}
+tr.calendarHeader th
+{
+	height: 35px;
+	padding: 0px 0px 0px 0px;
+    text-align: center;
+	vertical-align: middle;
+	color: #000000;
+}
+tr.calendarDaysHeader td
+{
+	border-bottom: solid 1px var(--color-gray-300);
+}
+tr.calRow td
+{
+	border-top: solid 1px var(--color-gray-300);
+}
+tr.calFirstRow
+{
+	border-top: none;
+}
+table#calendarTable td
+{
+	border-left: solid 1px var(--color-gray-300);
+}
+table#calendarTable tr.calendarDaysHeader td, table#calendarTable .calRow td:first-child
+{
+	border-left: none !important;
+}
+table#calendarTable td.calendarDayHeading
+{
+	height: 14px;
+    font-size: 10px;
+    color: #000000;
+	vertical-align: top;
+    text-align:  center;
+}
+	#leftArrowCol
+	{
+		text-align: right;
+	}
+	#rightArrowCol
+	{
+		text-align: left;
+	}
+table#calendarTable a
+{
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+}
+table#calendarTable a.canceled {
+	text-decoration: line-through;
+}
+table#calendarTable td
+{
+	width: 65px;
+	height: 74px;
+	text-align: right;
+}
+table#calendarTable td div
+{
+	position: relative;
+}
+table#calendarTable td.firstColumn, table#calendarTable td.lastColumn
+{
+	width: 67px !important;
+}
+.calendarCell
+{
+    font-size: 9px !important;
+    letter-spacing: .1em !important;
+	color: #000000;
+	vertical-align: top;
+}
+.calendarBlank
+{
+	text-align: right;
+}
+.calendarToday
+{
+	font-weight: bold;
+	background: #efefef;
+}
+.calNumber
+{
+	position: absolute;
+	width: 20px;
+	right: 4px;
+	margin-top: 2px;
+	z-index: 100;
+}
+div.daysCalendarEvents
+{
+	position: relative;
+}
+	a.eventLink
+	{
+		position: absolute;
+		width: 62px;
+		padding: 6px 0px 0px 4px;
+		text-align: left;
+		color: #000000;
+		font-size: 9px;
+		letter-spacing: .05px;
+		font-weight: normal;
+	}
+	td.firstColumn .eventLink, td.lastColumn .eventLink
+	{
+		width: 63px !important;
+		padding-left: 4px !important;
+	}
+	a.yellowEvent
+	{
+		height: 18px;
+		top: 0px;
+		left: 0px;
+		background: #eaddb5;
+	}
+	a.blueEvent
+	{
+		height: 18px;
+		top: 24px;
+		left: 0px;
+		background: #c3c4d7;
+		border-top: solid 1px #cbccdc;
+	}
+	a.grayEvent
+	{
+		height: 18px;
+		top: 49px;
+		left: 0px;
+		background: #cccccc;
+		border-top: solid 1px #d1d1d1;
+	}
+
+/* Bottom Area Calendar Content - Today's Events */
+div.calendarPage div#contentRight
+{
+	width: 467px;
+/*	padding-right: 6px;*/
+	padding: 0px;
+}
+.calendarPage #contentRight h3
+{
+	padding: 15px 0 0 0px !important;
+}
+table#calendarTodayTable
+{
+	font-size: 12px;
+}
+	table#calendarTodayTable td
+	{
+		padding: 0px 20px 10px 0px;
+	}
+	table#calendarTodayTable td.calTodayDateCol
+	{
+		width: 100px;
+	}
+	table#calendarTodayTable td.calTodayTypeCol
+	{
+		width: 100px;
+	}
+
+/* Right Area */
+div#contentRightEventsContent
+{
+	clear: both;
+	padding: 0px 20px 10px 20px;
+}
+table#calendarMeetingTable
+{
+	width: 465px;
+/*	width: 425px;*/
+	margin-left: 1px;
+	margin-bottom: 20px;
+}
+table#calendarMeetingTable th
+{
+	text-align: left;
+	height: 30px;
+	padding-bottom: 5px;
+}
+#calendarMeetingTable tr th:first-child,
+#calendarMeetingTable tr td:first-child
+{
+	padding-left: 20px;
+}
+#calendarMeetingTable td
+{
+	line-height: 1.8em;
+	padding-right: 0px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+#calendarMeetingTable td.calEventTitleCol
+{
+	padding-bottom: 10px;
+	font-size: 11px;
+}
+#calendarMeetingTable .highlight td
+{
+	background-color: var(--color-white);
+/*	background-color: rgba(255,255,255,.8);*/
+	border-top: 1px solid var(--color-gray-300);
+}
+#calendarMeetingTable tr.highlight.moreinfo td
+{
+	background-color: var(--color-white);
+	border-top: none ;
+}
+#calendarMeetingTable .mi
+{
+	background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-off.gif) no-repeat;
+	display: block;
+	height: 19px;
+	padding-left: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 18px;
+}
+#calendarMeetingTable .mi.on
+{
+	background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-on.gif) no-repeat 0 6px;
+}
+#calendarMeetingTable tr.moreinfo td
+{
+	padding: 0;
+}
+#calendarMeetingTable tr.moreinfo div
+{
+	padding: 10px 20px;
+/*	background-color: rgba(255,255,255,.7);*/
+/*	background-color: #F2F4EE; */
+	border-bottom: dotted 1px #d3b670;
+}
+#calendarMeetingTable td.calEventTitleCol strong
+{
+	line-height: 1.8em;
+}
+
+th.calDateCol
+{
+	width: 95px;
+}
+th.calDateTime
+{
+	width: 65px;
+}
+/* Videos =videos */
+/* ------------------------------------------------------------------------------------------*/
+div#videosListingArea
+{
+	float: left;
+	width: 467px;
+	height: 282px;
+	margin: 0px 0px 8px 0px;
+	background: url("https://foothillgoldline.org/images/half-width-yellow-bg.jpg") no-repeat
+}
+div#videosListing
+{
+	float: left;
+	overflow: auto;
+	width: 467px;
+	height: 258px;
+}
+div#videosListingArea h2, div#videoArchive h2
+{
+	height: 19px;
+	margin: 0px 0px 0px 130px;
+	padding: 5px 0px 0px 0px;
+	font-size: 12px;
+	line-height: 1em;
+}
+div.videosPage div#videoArchive h2
+{
+	margin: 0px 0px 0px 107px;
+}
+div#videosListing li
+{
+	line-height: 1.2em;
+}
+div#videoBox
+{
+	float: right;
+	background: var(--color-white);
+}
+div.homePage div#videoBox
+{
+	position: absolute;
+	top: 0px;
+	right: 1px;
+	z-index: 1000;
+}
+div#videoArchive
+{
+	clear: both;
+	width: 942px;
+	height: 246px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: url("https://foothillgoldline.org/images/full-width-titled-bg.jpg") no-repeat;
+}
+div#videoArchiveBox
+{
+	overflow: auto;
+	width: 919px;
+	height: 220px;
+	padding: 1px 0px 0px 23px;
+}
+div#videoArchive table
+{
+	width: 900px;
+	margin: 15px 0px 0px 0px;
+}
+div#videoArchive td
+{
+	width: 50%;
+	padding: 0px 30px 30px 0px;
+}
+div#videoArchive td.bottomRow
+{
+	padding-bottom: 0px;
+}
+.hide {display: none;}
+#videoArchive {}
+#videoArchive .videos {width: 900px; height: 170px; padding: 15px 0px 0px 0px; margin: 0px 0 0;}
+#videoArchive .row .item {float: left; width: 420px; padding: 0 30px 5px 0;}
+#videoArchive .paginator {clear: both;}
+#videosListing li
+{
+	clear: both;
+	overflow: auto;
+	margin: 0px;
+	padding: 7px 20px 7px 20px;
+	border-bottom: solid 1px var(--color-gray-border);
+}
+#videosListing li:last-child
+{
+	padding-bottom: 8px;
+	border: none;
+}
+#videosListing li a:link, #videosListing li a:visited, #videoArchive a:link, #videoArchive a:visited
+{
+	color: var(--color-dark-blue);
+	text-decoration: none;
+}
+#videosListing li a:link.underline, #videosListing li a:visited.underline
+{
+	text-decoration: underline;
+}
+#videosListing li a:hover, #videoArchive a:hover
+{
+	color: #BA8D16;
+}
+#videosListing img, #videoArchive img
+{
+	float: left;
+	clear: left;
+	margin: 0px 17px 0px 0px;
+}
+#videosListing p, #videoArchive p
+{
+	float: left;
+	width: 290px;
+	padding-top: 5px;
+	line-height: 1.4em;
+}
+#videoArchive p
+{
+	padding-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Contracting Opportunities */
+/* ------------------------------------------------------------------------------------------*/
+table.proposalTable
+{
+	margin: 0px 0px 10px 0px;
+}
+table.proposalTable td
+{
+	vertical-align: top;
+	padding: 0px 0px 10px 0px;
+}
+.proposalArrowLink
+{
+
+}
+td.rfpIdColumn
+{
+	width: 50px;
+}
+td.rfpFirstColumn
+{
+	vertical-align: bottom;
+	width: 27px;
+}
+.rfpFirstColumn img
+{
+	vertical-align: bottom;
+	margin: 0px 0px 0px 0px;
+}
+table.proposalTable p a
+{
+	line-height: 1.5em
+}
+table.proposalTable p
+{
+	margin: 0px;
+}
+tr.proposalFilesArea
+{
+	display: none;
+}
+/* STAFF =staff */
+/* ------------------------------------------------------------------------------------------*/
+.bios{
+width: 900px;}
+div.staffPage div#content, div.boardPage div#content
+{
+	padding-left: 20px;
+	padding-right: 0px;
+}
+table.biosTable
+{
+	font-size: 11px;
+	width: 950px;
+	margin: 0px 0px 0px 0px;
+}
+table.boardTable
+{
+	font-size: 11px;
+	width: 300px;
+	height: 170px;
+	margin: 0px 0px 0px 0px;
+}
+.biosTable td
+{
+	vertical-align: top;
+	padding: 0px 0px 30px 0px;
+width: 950px;
+}
+table.boardTable td
+{
+	padding: 0px 0px 20px 0px;
+}
+table.biosTable td.bioPictureCell
+{
+	width: 110px;
+	padding-right: 0px;
+}
+table.biosTable td.bioInfoCell
+{
+	padding-right: 8px;
+}
+
+/* Phases =phases */
+/* ------------------------------------------------------------------------------------------*/
+div#phasePageMap
+{
+	float: left;
+	position: relative;
+	width: 467px;
+	height: 496px;
+	margin: 0px 0px 7px 0px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-content-left-bg.jpg') no-repeat;
+}
+div#phasePageMap h2
+{
+	font-size: 1.1em;
+	line-height: 1em;
+	border: none;
+	margin: 5px 0px 6px 23px;
+}
+div#phaseTabs
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 496px;
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-tabs-bg.jpg') no-repeat;
+}
+div.phaseTabsPanel
+{
+	width: 424px;
+	height: 452px;
+	padding: 10px 21px 10px 21px;
+	overflow: auto;
+}
+div.phaseTabsPanel li
+{
+	line-height: 1em;
+}
+div.phaseTabsPanel ul
+{
+	list-style: disc;
+	list-style-position: inside;
+}
+div.phaseTabsPanel ol
+{
+	list-style: decimal;
+	list-style-position: inside;
+}
+div.phaseMapArea
+{
+	width: 466px;
+	height: 472px;
+}
+.phasesMapRollover
+{
+	position: absolute;
+	display: block;
+}
+div.phaseTabsPanel ul.phaseEventList
+{
+	list-style: none;
+	list-style-position: outside;
+}
+div.phaseTabsPanel ul.phaseEventList li
+{
+	line-height: 1.4em;
+}
+/*** PHASE 1 MAP ***/
+div#phase1Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-1-bg.jpg') right bottom no-repeat;
+}
+#phase1MapPasadena		{ top: 94px; left: 286px;}
+a.activeMapItem#phase1MapPasadena		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-pasadena.gif') no-repeat;}
+#phase1MapAllen			{ top: 110px; left: 340px;}
+a.activeMapItem#phase1MapAllen		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-allen.gif') no-repeat;}
+#phase1MapChinatown		{ top: 317px; left: 83px;}
+a.activeMapItem#phase1MapChinatown		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-chinatown.gif') no-repeat;}
+#phase1MapLake			{ top: 111px; left: 301px;}
+a.activeMapItem#phase1MapLake		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-lake.gif') no-repeat;}
+#phase1MapDelMar		{ top: 159px; left: 251px;}
+a.activeMapItem#phase1MapDelMar		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-delmar.gif') no-repeat;}
+#phase1MapFillmore		{ top: 180px; left: 249px;}
+a.activeMapItem#phase1MapFillmore		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-fillmore.gif') no-repeat;}
+#phase1MapMemorialPark	{ top: 141px; left: 222px;}
+a.activeMapItem#phase1MapMemorialPark		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-memorialpark.gif') no-repeat;}
+#phase1MapHeritage		{ top: 269px; left: 58px;}
+a.activeMapItem#phase1MapHeritage		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-heritage.gif') no-repeat;}
+#phase1MapHighlandPark	{ top: 224px; left: 122px;}
+a.activeMapItem#phase1MapHighlandPark		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-highlandpark.gif') no-repeat;}
+#phase1MapLincoln		{ top: 287px; left: 19px;}
+a.activeMapItem#phase1MapLincoln		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-lincolnheights.gif') no-repeat;}
+#phase1MapMission		{ top: 205px; left: 219px;}
+a.activeMapItem#phase1MapMission		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-mission.gif') no-repeat;}
+#phase1MapSierraMadre	{ top: 135px; left: 335px;}
+a.activeMapItem#phase1MapSierraMadre		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-sierramadre.gif') no-repeat;}
+#phase1MapSouthPasadena	{ top: 232px; left: 263px;}
+a.activeMapItem#phase1MapSouthPasadena		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-southpasadena.gif') no-repeat;}
+#phase1MapSWMuseum		{ top: 251px; left: 84px;}
+a.activeMapItem#phase1MapSWMuseum		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-swmuseum.gif') no-repeat;}
+#phase1MapUnionStation	{ top: 340px; left: 52px;}
+a.activeMapItem#phase1MapUnionStation		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-1-unionstation.gif') no-repeat;}
+
+/*** PHASE 2 MAP ***/
+div#phase2Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-2-bg.gif') right bottom no-repeat;
+}
+#phase2MapI210Bridge		{ top: 173px; left: 47px;}
+a.activeMapItem#phase2MapI210Bridge		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-i210bridge.gif') no-repeat;}
+#phase2MapArcadia		{ top: 193px; left: 91px;}
+a.activeMapItem#phase2MapArcadia		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-arcadia.gif') no-repeat;}
+#phase2MapMonrovia		{ top: 177px; left: 160px;}
+a.activeMapItem#phase2MapMonrovia		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-monrovia.gif') no-repeat;}
+
+#phase2MapCampus		{ top: 210px; left: 191px;}
+a.activeMapItem#phase2MapCampus		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-OpsCampus.gif') no-repeat;}
+
+#phase2MapDuarte		{ top: 179px; left: 247px;}
+a.activeMapItem#phase2MapDuarte		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-duarte.gif') no-repeat;}
+#phase2MapIrwindale		{ top: 220px; left: 304px;}
+a.activeMapItem#phase2MapIrwindale		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-irwindale.gif') no-repeat;}
+#phase2MapAlameda	{ top: 197px; left: 320px;}
+a.activeMapItem#phase2MapAlameda		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-alameda.gif') no-repeat;}
+#phase2MapCitrus	{ top: 183px; left: 340px;}
+a.activeMapItem#phase2MapCitrus		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-citrus.gif') no-repeat;}
+#phase2MapAzusa	{ top: 162px; left: 361px;}
+a.activeMapItem#phase2MapAzusa		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-2-azusa.gif') no-repeat;}
+
+/*** PHASE 3 MAP ***/
+div#phase3Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-3-bg.gif') right bottom no-repeat;
+}
+
+#phase3MapGlendora		{ top: 127px; left: 34px;}
+a.activeMapItem#phase3MapGlendora		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-glendora.gif') no-repeat;}
+#phase3MapSanDimas		{ top: 208px; left: 144px;}
+a.activeMapItem#phase3MapSanDimas		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-sandimas.gif') no-repeat;}
+#phase3MapLaVerne		{ top: 213px; left: 233px;}
+a.activeMapItem#phase3MapLaVerne		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-laverne.gif') no-repeat;}
+#phase3MapPomona		{ top: 249px; left: 277px;}
+a.activeMapItem#phase3MapPomona		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-pomona.gif') no-repeat;}
+#phase3MapClaremont		{ top: 230px; left: 334px;}
+a.activeMapItem#phase3MapClaremont		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-claremont.gif') no-repeat;}
+#phase3MapMontclair		{ top: 253px; left: 372px;}
+a.activeMapItem#phase3MapMontclair		{ background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-map-3-montclair.gif') no-repeat;}
+
+
+/*** PHASE 4 MAP ***/
+div#phase4Map
+{
+	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phases-map-4-bg.gif') right bottom no-repeat;
+}
+/* FOOTER =footer */
+/* ------------------------------------------------------------------------------------------*/
+#footer
+{
+	clear: both;
+	position: relative;
+	width: 942px;
+	height: 57px;
+	padding: 9px 0px 0px 0px;
+	font-size: 11px;
+	color: var(--color-dark-blue);
+}
+	#footer  li
+	{
+		display: inline;
+	}
+	#footer p
+	{
+		padding-top: 8px;
+		text-align: center;
+		margin-left: 35px;
+	}
+	#footerLeftIconList
+	{
+		position: absolute;
+		top: 9px;
+		left: 0px;
+	}
+		#footerLeftIconList li
+		{
+			margin-right: 3px;
+		}
+	#footerRightIconList
+	{
+		position: absolute;
+		top: 9px;
+		right: 0px;
+	}
+		#footerRightIconList li
+		{
+			margin-left: 5px;
+		}
+
+/* AJAX STUFF */
+.shield {position: absolute; z-index: 50; background-color: #000; opacity: .6; filter: alpha(opacity=60); -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;}
+.shield .ajax {width: 32px; height: 32px; position: absolute; z-index: 51; top: 50%; left: 50%; margin-left: -16px; margin-top: -16px; background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/ajax.gif) no-repeat;}
+
+
+/* ACCORDION */
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative; zoom: 1; margin: 15px 0;}
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat;}
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; top: 50%;}
+.ui-icon-triangle-1-e {background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-off.gif) no-repeat; width: 8px; height: 19px; margin-top: -9px; left: -20px;}
+.ui-icon-triangle-1-s {background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-on.gif) no-repeat; width: 19px; height: 8px; margin-top: -4px; left: -30px;}
+.ui-accordion .ui-accordion-content { padding: 0em 2.2em; border-top: 0; margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow: auto; display: none;}
+.ui-accordion .ui-accordion-content-active { display: block; }
+
+
+/******************
+HOME POPUP
+******************/
+#overlay {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     text-align:center;
+     z-index: 99999999999;
+     background: red;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+     background: rgba(0,0,0, 0.5);
+}
+#homePopup {
+	position: relative;
+	left: auto;
+	right: auto;
+	margin: 0 auto;
+	top: 45px;
+	width: 1200px!important;
+	height: 900px;
+	text-align: left;
+	background: red;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	z-index: 100000;
+}
+
+
+#popupLogo {
+
+	margin-left: 47px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+
+#homePopup h1 {
+	text-align: left;
+margin-top: 25px;
+margin-left: 150px;
+position: absolute;
+	font-size: 40px;
+	text-shadow: -4px 3px 5px rgba(0,0,0,.25);
+}
+
+#homePopup h1 span {
+	color: #b68f20;
+}
+
+#closePopup {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	cursor: pointer;
+}
+
+#closePopup2 {
+	position: fixed;
+z-index: 999999999;
+left: 0;
+	padding-left: 160px;
+	cursor: pointer;
+}
+
+
+
+#mapHeader h3{
+	color: var(--color-white);
+	line-height: 1.8em;
+	font-size: 21px;
+	font-weight:100;
+
+}
+#mapHeader {
+	clear: both;
+	width: 902px;
+	height: 36px;
+	margin: 20px auto 0;
+	padding-left: 40px;
+	font-size: 21px;
+letter-spacing: 10px;
+font-weight:100;
+	line-height: 1.8em;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: var(--color-yellow);
+	font-color: white;
+
+
+}
+
+#popupMap {
+	clear: both;
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#homePopup div img {
+	margin-right: 7px;
+}
+#popupEnterWebsite {
+	cursor: pointer;
+}
+.SBimg{max-width: 428px; max-height: 295px;
+}
+.imgStaff{
+width: 467px; height: 348px;}
+
+.imgIWR{width: 350px; height: 149px;
+}
+
+.iwillride{width: 500px;
+}
+
+#countdown{
+font-size: 15px;
+align: center;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+
+#numbers{
+color: var(--color-primary);
+font-size: 42px;
+margin-top: 35px;
+align: center;
+}
+
+#numbers2{
+color: var(--color-primary);
+font-size: 72px;
+margin-top: 35px;
+align: center;
+
+}
+
+#closingtag{
+color: var(--color-primary);
+margin-top: 70px;
+align: center;
+margin-bottom: 50px;
+font-size: 20px;
+letter-spacing: 0px;
+}
+
+goldtext{
+color: var(--color-yellow);
+}
+
+.funding a{
+float: right;
+position: relative;
+border: 1px solid black;
+padding: 10px;
+font-size: 30px;
+margin-right: 0!important;
+}
+
+#homePopup{
+background-color: red!important;
+}
+}
