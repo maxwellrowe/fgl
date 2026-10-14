@@ -1,0 +1,3569 @@
+/*!
+Theme Name: Foothill Gold Line
+Theme URI: https:/--/foothillgoldline.org/
+Author: foothillgoldline
+Author URI: https:/--/foothillgoldline.org/
+Description: Description
+Version: 1.2.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: foothill-gold-line
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+#contentArea div#subNav {
+    margin-top:0;
+}
+
+/* Language Selector */
+#fgl-language-selector {
+    position: absolute;
+    right: 237px;
+    top: 0;
+}
+
+#fgl-language-selector .sub-menu {
+    display: none;
+    background-color: #F7F4EC;
+}
+
+#fgl-language-selector li {
+    list-style: none;
+    display: block;
+    margin:0;
+    padding:0;
+}
+
+#fgl-language-selector li.fgl-translate-button a {
+    background: #f7f4ec; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f7f4ec 0%, #f1e6c8 67%, #f1e6c8 91%, #e4d2a0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f4ec', endColorstr='#e4d2a0',GradientType=0 ); /* IE6-9 */
+    color: #10155E;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 10px;
+    border: 1px solid #DEC78A;
+    position: relative;
+    width: 73px;
+    text-align: left;
+    padding: 6px 0 6px 12px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+#fgl-language-selector li.fgl-translate-button > a:after {
+    content:'';
+    background-image: url('images/triangle.svg');
+    background-size: 8px 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    display: block;
+    right: 8px;
+    top: 9px;
+}
+
+#fgl-language-selector li.fgl-translate-button a:hover {
+    background-color: #F7F4EC;
+    border-bottom-color: #F7F4EC;
+}
+
+#fgl-language-selector li ul.sub-menu {
+    z-index: 999;
+    position: relative;
+    top: 2px;
+    background-color: #F7F4EC;
+    width: 85px;
+    padding:0;
+    margin:0;
+    border: 1px solid #DEC78A;
+    border-radius: 10px;
+}
+
+#fgl-language-selector li ul.sub-menu li a {
+    border-radius: 0;
+    background-color:none;
+    background:transparent !important;
+    padding: 8px 12px;
+    width: 76px;
+    border:none;
+    display: block;
+}
+
+#fgl-language-selector li ul.sub-menu li a:hover {
+    color: #32378D;
+    text-decoration: underline;
+}
+
+#translate-mobile-only {
+    display: none;
+    margin-top:10px;
+}
+
+#fgl-language-selector-footer {
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+#fgl-language-selector-footer li {
+    display: inline-block;
+    margin:0;
+    padding:0;
+}
+
+#fgl-language-selector-footer li a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#fgl-language-selector-footer li ul {
+    margin:0;
+    padding:0;
+    display: inline-block;
+}
+
+#fgl-language-selector-footer li ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#fgl-language-selector-footer li ul li a {
+    color: #3b5ba7;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ul li.mobile-menu-translate {display: none;}
+
+@media screen and (max-width: 900px) {
+    #translate-mobile-only {display: block;}
+    ul li.mobile-menu-translate {display: block;}
+
+    #fgl-language-selector {
+        width: 90%;
+        right:0;
+        top:0;
+    }
+    #fgl-language-selector li.fgl-translate-button a {
+        width: calc(100% - 12px);
+        text-align: left;
+        padding: 15px 0 15px 12px;
+    }
+    #fgl-language-selector li.fgl-translate-button > a:after {
+        top: 20px;
+        right: 12px;
+    }
+    #fgl-language-selector li ul.sub-menu {
+        width: 100%;
+    }
+    #fgl-language-selector li ul.sub-menu li a {
+        width: calc(100% - 12px);
+        padding: 12px 0 12px 12px;
+    }
+}
+
+/* Header*/
+.relative-block{
+    position: relative;
+}
+#header #LogoText {
+    font-size: 28px;
+    font-weight: 800;
+    width: 280px;
+    color: #39438A;
+    z-index: 0;
+}
+.header-signup {
+    position: absolute;
+    left: 341px;
+    top:-3px;
+}
+a.header-signup-button {
+    display: inline-block;
+    background: rgb(215,172,5); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(215,172,5,1) 0%, rgba(191,160,5,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(215,172,5,1) 0%,rgba(191,160,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(215,172,5,1) 0%,rgba(191,160,5,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7ac05', endColorstr='#bfa005',GradientType=0 ); /* IE6-9 */
+    color: #fff !important;
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+a.header-signup-button:hover {
+    background: rgb(193,159,5); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(193,159,5,1) 0%, rgba(163,136,4,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(193,159,5,1) 0%,rgba(163,136,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(193,159,5,1) 0%,rgba(163,136,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19f05', endColorstr='#a38804',GradientType=0 ); /* IE6-9 */
+}
+.page-404-searchform {
+    position: relative;
+    max-width: 250px;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid #bbb;
+    padding-top: 15px;
+}
+
+div#subNav ul{
+    display: inline-block;
+}
+div#subNav.constphases-mobile-nav {
+    display: none;
+}
+#nav>.menu-item.current-menu-ancestor,
+#nav>.menu-item.current-menu-item {
+    background: url("https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg");
+    border-radius: 7px 7px 0 0;
+}
+
+#nav .menu-item.current-menu-item {
+    font-weight: 700;
+}
+
+#nav>.menu-item .sub-menu {
+    /*    height: 40px;*/
+}
+
+#nav>.menu-item.current-menu-ancestor .sub-menu,
+#nav .menu-item.current-menu-item .sub-menu {
+    display: block;
+}
+
+#nav>.nav-cities-stations.menu-item.current-menu-item .sub-menu,
+#nav>.nav-cities-stations.menu-item:hover .sub-menu,
+#nav>.nav-cities-stations.menu-item.current-menu-ancestor .sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7px;
+    height: 40px;
+}
+
+#nav>.nav-cities-stations.menu-item .sub-menu>li {
+    flex: 1 1 11%;
+    padding-right: 3px;
+}
+
+#nav>.nav-cities-stations.menu-item .sub-menu>li a {
+    white-space: nowrap;
+}
+
+#nav>.nav-cities-stations.menu-item .sub-menu>li {
+    flex: 1 1 11%;
+    padding-right: 3px;
+}
+
+#nav>.menu-item:hover .sub-menu {
+    z-index: 105;
+}
+
+ul#nav>li:last-child {
+    margin-right: 0;
+}
+
+#header .nav-construction-phases-funding-status,
+#header .nav-contact-us-funding-status,
+#header .nav-about-us-funding-status,
+#header .nav-news-funding-status,
+#header .nav-meetings-events-funding-status {
+    float: right!important;
+    /*margin-right: 22px!important;*/
+}
+
+#header .nav-construction-phases-funding-status a,
+#header .nav-contact-us-funding-status a,
+#header .nav-about-us-funding-status a,
+#header .nav-news-funding-status a,
+#header .nav-meetings-events-funding-status a {
+    border: 1px solid #10155e;
+    border-radius: 5px;
+    color: #10155e;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    z-index: 109;
+}
+
+.nav-news-funding-status {
+    margin-right: 0!important;
+}
+
+.ui-tabs .ui-tabs-panel {
+    overflow: auto;
+}
+
+.ui-tabs .ui-tabs-hide {
+    display: none !important;
+}
+
+#header {
+    min-height: 80px;
+}
+
+#header .header-logo img {
+    padding-top: 40px;
+}
+
+#header .header-logo #LogoText img {
+    padding-top: 0;
+    max-width: 100%;
+}
+
+.custom-logo-link img {
+    width: 87px;
+    height: auto;
+}
+
+#mobile-header-utilities,
+.mobile-header {
+    display: none;
+}
+
+#mobile-header-utilities a.header-signup-button {
+    display: block;
+    padding: 14px 0;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.container .mediaBox>img,
+#leftCornerBox img {
+    min-height: 100%;
+    width: auto;
+    min-width: 100%;
+}
+
+#rendering-container>img,
+#siteplan-container>img {
+    width: 100%;
+    height: calc(100% - 32px);
+}
+
+#cityTabs .tabLabels {
+    display: flex;
+}
+
+#videoArchiveBox .videos .page:not(:first-of-type) {
+    display: none;
+}
+
+#videoArchiveBox .item>.playVideo {
+    width: 96px;
+    height: 54px;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin-right: 17px;
+}
+
+#videoArchiveBox .item>.playVideo>img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#videoBox p {
+    margin: 0;
+}
+
+#nav.menu>li:first-child {
+    margin-left: 0;
+}
+
+#nav.menu>li.menu-item-has-children:first-child {
+    border-top-left-radius: 0;
+}
+
+#nav.menu>li.menu-item-has-children:last-child {
+    border-top-right-radius: 0;
+}
+
+.single-mec-events #nav.menu .menu-item-2025,
+.error404 #nav.menu>li:first-child,
+.home #nav.menu>li:first-child {
+    background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg);
+}
+
+.single-mec-events #nav.menu .menu-item-2025 ul {
+    display: block;
+    background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-bg.jpg') no-repeat;
+}
+
+#nav.menu>li:first-child>.sub-menu {
+    display: block;
+}
+
+table.biosTable td.bioPictureCell {
+    width: 110px;
+    padding-right: 10px;
+}
+
+table.biosTable td.bioPictureCell>img {
+    width: 97px;
+    height: auto;
+    border-radius: 10px;
+}
+
+div#content.boardpage .bios-item {
+    max-width: 33%;
+    min-height: 200px;
+}
+
+div#content.boardpage {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+table.biosTable td.bioInfoCell {
+    padding-right: 30px;
+}
+
+.left-space {
+    padding-left: 20px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.content_type_archive {
+    padding-left: 34px !important;
+    width: 413px !important;
+}
+
+.content_type_archive .ui-accordion-header {
+    font-size: 1em;
+}
+
+.content_type_archive .ui-accordion-content {
+    padding-right: 10px;
+    margin-top: 0!important;
+}
+
+.content_type_archive .ui-accordion-content .accordion {
+    padding-left: 0;
+}
+
+.content_type_archive .ui-accordion-content {
+    margin-left: 0!important;
+    overflow: visible;
+}
+
+.files {
+    list-style-type: none;
+    margin: 0 0 0 -20px;
+    padding: 2px 0 0;
+}
+
+.files a {
+    line-height: 16px;
+}
+
+.content_type_archive .ui-accordion-header {
+    margin: 0 0 0 !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding: 10px 0 10px !important;
+}
+
+.oportunity-right .tnp-subscription .tnp-field-email {
+    margin-top: 12px;
+    margin-left: 24px;
+}
+
+.oportunity-right .tnp-subscription .tnp-field-email label {
+    font-weight: 400;
+    color: inherit;
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+.oportunity-right .tnp-subscription .tnp-field-email label:after {
+    content: " Address";
+}
+
+.oportunity-right .tnp-subscription .tnp-field-email label:before {
+    content: url("theme-files/fgl_files/required-ef6e0abfe1c903c5ed5cba6ab7c2c38b.gif");
+}
+
+.oportunity-right .tnp-subscription input.tnp-email {
+    width: 100%;
+    padding: 4px 2px 2px 3px;
+    margin-bottom: 0.5em;
+    height: 26px;
+    border: solid 1px #c6c6c6;
+    font-size: 12px;
+    box-shadow: inset 0 1px 1px 0px #ccc;
+    background: none;
+}
+
+.oportunity-right .tnp-subscription .tnp-submit {
+    background-color: buttonface;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bbb;
+    color: buttontext;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+.mediaBox {
+    margin-bottom: 3px;
+}
+
+div#homePhaseMap a {
+    color: rgba(0, 0, 0, 0);
+}
+
+body.home div#videoBox {
+    position: relative;
+    display:none;
+    top: 0px;
+    right: 1px;
+    z-index: 1000;
+}
+
+div#phaseMap {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+div#phaseMap .phasesMapRollover {
+    opacity: 0;
+}
+
+div#phaseMap .phasesMapRollover:hover {
+    opacity: 1;
+}
+
+.post-type-archive-mec-events div#contentArea {
+    overflow: auto;
+}
+
+#contentRight img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*#contentArea #main-content,*/
+
+#contentArea #primary {
+    overflow: auto;
+    height: 100%;
+}
+
+.single-mec-events .mec-single-event>div {
+    width: 100%;
+}
+
+.single-mec-events .mec-single-event li {
+    margin-bottom: 0;
+}
+
+.single-mec-events .mec-events-meta-group-countdown .countdown-w {
+    padding-top: 20px;
+}
+
+.mec-single-event .mec-event-content {
+    padding: 20px 0;
+}
+
+.mec-single-event .mec-event-content .mec-single-title {
+    margin-bottom: 0;
+}
+
+.mec-calendar .mec-calendar-events-side {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.mec-calendar .mec-calendar-events-side .mec-event-article {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mec-calendar .mec-calendar-events-side {
+    width: 50%;
+}
+
+.mec-wrap.mec-sm959 .mec-calendar:not(.mec-event-calendar-classic):not(.mec-calendar-weekly) .mec-calendar-header {
+    margin-top: 0;
+}
+
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article {
+    color: #10155e;
+    margin: 0px;
+    padding: 17px 57px 12px 34px;
+    border-bottom: solid 1px #b9b2a1;
+    font-size: 12px;
+}
+
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-date {
+    font-family: inherit;
+    color: inherit;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: none;
+    line-height: 1;
+    float: left;
+}
+
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-date:after {
+    content: " - ";
+    margin-right: 3px;
+}
+
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-title a,
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-title {
+    font-family: verdana, arial, helvetica;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: none;
+    margin: 0;
+    font-weight: 400;
+    color: inherit;
+}
+
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-title .event-color,
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-date .mec-end-date-label,
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-date .mec-sl-calendar {
+    display: none;
+}
+
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-detail {
+    display: none;
+}
+
+.tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article .mec-event-image {
+    display: none;
+}
+
+/*.postid-799 #cityTabs,
+.postid-63 #cityTabs {
+    background-size: 100% 100%;
+    background-image: url(https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif);
+}
+
+.postid-799 #cityTabs,
+.postid-63 #cityTabs {
+    height: 534px;
+}
+
+.postid-799 #cityTabs .cityTabsPanel {
+    height: 491px;
+}
+
+.postid-63 #cityTabs .cityTabsPanel {
+    height: 489px;
+}
+
+.postid-799 div.btmContent,
+.postid-63 div.btmContent {
+    clear: left;
+    overflow: auto;
+    width: 442px;
+    height: 165px;
+    padding: 10px 5px 5px 20px;
+    background-size: 100% 100%;
+}*/
+
+.post-edit-link {
+    font-style: italic;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+div#leftCornerBox>img {
+    width: 100%;
+    height: 100%;
+}
+
+.wsp-container>h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+#breadcrumbs {
+    margin: 5%;
+    font-size: 14px;
+}
+
+#breadcrumbs a {
+    background-color: #10155e;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 2px 6px 2px 6px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.SBimg {
+    max-width: 260px;
+    max-height: 179px;
+    position: relative;
+    align: center;
+}
+
+.imgStaff {
+    width: 260px;
+    height: 194px;
+}
+
+.imgIWR {
+    width: 250px;
+    height: 106px;
+}
+
+
+.funding a {
+    border: 1px solid #10155e;
+    border-radius: 5px;
+    color: #10155e;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 999;
+    display: block;
+    font-size: 125%;
+    margin-top: 10px;
+}
+
+
+.mobile-arrow-up {
+    display: none;
+}
+
+.mobile-show {
+    display: none;
+}
+.mobile-hide {
+    display: block;
+}
+
+/* City Stations */
+
+.halfBtmContent.citybottomhalf {
+    background-image: url('images/city-stations-bg.jpg');
+    height: 125px;
+}
+
+div#cityTabs.phaseTabsDualContent.citytabs {
+    background-image: url('images/city-stations-rightbg.jpg');
+    height: 495px;
+}
+
+#cityTabs.phaseTabsDualContent.citytabs div.cityTabsPanel {
+    height: 450px;
+}
+
+#mobile-nav {
+    opacity: 0;
+}
+
+/***************
+FOOTER
+***************/
+#footer {
+    padding-top: 3px;
+}
+#footer .footer-copyright {
+    float: left;
+    width: 550px;
+}
+
+#footer .footer-buttons {
+    float:left;
+    padding-top: 12px;
+}
+
+#footer .footer-social {
+    float: right;
+    padding-top: 12px;
+}
+
+#footer:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+#footer .footer-copyright p {
+    text-align: left;
+    margin-left: 0;
+    padding-top:0;
+    margin-top:0;
+    padding-bottom:0;
+    margin-bottom: 0;
+}
+
+#footer .footer-copyright-text {
+    font-size: 9px;
+    display: block;
+    margin-top: 2px;
+}
+
+#footer #footerLeftIconList,
+#footer #footerRightIconList {
+    position: relative;
+    top:auto;
+    left: auto;
+}
+
+#footer #footerLeftIconList li,
+#footer #footerRightIconList li {
+    display: inline-block;
+}
+
+#footer a.footer-button {
+    background: #3e44ad; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3e44ad 0%, #32378d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #3e44ad 0%,#32378d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #3e44ad 0%,#32378d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e44ad', endColorstr='#32378d',GradientType=0 ); /* IE6-9 */
+    color: #F1E6C8;
+    border-radius: 8px;
+    padding: 0 8px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border: 1px solid #10155E;
+}
+
+#footer a.footer-button:hover {
+    background: #32378D;
+    background-color: #32378D;
+    border-color: #32378D;
+    background
+}
+
+#footer a.footer-button.footer-i-will-ride {
+    font-weight: 600;
+    color: #323984;
+    padding-left: 28px;
+    background: transparent;
+    position: relative;
+    background-image: url('images/cropped-FGL_Mark.png');
+    background-repeat: no-repeat;
+    background-position: left 4px center;
+    background-size: 18px 18px;
+}
+
+#footer a.footer-button.footer-i-will-ride:hover {
+    background-color: #F1E6C8;
+}
+
+#footer .footer-social a.footer-button {
+    min-width: 30px;
+    padding:0;
+    font-size: 19px;
+}
+
+#footer .footer-desktop .footer-copyright {
+    display:block;
+}
+
+#footer .footer-mobile .footer-copyright {
+    display:none;
+}
+
+/* SPANISH FOOTER */
+@media screen and (min-width: 900px) {
+    body.translatepress-es_MX .footer-social #footerRightIconList li {
+        margin-left: 0px;
+    }
+    body.translatepress-es_MX #footer .footer-buttons a.footer-button {
+        font-size: 12px;
+
+    }
+    body.translatepress-es_MX #footer .footer-buttons ul#footerLeftIconList:first-child a.footer-button {
+        max-width: 150px;
+        line-height: 1.2;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    body.translatepress-es_MX #footer a.footer-button.footer-i-will-ride {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        line-height: 30px !important;
+        position: relative;
+        top: -8px;
+        font-size: 11px;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    .scotch-panel-canvas {
+        -o-transform: translate3d(0px, 0px, 0px) !important;
+        -ms-transform: translate3d(0px, 0px, 0px) !important;
+        -moz-transform: translate3d(0px, 0px, 0px) !important;
+        -webkit-transform: translate3d(0px, 0px, 0px) !important;
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+/*@charset "UTF-8";*/
+    /* CSS RESET =reset */
+    /* ------------------------------------------------------------------------------------------*/
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    font,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        outline: 0px;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        line-height: 1.4em;
+        y-overflow: hidden;
+        word-wrap: break-word;
+    }
+    em {
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+
+    #content td {
+        display:block;
+        padding: 5px;
+    }
+    .bios {width: auto;}
+    #content table {
+        margin-bottom: 20px;
+    }
+    body {
+        line-height: 1.4em;
+        margin: auto;
+        y-overflow: hidden;
+    }
+    ol,
+    ul {
+        list-style: none;
+    }
+    strong {
+        line-height: 1.4em;
+        font-size: 13px;
+    }
+    blockquote,
+    q {
+        quotes: """"
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+    }
+     :focus {
+        outline: 0;
+    }
+    ins {
+        text-decoration: none;
+    }
+    del {
+        text-decoration: line-through;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .mobile-show {
+        display: block;
+    }
+    .mobile-hide {
+        display: none;
+    }
+
+    #mobile-nav {
+        opacity: 1;
+    }
+
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+        text-align: left;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .breadcrumbs ul {
+        margin:0;
+        padding:0;
+    }
+
+    .breadcrumbs ul li {
+        list-style: none;
+        display:inline;
+        margin:0;
+        padding:0;
+    }
+
+    .breadcrumbs a:link,
+    .breadcrumbs a:visited {
+        color: #11155f;
+        font-weight: bold;
+        padding: 4px 0;
+    }
+
+    .breadcrumbs ul li:first-child a:link,
+    .breadcrumbs ul li:first-child a:visited {
+        background-color: #11155f;
+        color: #fff;
+        padding: 4px;
+        text-decoration: none;
+    }
+
+    /* GLOBALS =global */
+    /* ------------------------------------------------------------------------------------------*/
+    p {
+        margin-top: 0.2em;
+        margin-bottom: 1em;
+        line-height: 1.4em;
+        font-size: 13px;
+    }
+    br {
+        line-height: 1.4em;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0.5em 0px 1.3em 0px;
+        line-height: 1.4em;
+    }
+    h1 {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 13px;
+    }
+    h4 {
+        font-size: 13px;
+    }
+    h5 {
+        font-size: 13px;
+    }
+    h6 {
+        font-size: 13px;
+    }
+    a:link,
+    a:visited {
+        color: #3b5ba7;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #BB8E19;
+    }
+    li {
+        line-height: 1.4em;
+        margin: 0px 0px 1em 0px;
+    }
+    fieldset {
+        margin-bottom: 1em;
+    }
+    legend {
+        line-height: 1.4em;
+        font-weight: bold;
+    }
+    hr {
+        margin-top: 1.5em;
+        color: #000000;
+        background: #000000;
+        height: 1px;
+    }
+    td,
+    th {
+        vertical-align: top;
+        line-height: 1.4em;
+    }
+    input,
+    select {
+        line-height: 1.4em;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 4px 2px 2px 3px;
+        margin-bottom: 0.5em;
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/form-text-bg.gif') #ffffff repeat-x;
+        border: solid 1px #c6c6c6;
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+    p input[type="text"],
+    p textarea {
+        margin-bottom: 0px;
+    }
+    div#container input[type="text"].halfWidth {
+        width: 50%;
+    }
+    div#container input[type="text"].thirdWidth {
+        width: 33%;
+    }
+    /* UTILITY =utility */
+    /* ------------------------------------------------------------------------------------------*/
+    .left {
+        float: left
+    }
+    .right {
+        float: right
+    }
+    .clear {
+        clear: both;
+    }
+    .ralign {
+        text-align: right;
+    }
+    .lalign {
+        text-align: left;
+    }
+    .centered {
+        text-align: center;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .formRequired {
+        color: #bb8d09;
+    }
+    .noMargin {
+        margin: 0px;
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    /* MAIN =main */
+    /* ------------------------------------------------------------------------------------------*/
+    #center {
+        margin: auto;
+    }
+    html,
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        height: auto;
+    }
+    body {
+        text-align: center;
+        /*background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/body-bg.jpg') center top #ffffff; */
+        font: 13px verdana, arial, helvetica;
+        background: #fff!important;
+    }
+    #container {
+        /*position: absolute;*/
+        padding-top: 60px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: left;
+        line-height: 1.4em;
+        color: #10155e;
+        background-image: url('images/skins-oranges-mobile-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 100% auto;
+    }
+    #header {
+        margin: 0;
+        padding: 0 2% 2% 2%;
+        background-color: #fff;
+        align: center;
+    }
+    #mobile-header-utilities {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+    #mobile-header-utilities img {
+        max-width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    #mobile-header-utilities a.mobile-funding-status-button {
+        display: block;
+        max-width: 300px;
+        border: 1px solid #10155C;
+        color: #10155C;
+        text-decoration: none;
+        font-size: 15px;
+        text-align: center;
+        padding: 14px 0;
+        margin: 0 auto 10px auto;
+        border-radius: 5px;
+    }
+    #contentArea {
+        background-color: #fff;
+    }
+    #contentArea:after {
+        content:'';
+        display: block;
+        clear:both;
+    }
+    #site-title {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        margin: 0px;
+        font: normal 36px 'MyriadProSemibold';
+        color: #1e286f;
+    }
+    .tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article,
+    .newsPanel li, .eventsPanel li{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #logo {
+        position: absolute;
+        float: left;
+        top: 0px;
+        bottom: 50px;
+        margin: 5px 105px 15px 5px;
+    }
+
+    /* Mobile Navigation
+    ---------------------------------------------------------------------------------------------*/
+    .header-logo {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+
+
+    .mobile-header {
+        display: block;
+        position: relative;
+    }
+
+    .mobile-header a.mobile-logo {
+        display: block;
+        margin-right: 120px;
+    }
+
+    .mobile-header a.mobile-logo img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .mobile-header a.mobile-toggler {
+        display: block;
+        position: absolute;
+        right:0px;
+        top: 50%;
+        margin-top: -17px;
+        text-align: right;
+    }
+
+    .mobile-header a.mobile-toggler img.mobile-toggler-closed {
+        width: 83px;
+        height: auto;
+    }
+
+    .mobile-header a.mobile-toggler img.mobile-toggler-open {
+        display: none;
+        width: 38px;
+        height: auto;
+    }
+
+    .scotch-is-showing .mobile-header a.mobile-toggler img.mobile-toggler-open {
+        display: block;
+    }
+
+    .scotch-is-showing .mobile-header a.mobile-toggler img.mobile-toggler-closed {
+        display: none;
+    }
+
+    #scotch-panel {
+        background-color: #F1E6C8;
+    }
+
+    .scotch-is-showing #scotch-panel {
+            -webkit-box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.25);
+            -moz-box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.25);
+        box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.25);
+        border-left: 1px solid #DEC78A;
+    }
+
+    /* UL */
+
+    ul#mobile-nav {
+        margin:0;
+        padding:0;
+        text-align: left;
+    }
+
+    ul#mobile-nav li {
+        list-style: none;
+        display: block;
+        padding:0;
+        margin:0;
+    }
+
+    ul#mobile-nav li a {
+        color: #10155E;
+        text-decoration: none;
+        padding: 0 15px;
+        display: block;
+        line-height: 40px;
+        background: rgb(228,210,160); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(228,210,160,1) 0%, rgba(241,230,200,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(228,210,160,1) 0%,rgba(241,230,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(228,210,160,1) 0%,rgba(241,230,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4d2a0', endColorstr='#f1e6c8',GradientType=1 ); /* IE6-9 */
+        border-bottom: 1px solid #DEC78A;
+    }
+
+    ul#mobile-nav li a:after {
+        content: '';
+        width: 6px;
+        height: 9px;
+        display: inline-block;
+        background-image: url('images/caret-right@2x.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: 4px;
+        background-size: cover;
+
+    }
+
+    ul#mobile-nav li ul {
+        display: none;
+        padding: 15px;
+        border-bottom: 1px solid #DEC78A;
+    }
+
+    ul#mobile-nav li ul li a {
+        background: #F1E6C8 !important;
+    }
+
+    ul#mobile-nav li.menu-item-has-children {
+        /*padding-right: 40px;*/
+        position: relative;
+    }
+
+    ul#mobile-nav li.menu-item-has-children span.mobile-menu-toggle {
+        content:'';
+        background-image: url('images/caret-down@2x.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 9px 6px;
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right:0;
+        top: 0;
+        border-left: 1px solid #DEC78A;
+        border-bottom: 1px solid #DEC78A;
+    }
+
+    ul#mobile-nav li.menu-item-has-children.current-menu-parent span.mobile-menu-toggle {
+        border-bottom-color: #F1E6C8;
+        background-image: url('images/caret-up@2x.png');
+    }
+
+    ul#mobile-nav li.menu-item-has-children ul li.menu-item-has-children span {
+        display: none;
+    }
+
+    ul#mobile-nav li.menu-item-has-children ul li.menu-item-has-children ul {
+        display: none !important;
+    }
+
+    ul#mobile-nav li.current-menu-parent ul {
+        display: block;
+    }
+
+
+    /* OLD -------- TABS =tabs */
+    /* ------------------------------------------------------------------------------------------*/
+    div.tabs {
+        margin: 0px;
+        color: #10155e;
+        width: 100%;
+        position: relative;
+    }
+    div.tabs li a:link,
+    div.tabs li a:visited {
+        color: #10155e;
+        text-decoration: none;
+    }
+    div.tabs li a:hover {
+        align: center;
+        color: #BA8D16;
+    }
+    ul.tabLabels li {
+        text-align: center;
+        position: relative;
+        float: center;
+        margin: 5%;
+    }
+    div.tabs ul.tabLabels a {
+        font: bold 15px verdana;
+    }
+    div.tabs ul.tabLabels a:hover {
+        color: #BA8D16;
+    }
+    div.tabs ul.tabLabels li.ui-tabs-selected a:hover {
+        color: #10155e;
+    }
+    div.tabs ul.tabLabels li.tabLabel1 {
+        margin: 1% 2% 1% 2%;
+        padding: 3%;
+        width: 90%;
+    }
+    div.tabs ul.tabLabels li.tabLabel2 {
+        margin: 1% 2% 1% 2%;
+        padding: 3%;
+        width: 90%;
+    }
+    div.tabs ul.tabLabels li.tabLabel3 {
+        margin: 1% 2% 0% 2%;
+        padding: 3% 3% 3% 3%;
+        width: 90%;
+    }
+    div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected {
+        background: rgb(234,234,234); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(208,208,208,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-9 */
+        -moz-border-radius-topright: 10px;
+        margin-bottom: 2px;
+        /* for any version of Firefox */
+        -webkit-border-top-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-topleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-top-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-left-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomright: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-left-radius: 10px;
+        /* for browsers who support CSS3 */
+    }
+    div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected {
+        background: rgb(234,234,234); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(208,208,208,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-9 */
+        -moz-border-radius-topright: 10px;
+        margin-bottom: 2px;
+        /* for any version of Firefox */
+        -webkit-border-top-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-topleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-top-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-left-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomright: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-left-radius: 10px;
+        /* for browsers who support CSS3 */
+    }
+    div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected {
+        background: rgb(234,234,234); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(208,208,208,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-9 */
+        -moz-border-radius-topright: 10px;
+        margin-bottom: 2px;
+        /* for any version of Firefox */
+        -webkit-border-top-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-topleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-top-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-left-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomright: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-left-radius: 10px;
+        /* for browsers who support CSS3 */
+    }
+    div.tabsPanel {
+        float: left;
+        margin: 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 5px;
+        height: auto;
+    }
+    div.tabsPanel li {
+        line-height: 1.4em;
+    }
+    .ui-tabs {
+        position: relative;
+        zoom: 1;
+    }
+    /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+    .ui-tabs .ui-tabs-nav {
+        margin: 0;
+        padding: 0px 0px 0px 0px;
+    }
+    .halfBtmContent.citybottomhalf {
+        background:transparent;
+        background-image: none;
+        height: auto;
+    }
+
+    div#cityTabs.phaseTabsDualContent.citytabs {
+        background:transparent;
+        background-image: none;
+        height: auto;
+    }
+
+    #cityTabs.phaseTabsDualContent.citytabs div.cityTabsPanel {
+        height: auto;
+    }
+    #rendering-container>img, #siteplan-container>img {
+        height: auto;
+    }
+    div.cityTabsPanel{
+        width: 96%;
+        margin: 2%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    #cityTabs .tabLabels{
+        flex-wrap: wrap;
+    }
+    .ui-tabs .ui-tabs-nav li {
+        list-style: none;
+        center: left;
+        position: relative;
+        top: 1px;
+        border-bottom: 0 !important;
+        padding: 0;
+        white-space: nowrap;
+    }
+    .ui-tabs .ui-tabs-nav li a {
+        display: block;
+        text-decoration: none;
+    }
+    .ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+        margin-bottom: 0;
+    }
+    .ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+    .ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+    .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+        cursor: text;
+    }
+    .ui-tabs .ui-tabs-nav li a,
+    .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+        cursor: pointer;
+    }
+    /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+    .ui-tabs .ui-tabs-panel {
+        display: block;
+        border-width: 0;
+        background: none;
+    }
+    body.home .ui-tabs .ui-tabs-panel {
+        padding-top:0;
+        margin-top:-10px;
+    }
+    .ui-tabs .ui-tabs-hide {
+        display: none !important;
+    }
+    /* HOME =home */
+    /* ------------------------------------------------------------------------------------------*/
+    div#homeTabs {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background: #fff;
+        padding-bottom: 50px;
+    }
+    .newsPanel li,
+    .eventsPanel li {
+        clear: both;
+        padding-bottom: 10px;
+        border-bottom: solid 1.5px #b9b2a1;
+        position: relative;
+    }
+    .newsPanel li:last-child,
+    .eventsPanel li:last-child,
+    .videoPanel li:last-child {
+        padding-bottom: 5px;
+        border: none;
+    }
+    .videoPanel li {
+        clear: both;
+        position: relative;
+        margin: 0px;
+        border-bottom: solid 1.5px #b9b2a1;
+    }
+    .videoPanel img {
+        float: left;
+        clear: left;
+        margin: 0px;
+    }
+    .videoPanel p {
+        float: left;
+        width: 125px;
+        padding-top: 5px;
+        position: relative;
+        line-height: 1.4em;
+    }
+    .videoPanel a:link.underline,
+    .videoPanel a:visited.underline {
+        text-decoration: underline;
+    }
+    div#homeRightContent {
+/*        min-height: 300px;*/
+        width: 100%;
+        float: left;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+    div#homeRightContent img {
+        float: right;
+    }
+    /* CONTENT =content */
+    /* ------------------------------------------------------------------------------------------*/
+    .iwillride p {
+        width: 100%;
+    }
+    div#contentArea {
+        position: relative;
+        line-height: 1.4em;
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+    }
+    .sub-menu:before,
+    .sub-menu:after,
+    .clearfix:before,
+    .clearfix:after,
+    div#contentArea:before,
+    div#contentArea:after{
+        display: table;
+        content: ' ';
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-order: 1;
+        order: 1;
+
+    }
+    .sub-menu:after,
+    .clearfix:after,
+    div#contentArea:after{
+        clear: both;
+    }
+    div#content {
+        float: left;
+        margin: 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        background: transparent;
+    }
+    div#content ol,
+    div#content ul,
+    div#contentLeft ol,
+    div#contentLeft ul,
+    div#contentRight ol,
+    div#contentRight ul {
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    div#content ol,
+    div#contentLeft ol,
+    div#contentRight ol {
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+    div#content ul,
+    div#contentLeft ul,
+    div#contentRight ul {
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    div#content li,
+    div#contentLeft li,
+    div#contentRight li {
+        margin-bottom: 0.5em;
+    }
+    div#contentLeft {
+        float: left;
+        margin: 0% 5% 0% 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 5px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    div#contentRight {
+        float: left;
+        margin: 0% 5% 0% 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background: #ffffff;
+        position: relative;
+        margin-top: 5px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        overflow: hidden;
+        height: auto;
+    }
+    div#contentRight.contentRightConstPhase {
+        height: auto;
+        background:none;
+    }
+    div#contentRight table {
+        width: 100%;
+    }
+    div#contentLeft h1:first-child,
+    div#contentRight h1:first-child,
+    div.halfBtmContent h1:first-child,
+    div#contentLeft h2:first-child,
+    div#contentRight h2:first-child,
+    div.halfBtmContent h2:first-child,
+    div#contentLeft h3:first-child,
+    div#contentRight h3:first-child,
+    div.halfBtmContent h3:first-child {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    div#subNav3 {
+        position: absolute;
+        margin: 0;
+        font: normal 15px 'MyriadProSemibold';
+        text-align: center;
+        float: left;
+    }
+    div#subNav3 ul {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    div#subNav4 li {
+        position: relative;
+        padding: 5px 15px 5px 15px;
+        margin: 0 auto;
+        font: normal 15px 'MyriadProSemibold';
+        text-align: center;
+        background-color: #ddc27b;
+        -moz-border-radius-topright: 10px;
+        margin-bottom: 2px;
+        /* for any version of Firefox */
+        -webkit-border-top-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-topleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-top-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-left-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomright: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-left-radius: 10px;
+        /* for browsers who support CSS3 */
+    }
+    .sub-level-0 {
+        display: inline;
+        padding-right: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    div#subNav {
+        float: left;
+        position: relative;
+        width: 100%;
+        margin: 0px 10px 0px 0px;
+        font: normal 13px 'MyriadProSemibold';
+        text-align: left;
+        height: auto;
+        padding: 2% 5%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    div#subNav ul li a {
+        background: transparent;
+    }
+    div#subNav.constphases-mobile-nav {
+        width: 30%;
+        margin-left: 70%;
+        display: block;
+        position: absolute;
+        border-top: 0;
+    }
+    .nav-construction-phases-funding-status, .nav-contact-us-funding-status, .nav-about-us-funding-status, .nav-news-funding-status, .nav-meetings-events-funding-status {
+        display: none;
+    }
+    div#subNav.constphases-mobile-nav li.active a:link {
+        background: transparent;
+    }
+    div#phaseMap .phasesMapRollover{
+        opacity: 0!important;
+    }
+    div#phaseMap {
+        background-position: left top;
+    }
+    div#subNav table {
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+    }
+    div#subNav table td{
+        width: 100%;
+    }
+    div#subNav li {
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+        padding: 2px;
+    }
+    div#subNav li a:link,
+    div#subNav li a:visited {
+        display: block;
+        padding: 2px 3px 0px 3px;
+        text-decoration: none;
+        color: #10155e;
+        height: auto;
+    }
+    div#subNav li a:hover {
+        display: block;
+        padding: 2px 3px 0px 3px;
+        text-decoration: none;
+        color: #10155e;
+        background:none;
+    }
+    div#subNav a {
+        -moz-border-radius-bottomright: 8px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-right-radius: 8px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-right-radius: 8px;
+        /* for Konqueror (linux browser) */
+        border-bottom-right-radius: 8px;
+        /* for browsers who support CSS3 */
+    }
+    div#subNav li.active a:link,
+    div#subNav li.active a:visited {
+        /*color: #10155e;*/
+        line-height: 31px;
+    }
+    table#siteMapTable {
+        width: 100%;
+    }
+    table#siteMapTable td {
+        width: 50%;
+    }
+    /* SUB =sub */
+    /* ------------------------------------------------------------------------------------------*/
+    #content-headlines {
+        float: left;
+        margin: 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+    }
+    div#contentArea div.headlinesPage {
+        line-height: 1.4em;
+        overflow: hidden;
+        position: relative;
+    }
+    div#leftCornerBox {
+        margin: 0 2% 0 2%;
+        width: 96%;
+        position: relative;
+        overflow: hidden;
+        float: none;
+        height: auto;
+    }
+    div#homeRightContent .mediaBox {
+        margin: auto;
+        position: relative;
+        height: 250px;
+    }
+    div#homeRightContent .mediaBoxImage {
+        position: relative;
+        padding: 5%;
+        width: 100%;
+        height: 100%;
+    }
+    .mediaBox {
+        margin: auto;
+        position: relative;
+        /*height: 250px;*/
+    }
+    .container .mediaBox>img, #leftCornerBox img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+
+    }
+    .mediaBoxImage {
+        position: relative;
+        padding: 5%;
+        width: 90%;
+        height: 90%;
+    }
+    /* image replacement */
+    .graphic,
+    #prevBtn,
+    #nextBtn,
+    #slider1prev,
+    #slider1next {
+        margin: 0;
+        padding: 0;
+        display: block;
+        overflow: hidden;
+        text-indent: -8000px;
+    }
+    /* // image replacement */
+    /* Easy Slider */
+    .mediaBox ul,
+    .mediaBox li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .mediaBox li {
+        /*
+            define width and height of list item (slide)
+            entire slider area will adjust according to the parameters provided here
+        */
+        /*width: 100%; */
+        /*height: 348px;*/
+        overflow: hidden;
+    }
+    #prevBtn,
+    #nextBtn,
+    #slider1next,
+    #slider1prev {
+        display: block;
+        width: 58px;
+        height: 88px;
+        position: absolute;
+        top: 150px;
+        z-index: 1000;
+    }
+    /* Home Page's Slideshow */
+    div.homePage #prevBtn,
+    div.homePage #nextBtn,
+    div.homePage #slider1next,
+    div.homePage #slider1prev {
+        top: 30%;
+    }
+    #prevBtn,
+    #slider1prev {
+        left: 10%;
+    }
+    #nextBtn,
+    #slider1next {
+        left: 80%;
+    }
+    #prevBtn a,
+    #nextBtn a,
+    #slider1next a,
+    #slider1prev a {
+        display: block;
+        position: relative;
+        width: 29px;
+        height: 44px;
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/gallery-previous-arrow.png') no-repeat 0 0;
+    }
+    #nextBtn a,
+    #slider1next a {
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/gallery-next-arrow.png') no-repeat 0 0;
+    }
+    /* numeric controls */
+    ol#controls {
+        margin: 1em 0;
+        padding: 0;
+        height: 28px;
+    }
+    ol#controls li {
+        margin: 0 10px 0 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        height: 28px;
+        line-height: 1.4em;
+    }
+    ol#controls li a {
+        float: left;
+        height: 28px;
+        line-height: 1.4em;
+        border: 1px solid #ccc;
+        background: #DAF3F8;
+        color: #555;
+        padding: 0 10px;
+        text-decoration: none;
+    }
+    ol#controls li.current a {
+        background: #5DC9E1;
+        color: #fff;
+    }
+    ol#controls li a:focus,
+    #prevBtn a:focus,
+    #nextBtn a:focus {
+        outline: none;
+    }
+    td.siteMapCell {
+        padding-right: 15px;
+    }
+    /* // Easy Slider */
+    /* CITIES/STATIONS =cities */
+    /* ------------------------------------------------------------------------------------------*/
+    div#cityTabs {
+        margin: 0px;
+        color: #10155e;
+        width: 100%;
+        position: relative;
+        float: left;
+        y-overflow: hidden;
+        height: auto;
+    }
+    .cityTabsPanel {
+        float: left;
+        margin: 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    table.cityTabsPanel td {
+        width: 100%;
+    }
+    div#cityTabs.IFSTab div.cityTabsPanel {
+        height: 100%;
+    }
+    div.cityTabsPanel li {
+        line-height: 1.4em;
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-left: 12px;
+    }
+    div#cityTabs.IFSTab {
+        width: 467px;
+        height: 100%;
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif') no-repeat;
+    }
+    div.btmContent {
+        word-wrap: break-word;
+        float: left;
+        margin: 2%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        background: none;
+        height: auto;
+    }
+    div.btmContent li {
+        line-height: 1.4em;
+    }
+    div.halfBtmContent {
+        float: left;
+        margin: 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background: #ffffff;
+        position: relative;
+        margin-top: 5px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        height: auto;
+    }
+    table#ContactTable td {
+        display: block;
+    }
+    div.halfBtmContent p {
+        line-height: 1.4em;
+    }
+    div.halfBtmContentAuthority {
+        float: left;
+        margin: 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 5px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        background-size: cover;
+        height: auto;
+        background: transparent;
+        background-image: none;
+    }
+    div#contentLeft{
+        background-size: cover;
+        overflow: auto;
+        width: 90%;
+        box-sizing: border-box;
+        background:transparent;
+        background-image: none;
+        height: auto;
+    }
+    .content_type_archive{
+        width: 90%!important;
+        box-sizing: border-box;
+    }
+    .full-width-mobile{
+        width: 100%!important;
+    }
+    .full-width-mobile .mediaBox{
+        width: 100%;
+    }
+    div.halfBtmContent ul,
+    div.halfBtmContentAuthority ul {
+        list-style: disc;
+        list-style-position: inside;
+    }
+    div.halfBtmContent ol,
+    div.halfBtmContentAuthority ol {
+        list-style: disc;
+        list-style-position: inside;
+    }
+    .iebgfix {
+        /*	position: relative;*/
+        /*	clear: both;*/
+    }
+    /* Event =event =calendar */
+    /* ------------------------------------------------------------------------------------------*/
+    div#calendarArea {
+        width: 288px;
+        margin: 0 auto;
+        position: relative;
+    }
+    div.calendarPage div.halfBtmContent {
+        float: left;
+        margin: 0% 5% 0% 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 5px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    div.calendarPage div#contentRight {
+        margin: 0 auto;
+        overflow: auto;
+        padding: 15px 0px 10px 0px;
+    }
+    table#calendarTable {
+        position: relative;
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 10px;
+        border-collapse: collapse;
+        /*	background: url("https://foothillgoldline.org/wp-content/uploads/converted-images/calendar-bg-2.gif") no-repeat;*/
+    }
+    tr.calendarHeader {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        align: center;
+    }
+    tr.calendarHeader th {
+        height: 30px;
+        padding: 10px 0px 10px 0px;
+        vertical-align: middle;
+        color: #000000;
+    }
+    tr.calendarDaysHeader td {
+        display: inline;
+        margin-bottom: 15px;
+        position: relative;
+        width: 100%;
+        height: 15px;
+        margin: 0 auto;
+    }
+    tr.calRow td {
+        border-top: solid 1px #c2c2c2;
+        float: left;
+    }
+    tr.calFirstRow {
+        border-top: none;
+        float: left;
+    }
+    table#calendarTable td {
+        border-left: solid 1px #c2c2c2;
+        float: left;
+    }
+    table#calendarTable tr.calendarDaysHeader td,
+    table#calendarTable .calRow td:first-child {
+        border-left: none !important;
+        float: left;
+    }
+    table#calendarTable td.calendarDayHeading {
+        height: 14px;
+        float: left;
+        color: #000000;
+        vertical-align: top;
+        text-align: center;
+    }
+    #leftArrowCol {
+        text-align: right;
+        padding-right: 10px;
+    }
+    #rightArrowCol {
+        text-align: left;
+        padding-left: 10px;
+    }
+    table#calendarTable a {
+        display: block;
+        cursor: pointer;
+        float: left;
+        text-decoration: none;
+    }
+    table#calendarTable td {
+        width: 36px;
+        height: 55px;
+        text-align: right;
+    }
+    table#calendarTable td div {
+        position: relative;
+    }
+    table#calendarTable td.firstColumn,
+    table#calendarTable td.lastColumn {
+        width: 36px !important;
+    }
+    .calendarCell {
+        font-size: 7px !important;
+        letter-spacing: -.1em !important;
+        color: #000000;
+        vertical-align: top;
+    }
+    .calendarBlank {
+        text-align: right;
+    }
+    .calendarToday {
+        font-weight: bold;
+        background: #efefef;
+    }
+    .calNumber {
+        position: absolute;
+        width: 33px;
+        right: 2px;
+        margin-top: 2px;
+        z-index: 100;
+    }
+    div.daysCalendarEvents {
+        position: relative;
+        align: center;
+    }
+    a.eventLink {
+        position: absolute;
+        width: 34px;
+        padding: 1px 0px 0px 2px;
+        text-align: left;
+        color: #000000;
+        font-size: 7px;
+        letter-spacing: -1px;
+        font-weight: normal;
+    }
+    td.firstColumn .eventLink,
+    td.lastColumn .eventLink {
+        width: 36px !important;
+        padding-left: 4px !important;
+    }
+    a.yellowEvent {
+        height: 12px;
+        top: 13px;
+        left: 0px;
+        background: #eaddb5;
+    }
+    a.blueEvent {
+        height: 12px;
+        top: 28px;
+        left: 0px;
+        background: #c3c4d7;
+        border-top: solid 1px #cbccdc;
+    }
+    a.grayEvent {
+        height: 12px;
+        top: 40px;
+        left: 0px;
+        background: #cccccc;
+        border-top: solid 1px #d1d1d1;
+    }
+    /* Bottom Area Calendar Content - Today's Events */
+    div.calendarPage div#contentRight {
+        float: left;
+        margin: 0% 5% 0% 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 5px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    .calendarPage #contentRight h3 {
+        padding: 0px 0 0 0px !important;
+    }
+    table#calendarTodayTable {}
+    table#calendarTodayTable td {
+        padding: 0px 20px 10px 0px;
+    }
+    table#calendarTodayTable td.calTodayDateCol {
+        width: 100%;
+    }
+    table#calendarTodayTable td.calTodayTypeCol {
+        width: 100%;
+    }
+    /* Right Area */
+    div#contentRightEventsContent {
+        clear: both;
+        padding: 0px 0px 10px 0px;
+    }
+    table#calendarMeetingTable {
+        /*	width: 425px;*/
+        margin-left: 0px;
+        margin-bottom: 20px;
+        float: left;
+    }
+    table#calendarMeetingTable th {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    #calendarMeetingTable tr th:first-child,
+    #calendarMeetingTable tr td:first-child {
+        /*padding-left: 20px;*/
+    }
+    #calendarMeetingTable td {
+        line-height: 1.4em;
+        padding-right: 0px;
+        vertical-align: top;
+        padding-top: 10px;
+    }
+    #calendarMeetingTable td.calEventTitleCol {
+        padding-bottom: 10px;
+        font-size: 13px;
+        width: 100%;
+    }
+    table#calendarMeetingTable th {
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    #calendarMeetingTable td.calEventDates strong {
+        padding-top: 25px;
+        line-height: 1.4em;
+        float: left;
+        font-size: 13px;
+    }
+    th.calDateCol {
+        width: 95px;
+        float: left;
+    }
+    th.calDateTime {
+        font-size: 13px;
+        border-bottom: 1px solid black;
+        float: left;
+    }
+    .separating_line {
+        border-top: 1px #000 solid;
+        /* top border only */
+        padding-top: 100px;
+    }
+    div#contentRight-Event {
+        float: left;
+        margin: 0% 5% 0% 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 5px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    /* Videos =videos */
+    /* ------------------------------------------------------------------------------------------*/
+    div#videosListingArea {
+        float: left;
+        margin: 5%;
+        padding: 3%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 5px;
+        background:none;
+        height: auto;
+    }
+    div#videosListing {
+        position: relative;
+        overflow: auto;
+        height: 100%;
+    }
+    div#videosListingArea h2,
+    div#videoArchive h2 {
+        height: 19px;
+        margin: 0px 0px 0px 0px;
+        padding: 5px 0px 0px 0px;
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+    div.videosPage div#videoArchive h2 {
+        margin: 0px 0px 0px 0px;
+    }
+    div#videosListing li {
+        line-height: 1.4em;
+    }
+    #videoBox {
+        margin: 0 2% 0 2%;
+        width: 98%;
+        margin: 0 auto;
+    }
+    div#videoBox {
+        position: relative;
+        top: 0px;
+        right: 1px;
+        z-index: 1000;
+        width: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+        float: none;
+    }
+    div#videoBox{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    div#videoBox iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+    div.homePage div#videoBox {
+        position: relative;
+        top: 0px;
+        right: 1px;
+        z-index: 1000;
+        width: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    div#videoArchive {
+        float: left;
+        margin: 5%;
+        padding: 3%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 5px;
+        height: auto;
+        background:none;
+    }
+    div#videoArchiveBox {
+        width: auto;
+        height: auto;
+    }
+    div#videoArchive table {
+        width: 100%;
+        margin: 15px 0px 50px 0px;
+    }
+    div#videoArchive td {
+        width: 100%;
+        padding: 0px 0px 50px 0px;
+    }
+    div#videoArchive td.bottomRow {
+        padding-bottom: 50px;
+    }
+    .hide {
+        display: none;
+    }
+    #videoArchive {}
+    #videoArchive .videos {
+        width: 100%;
+        padding: 15px 0px 0px 0px;
+        margin: 0px 0 0;
+    }
+    #videoArchive .row .item {
+        float: left;
+        width: 100%;
+        padding: 0 30px 5px 0;
+    }
+    #videoArchive .paginator {
+        clear: both;
+    }
+    #videosListing li,
+    #videoArchive li {
+        clear: both;
+        overflow: auto;
+        margin: 0px;
+        padding: 7px 20px 7px 20px;
+        border-bottom: solid 1px #b9b2a1;
+    }
+    #videosListing li:last-child {
+        padding-bottom: 8px;
+        border: none;
+    }
+    #videosListing li a:link,
+    #videosListing li a:visited,
+    #videoArchive a:link,
+    #videoArchive a:visited {
+        color: #10155e;
+        text-decoration: none;
+    }
+    #videosListing li a:link.underline,
+    #videosListing li a:visited.underline {
+        text-decoration: underline;
+    }
+    #videosListing li a:hover,
+    #videoArchive a:hover {
+        color: #BA8D16;
+    }
+    #videosListing img,
+    #videoArchive img {
+        float: left;
+        clear: left;
+        margin: 0px 17px 0px 0px;
+    }
+    #videosListing p,
+    #videoArchive p {
+        max-width: 100%;
+        float: none;
+        padding-top: 5px;
+        position: relative;
+        line-height: 1.4em;
+    }
+    #videoArchiveBox .item>.playVideo {
+        float: none;
+    }
+    #videoArchive p {
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    /* Contracting Opportunities */
+    /* ------------------------------------------------------------------------------------------*/
+    table.proposalTable {
+        margin: 0px 0px 10px 0px;
+    }
+    table.proposalTable td {
+        vertical-align: top;
+        padding: 0px 0px 10px 0px;
+        position: relative;
+        float: left;
+    }
+    .proposalArrowLink {
+        min-width: 60px;
+        position: relative;
+        float: left;
+    }
+    td.rfpIdColumn {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+    td.rfpFirstColumn {
+        vertical-align: bottom;
+        width: 100%;
+    }
+    .rfpFirstColumn img {
+        vertical-align: bottom;
+        margin: 0px 0px 0px 0px;
+    }
+    table.proposalTable p a {
+        line-height: 1.4em
+    }
+    table.proposalTable p {
+        margin: 0px;
+    }
+    tr.proposalFilesArea {
+        display: none;
+    }
+    /* STAFF =staff */
+    /* ------------------------------------------------------------------------------------------*/
+    .bios p {
+        line-height: 1.4em;
+    }
+    div.staffPage table tr {
+        max-width: 300px;
+        overflow: hidden;
+        line-height: 1.4em;
+    }
+    div.staffPage div#content,
+    div.boardPage div#content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    div.staffPage div#content,
+    div.boardPage div#content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+    }
+    table.biosTable {
+        line-height: 1.4em;
+        width: 90%;
+        margin: 0px 0px 0px 0px;
+        border-bottom: 1px solid #000;
+    }
+    table.boardTable {
+        line-height: 1.4em;
+        width: 90%;
+        margin: 10px 0px 10px 0px;
+        border-bottom: 1px solid #000;
+    }
+    .biosTable td {
+        vertical-align: top;
+        padding: 0px 0px 30px 0px;
+        width: 250px;
+    }
+    table.boardTable td {
+        padding: 20px 0px 20px 0px;
+    }
+    table.biosTable td.bioPictureCell {
+        width: 100px;
+        float: left;
+        position: relative;
+        padding-right: 10px;
+    }
+    table.biosTable td.bioInfoCell {
+        float: left;
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    /* Phases =phases */
+    /* ------------------------------------------------------------------------------------------*/
+    div#phasePageMap {
+        float: none;
+        width: 100%;
+        background-color: #fff;
+        background-image: none;
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        height: auto;
+    }
+    div#phasePageMap h2 {
+        font-size: 13px;
+        position: relative;
+        line-height: 1.4em;
+        border: none;
+        margin: 5px 0px 6px 13px;
+    }
+    div#phaseTabs {
+        margin: 0px;
+        color: #10155e;
+        width: 100%;
+        position: relative;
+        float: left;
+        height: auto;
+    }
+    div#phaseTabs.phaseTabsDualContent {
+        background: transparent;
+        background-image: none;
+        height: auto;
+    }
+    #phaseTabs.phaseTabsDualContent div.phaseTabsPanel {
+        height: auto;
+    }
+    div.phaseTabsPanel {
+        float: left;
+        margin: 5%;
+        padding: 2% 4% 2% 4%;
+        width: 82%;
+        background-color: #ffffff;
+        position: relative;
+        margin-top: 15px;
+        border: 0px solid #5e5e5e;
+        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
+        box-shadow: 0px 0px 3px 3px #e0dcdc;
+        margin-bottom: 15px;
+        height: auto;
+    }
+    div.phaseTabsPanel li {
+        line-height: 1.4em;
+    }
+    div.phaseTabsPanel ul {
+        list-style: disc;
+        list-style-position: inside;
+    }
+    div.phaseTabsPanel p {
+        line-height: 1.4em;
+    }
+    div.phaseTabsPanel ol {
+        list-style: decimal;
+        list-style-position: inside;
+    }
+    div.phaseMapArea {
+        position: relative;
+        width: 230px;
+        float: left;
+        height: 233px;
+        background-size: cover;
+        margin-left: 20px;
+    }
+    div.phaseTabsPanel ul.phaseEventList {
+        list-style: none;
+        list-style-position: outside;
+    }
+    div.phaseTabsPanel ul.phaseEventList li {
+        line-height: 1.4em;
+    }
+    /*** PHASE 1 MAP ***/
+    div#phase1Map {
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/m_phases-map-1-bg.gif') left top no-repeat;
+        position: relative;
+        width: 75%;
+        float: left;
+        margin-left: 3%;
+    }
+    /*** PHASE 2 MAP ***/
+    div#phase2Map {
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/m_phases-map-2-bg.gif') left top no-repeat;
+        position: relative;
+        width: 75%;
+        float: left;
+        margin-left: 3%;
+    }
+    /*** PHASE 3 MAP ***/
+    div#phase3Map {
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/m_phases-map-3-bg.gif') left top no-repeat;
+        position: relative;
+        width: 75%;
+        margin-left: 3%;
+        float: left;
+    }
+    /*** PHASE 4 MAP ***/
+    div#phase4Map {
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/m_phases-map-4-bg.gif') left top no-repeat;
+        position: relative;
+        width: 75%;
+        margin-left: 3%;
+        float: left;
+    }
+    /* FOOTER =footer */
+    /* ------------------------------------------------------------------------------------------*/
+    #footer {
+        clear: both;
+        position: relative;
+        width: 100%;
+        padding: 0 0 40px 0px;
+        color: #10155e;
+        margin-top: 0px;
+        height: auto;
+        background: #fff;
+    }
+
+    #footer .footer-buttons,
+    #footer .footer-copyright,
+    #footer .footer-social {
+        float:none;
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #footer .footer-desktop .footer-copyright {
+        display:none;
+    }
+
+    #footer .footer-mobile .footer-copyright {
+        display:block;
+        text-align: center;
+    }
+
+    #footer .footer-mobile .footer-copyright p {
+        text-align: center;
+    }
+
+    .mobile-arrow-up {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 99;
+    }
+
+    .mobile-arrow-up img {
+        width: 50px;
+        height: auto;
+    }
+
+    #footer ul {
+        text-align: center;
+    }
+
+    #footer .footer-buttons li {
+        display:block;
+    }
+
+    #footer li {
+        display: inline;
+    }
+    #footer .footer-social li {
+        display: inline-block;
+    }
+    #footer p {
+        font-size: 10.5px;
+        text-align: center;
+    }
+    #footerIcons {
+        top: 9px;
+        bottom: -10px;
+        margin: auto;
+    }
+    #footerIcons li {
+        margin: 0px 5px 0 0;
+    }
+    /* AJAX STUFF */
+    .shield {
+        position: absolute;
+        z-index: 50;
+        background-color: #000;
+        opacity: .6;
+        filter: alpha(opacity=60);
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+    .shield .ajax {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        z-index: 51;
+        top: 50%;
+        left: 50%;
+        margin-left: -16px;
+        margin-top: -16px;
+        background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/ajax.gif) no-repeat;
+    }
+    /* ACCORDION */
+    .ui-accordion .ui-accordion-header {
+        cursor: pointer;
+        position: relative;
+        zoom: 1;
+        margin: 15px 0;
+    }
+    .ui-accordion .ui-accordion-li-fix {
+        display: inline;
+    }
+    .ui-icon {
+        display: block;
+        text-indent: -99999px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+    .ui-accordion .ui-accordion-header .ui-icon {
+        position: absolute;
+        top: 50%;
+    }
+    .ui-icon-triangle-1-e {
+/*        background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-off_m.gif) no-repeat;*/
+        width: 8px;
+        height: 19px;
+        margin-top: -9px;
+        left: -20px;
+    }
+    .ui-icon-triangle-1-s {
+/*        background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/arrow-yellow-on_m.gif) no-repeat;*/
+        width: 19px;
+        height: 8px;
+        margin-top: -4px;
+        left: -30px;
+    }
+    .ui-accordion .ui-accordion-content {
+        padding: 0em 2.2em;
+        border-top: 0;
+        margin-top: -2px;
+        position: relative;
+        top: 1px;
+        margin-bottom: 2px;
+        overflow: auto;
+        display: none;
+    }
+    .ui-accordion .ui-accordion-content-active {
+        display: block;
+    }
+    /* NAVIGATION =nav */
+    /* ------------------------------------------------------------------------------------------*/
+    ul#nav {
+        position: relative;
+        top: 5px;
+        width: 100%;
+        text-align: center;
+        line-height: none;
+        margin-bottom: 5px;
+        left: 0;
+        height: auto;
+        border: none;
+    }
+    ul#nav > li.menu-item > a{
+        background: #DBC37B;
+        border-radius: 9px;
+    }
+    ul#nav > li.menu-item.current-menu-parent > a{
+        border-radius: 9px 9px 0 0;
+    }
+    ul#nav li .sub-menu{
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        height: auto;
+        padding: 0 0 25px 0!important;
+        top: 0;
+        padding-bottom: 20px;
+    }
+    div#contentArea div.headlinesPage{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        box-sizing: border-box;
+    }
+    div#content{
+        height: auto;
+        background-size: cover;
+    }
+    .accordion {
+        padding-left: 50px;
+    }
+    #nav>.nav-cities-stations.menu-item .sub-menu>li{
+        flex: 1 1 100%;
+    }
+    #nav>.nav-cities-stations.menu-item.current-menu-item .sub-menu, #nav>.nav-cities-stations.menu-item:hover .sub-menu, #nav>.nav-cities-stations.menu-item.current-menu-ancestor .sub-menu{
+        height: auto;
+    }
+    ul#nav li .sub-menu > li{
+        width: 100%;
+    }
+    ul#nav a:link,
+    ul#nav a:visited {
+        color: #10155e;
+        text-decoration: none;
+    }
+    ul#nav>li{
+        width: 100%;
+    }
+    ul#nav>li>a {
+        display: block;
+        padding: 15px 0px 15px 0px;
+        color: #10155e;
+    }
+    ul#nav a,
+    ul#nav a:hover {
+        color: #bb8d09;
+    }
+    ul#nav li {
+        font: bold 15px verdana, arial;
+        background: #ddc27b;
+        color: #bb8d09;
+        margin-bottom: 2px;
+        -moz-border-radius-topright: 10px;
+        /* for any version of Firefox */
+        -webkit-border-top-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-topleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-top-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-top-left-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomright: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-right-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-right-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-right-radius: 10px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomleft: 10px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-left-radius: 10px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-left-radius: 10px;
+        /* for Konqueror (linux browser) */
+        border-bottom-left-radius: 10px;
+        /* for browsers who support CSS3 */
+    }
+    ul#nav li ul li.here,
+    ul#nav li ul li.parent-here {
+        font-weight: bold;
+        color: #bb8d09;
+    }
+    ul#nav>li.parent-here>li.class {
+        font-weight: bold;
+        color: #bb8d09;
+    }
+    /* Cut off the menu after 2 levels */
+    ul#nav>li>ul ul {
+        display: none !important;
+    }
+    ul#nav li ul{
+        background: #ede3c0;
+    }
+    ul#nav li ul li {
+        font-weight: normal;
+        height: 1em;
+        margin: 0px;
+        padding: 15px 0px 15px 0px;
+        font-size: 15px;
+        background: #ede3c0;
+        -moz-border-radius-topright: 0px;
+        /* for any version of Firefox */
+        -webkit-border-top-right-radius: 0px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-right-radius: 0px;
+        /* for Konqueror (linux browser) */
+        border-top-right-radius: 0px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-topleft: 0px;
+        /* for any version of Firefox */
+        -webkit-border-top-left-radius: 0px;
+        /* for Safari and Google Chrome */
+        -khtml-border-top-left-radius: 0px;
+        /* for Konqueror (linux browser) */
+        border-top-left-radius: 0px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomright: 0px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-right-radius: 0px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-right-radius: 0px;
+        /* for Konqueror (linux browser) */
+        border-bottom-right-radius: 0px;
+        /* for browsers who support CSS3 */
+        -moz-border-radius-bottomleft: 0px;
+        /* for any version of Firefox */
+        -webkit-border-bottom-left-radius: 0px;
+        /* for Safari and Google Chrome */
+        -khtml-border-bottom-left-radius: 0px;
+        /* for Konqueror (linux browser) */
+        border-bottom-left-radius: 0px;
+        /* for browsers who support CSS3 */
+    }
+    .scrollup {
+        width: 55px;
+        height: 55px;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+        /* For IE8 and earlier */
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        text-indent: -9999px;
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/toTop.gif') no-repeat;
+        z-index: 99999999999999;
+    }
+    .toTop {
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+        /* For IE8 and earlier */
+        z-index: 99999999999999;
+    }
+    #mainContent #sidebar h3 {
+        color: #000;
+    }
+    #mainContent #sidebar #SBvids h3 {
+        color: #fff;
+    }
+    #monthlyArchive li {
+        list-style: none;
+    }
+    #monthlyArchive ul>li {
+        color: #fff;
+        padding: 0px;
+    }
+    #mainContent #sidebar #monthlyArchive ul li ul {
+        background: none;
+    }
+    #monthlyArchive li {
+        padding: 0 0 0 15px;
+        background: url(../images/blogArchiveRight.gif) 3px 0px no-repeat;
+    }
+    #monthlyArchive li.extended,
+    #monthlyArchive li.extended li {
+        background: url(../images/blogArchiveDown.gif) left 3px no-repeat;
+        padding: 0!important;
+    }
+    #monthlyArchive li li li,
+    #monthlyArchive li.extended li li {
+        padding: 0 0 4px;
+        background: none;
+    }
+    #monthlyArchive li ul {
+        margin: 6px 0 0 0;
+    }
+    #monthlyArchive li li ul {
+        margin: 6px 0 10px 0;
+    }
+    /* #monthlyArchive > ul > li {margin: 0 0 10px;} */
+    #monthlyArchive>ul>li.extended ul {
+        display: block;
+    }
+    #monthlyArchive .blogMonths {
+        display: block;
+    }
+    #monthlyArchive .blogMonths>li {
+        color: #92B03B;
+    }
+    #monthlyArchive .blogMonths>li>a {
+        font-size: 10px;
+    }
+    #monthlyArchive .blogMonths>li .blogTitles {
+        display: block;
+        background: #fff!important;
+    }
+    #monthlyArchive .blogMonths .monthExtended .blogTitles {
+        display: block;
+    }
+    #container article .newBarBottom a.catLink {
+        display: inline;
+        padding: 0;
+        background: none;
+        float: none;
+        color: #fff;
+    }
+    #mainContent #sidebar ul li.extended>a,
+    #mainContent #sidebar ul li.extended>a:hover,
+    #mainContent #sidebar ul li.extended li.monthExtended>a,
+    #mainContent #sidebar ul li.extended li.monthExtended>a:hover {
+        background: url("../img/subNavActivePointer.png") no-repeat scroll right center transparent;
+        font-size: 13px;
+        color: #C3A204;
+    }
+    #mainContent #sidebar #monthlyArchive>ul>li>a {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    #mainContent #sidebar #monthlyArchive>ul>li>ul>li {
+        border-top: 1px dotted #C3A204;
+    }
+    #mainContent #sidebar #monthlyArchive>ul>li>ul>li.monthExtended+li {
+        border-top: none;
+    }
+    #mainContent #sidebar #monthlyArchive>ul>li>ul>li>ul>li {
+        border-top: 1px dotted #3A072B;
+    }
+    #mainContent #sidebar #monthlyArchive>ul>li>ul>li>ul>li:first-child {
+        border-top: none;
+    }
+    #mainContent #sidebar ul li li.monthExtended li {
+        background: #fff;
+    }
+    #mainContent #sidebar ul li li li a {
+        text-transform: none;
+        background: #fff;
+        color: #000000 !important;
+        position: relative;
+    }
+    #mainContent #sidebar ul li li li.active a,
+    #mainContent #sidebar ul li li li.active a:hover {
+        background: url(../img/subNavPointerActive.png) right center no-repeat!important;
+    }
+    #mainContent #sidebar ul li li li.active a span {
+        display: none;
+    }
+    #mainContent #sidebar ul li li li a span {
+        padding: 0 0 0 5px;
+        border-left: 1px dotted #c6c6c6;
+        margin: 0 0 0 5px;
+        color: #a5a5a5;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        display: block;
+        margin: -9px 0 0 0;
+    }
+    #mainContent #sidebar ul.blogTitles li a:hover {
+        background: none!important;
+        color: #6A61AA!important;
+    }
+    /* #mainContent #sidebar ul li.blogYear { border-top:3px solid #fff;} */
+    #monthlyArchive li.extended {
+        border-bottom: 2px solid #fff;
+    }
+    #mainContent #monthlyArchive li.extended+li {
+        border-top: none;
+    }
+    #homePhaseMap{
+        display: none;
+    }
+    #footerLeftIconList,
+    #footerRightIconList{
+        position: static;
+        text-align: center;
+    }
+    div#homeRightContent .mediaBox > img{
+    }
+    div#homeRightContent .mediaBox > img,
+    div#homeRightContent .mediaBox{
+        /*height: 60vw!important;
+        width: 100%!important;*/
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    #header #search{
+        display: none;
+    }
+    .custom-logo-link{
+        height: 90px;
+        display: inline-block;
+        position: relative;
+    }
+    .custom-logo-link > img{
+        position: absolute;
+        bottom: 0;
+    }
+    #header .header-logo{
+        position: relative;
+    }
+    #header .header-logo #LogoText{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-90%);
+        right: 0;
+        left: 100px;
+        text-align: left;
+        width: auto;
+    }
+    #prevBtn, #nextBtn, #slider1next, #slider1prev{
+        top: 50%;
+        margin-top: -22px;
+    }
+    div#videosListing{
+        width: 100%;
+    }
+    #content img{
+        max-width: 100%;
+        height: auto !important;
+    }
+    div#phaseTabs{
+        background: none;
+    }
+    #nav.menu>li:not(.current-menu-ancestor):first-child>.sub-menu{
+        display: none;
+    }
+    #siteplan-container img{
+        max-width: 100%;
+        height: auto !important;
+    }
+    #siteplan-container, #rendering-container{
+        width: 94%;
+        margin: auto;
+    }
+    #interactiveMap{
+        width: 100%;
+    }
+    .mec-calendar .mec-calendar-events-side{
+        width: 100%;
+    }
+    div#content.boardpage .bios-item{
+        max-width: 100%;
+        width: 100%;
+    }
+    .iwillride{
+        width: 100%;
+    }
+    div#contentArea{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding-top: 45px;
+    }
+    .container.mobile-gallery {
+        padding-top:0;
+    }
+    #contentArea img {
+        float:none !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #header .header-logo #LogoText{
+        font-size: 20px;
+    }
+    .mec-single-event .mec-events-meta-group-countdown{
+        margin: 0;
+    }
+
+
+}
+
+/* Toggle */
+.toggle-header span.ui-icon-triangle-1-e {
+    transition: all .2s ease-in-out;
+}
+.toggle-header.toggle-open span.ui-icon-triangle-1-e {
+    transform: rotate(90deg);
+}
+.toggle-content.toggle-open {
+    display: block;
+}
+
+/**/

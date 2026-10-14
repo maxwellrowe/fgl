@@ -1,0 +1,310 @@
+/* Custom Fullcalendar CSS */
+div#calendarArea {
+	margin-bottom: 5px;
+}
+
+.fc-list-empty {
+	background: transparent;
+	font-style: italic;
+	text-align: left;
+}
+
+.fc-toolbar {
+	padding: 10px 0 0 0;
+}
+
+#calbuttons {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+#calbuttons button {
+	background:transparent;
+	text-shadow: none;
+	box-shadow: none;
+	border:none;
+	padding:0;
+	display: inline-block;
+	width: 13px;
+	height: 20px;
+	cursor: pointer;
+}
+
+#calbuttons button#calendarprev {
+	background-image: url('../images/arrow-left.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-right: 100px;
+}
+
+#calbuttons button#calendarnext {
+	background-image: url('../images/arrow-right.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-left: 100px;
+}
+
+.fc-center h2 {
+	color: #3b5ba7;
+	font-size: 12px;
+	display: inline;
+}
+
+td.fc-widget-header {
+	border:none !important;
+}
+
+.fc-day-grid-container .fc-today {
+	font-weight: bold;
+}
+
+.fc-unthemed td.fc-today {
+	background-color: #efefef;
+}
+
+.fc-day-grid-event {
+	padding:0 !important;
+	border:none !important;
+	background-color: #fff !important;
+}
+
+.fc-day-grid-event .fc-content {
+	white-space: normal;
+	line-height: 1.2;
+	padding: 4px;
+}
+
+.fc-day-grid-event .fc-content.eventcancelled {
+	text-decoration: line-through;
+}
+
+.fc-day-grid-event .fc-content.jpa-and-tac-meeting {
+	background-color: #c3c4d7;
+}
+
+.fc-day-grid-event .fc-content.community-meeting {
+	background-color: #cccccc;
+}
+
+.fc-day-grid-event .fc-content.board-meeting {
+	background-color: #eaddb5;
+}
+
+.fc-day-grid-event .fc-content span.fc-time {
+	font-weight: normal;
+}
+
+.fc-day-header.fc-widget-header {
+	font-size: 10px;
+	font-weight: normal;
+	color: #000;
+	border:none;
+	height: 14px;
+	vertical-align: top;
+}
+
+.fc-day-number {
+	font-size: 10px;
+	text-align: right;
+}
+
+
+.fc-content .fc-title {
+	font-size: 10px;
+}
+
+.fc-event-container a {
+	color: #000;
+	text-decoration: none;
+}
+
+.fc-event-container a:hover {
+	color: #000;
+}
+
+.fc-list-item td.yepitsgood {
+	background-color: #fff;
+}
+
+/* Right Calendar */
+
+.fc-list-view {
+	border:none;
+}
+
+#contentRightEventsContent table,
+#contentRightEventsContent table tbody,
+#contentRightEventsContent table tr,
+#contentRightEventsContent table tr td,
+#contentRightEventsContent table tr th {
+	border:none;
+}
+
+.callistheader {
+	margin-bottom: 10px;
+}
+
+th.calDateCol {
+	width: 30%;
+	text-align: left;
+}
+
+th.calDateCommittees {
+	width: 55%;
+	text-align: left;
+}
+
+th.calDateTime {
+	width: 15%;
+	text-align: left;
+}
+
+#contentRight .fc-header-toolbar button.fc-button {
+	height:0;
+	width: 0;
+	overflow: hidden;
+	cursor: text;
+	box-shadow: none;
+	text-shadow: none;
+	background:transparent;
+}
+
+#contentRightEventsContent .fc-toolbar {
+	display: none;
+}
+
+.fc-unthemed .fc-list-item:hover td {
+	background: transparent;
+}
+
+/*.fc-list-item-marker {
+	display: none;
+}*/
+
+.fc-list-heading {display: none;}
+
+.fc-list-item td {
+	white-space: normal;
+	padding-left:0;
+	padding-right: 0;
+}
+
+.fc-list-item .fc-list-item-time {
+	width: 30%;
+}
+
+.fc-list-item .fc-list-item-marker {
+	width: 53%;
+	white-space: normal;
+	font-size: 11px;
+	padding-right: 2%
+	
+}
+
+.fc-list-item .fc-list-item-title {
+	width: 15%;
+	text-align: left;
+	font-size: 11px;
+}
+
+span.caleventtitle {
+	font-weight: bold;
+	display: block;
+	line-height: 1.2;
+	margin-bottom: 7px;
+}
+
+/* Right Content */
+
+.caleventcontentmore {
+	font-weight: bold;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	padding-left: 19px;
+	line-height: 20px;
+	cursor: pointer;
+	background-image: url('../images/arrow-yellow-off.gif');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto;
+}
+
+.caleventcontentmore:hover {
+	text-decoration: underline;
+}
+
+.caleventcontentmore.caleventmoreactive {
+	background-image: url('../images/arrow-yellow-on.gif');
+}
+
+.caleventcontent {
+	display: none;
+}
+
+.caleventcontent img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.calattachment {
+	display: block;
+	margin-top: 5px;
+}
+
+.fc-list-item-marker.fc-widget-content.eventcancelled {
+	text-decoration: line-through;
+}
+
+.calendarPage .halfBtmContentCalMobile {
+	display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 900px) {
+	#calendarfc .fc-view-container {
+		
+	}
+	
+	.calendarPage .halfBtmContent {
+		display: none;
+	}
+	
+	.calendarPage .halfBtmContent.halfBtmContentCalMobile {
+		display:block;
+		height: auto;
+		background:none;
+		clear:both;
+		margin-top: 20px;
+	}
+	
+	table#calendarTodayTable td.calTodayTypeCol {
+		width: auto !important;
+	}
+	
+	div#calendarArea {
+		
+		width: 100% !important;
+		border: none;
+	}
+	
+	div.calendarPage div#contentRight {
+		background:transparent;
+		overflow: auto;
+		height: auto;
+	}
+	
+	div.calendarPage div#contentRight .fc-list-item {
+		border-bottom: 30px solid #fff;
+	}
+	
+	.callistheader {
+		display: none;
+	}
+}

@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+wp-config.php
+
+# Dependencies and local tooling
+node_modules/
+.idea/
+.vscode/
+
+# WordPress runtime files and backups
+/uploads/
+/cache/
+/upgrade/
+/backups/
+*.log
+*.sql
+*.sql.gz
