@@ -69,7 +69,7 @@ td.fc-widget-header {
 .fc-day-grid-event {
 	padding:0 !important;
 	border:none !important;
-	background-color: #fff !important;
+	background-color: var(--color-white) !important;
 }
 
 .fc-day-grid-event .fc-content {
@@ -127,7 +127,7 @@ td.fc-widget-header {
 }
 
 .fc-list-item td.yepitsgood {
-	background-color: #fff;
+	background-color: var(--color-white);
 }
 
 /* Right Calendar */
@@ -301,7 +301,7 @@ span.caleventtitle {
 	}
 	
 	div.calendarPage div#contentRight .fc-list-item {
-		border-bottom: 30px solid #fff;
+		border-bottom: 30px solid var(--color-white);
 	}
 	
 	.callistheader {

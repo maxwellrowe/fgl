@@ -22,16 +22,16 @@
         } ?></title>
         <meta name="keywords" content="los angeles metro, metro gold line, foothill extension">
         <meta name="description" content="The Foothill Extension will continue the Metro Gold Line light-rail line from East Pasadena to Montclair.">
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource.css">
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource.css?v=1.16">
 
-        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource(1).css?v=1.2">
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource(1).css?v=1.16">
         <link rel="shortcut icon" href="">
 
-        <link rel="stylesheet" type="text/css" media="print" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource(2).css">
+        <link rel="stylesheet" type="text/css" media="print" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource(2).css?v=1.16">
 
         <!--Full Calendar -->
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/fullcalendar/fullcalendar.min.css">
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/fullcalendar/fccustom.css?v=1.3">
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/fullcalendar/fccustom.css?v=1.16">
 
         <style type="text/css">
 

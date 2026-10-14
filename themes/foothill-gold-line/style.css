@@ -15,6 +15,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 */
 
+/* Shared Foothill Gold Line palette. */
+:root {
+    --color-sage: #AEB57E;
+    --color-primary: #313984;
+    --color-dark-blue: #10155E;
+    --color-periwinkle: #A9A5CD;
+    --color-yellow: #DCA90E;
+    --color-tan-800: #DEC78A;
+    --color-tan-400: #E4D2A0;
+    --color-tan-200: #F1E6C8;
+    --color-gray-300: #C2C2C2;
+    --color-white: #FFFFFF;
+    --color-tan-100: #FAF4E5;
+    --color-gray-border: #B9B2A1;
+}
+
 #contentArea div#subNav {
     margin-top:0;
 }
@@ -28,7 +44,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #fgl-language-selector .sub-menu {
     display: none;
-    background-color: #F7F4EC;
+    background-color: var(--color-tan-100);
 }
 
 #fgl-language-selector li {
@@ -39,16 +55,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #fgl-language-selector li.fgl-translate-button a {
-    background: #f7f4ec; /* Old browsers */
-    background: -moz-linear-gradient(top,  #f7f4ec 0%, #f1e6c8 67%, #f1e6c8 91%, #e4d2a0 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: var(--color-tan-100); /* Old browsers */
+    background: -moz-linear-gradient(top,  var(--color-tan-100) 0%, var(--color-tan-200) 67%, var(--color-tan-200) 91%, var(--color-tan-400) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  var(--color-tan-100) 0%,var(--color-tan-200) 67%,var(--color-tan-200) 91%,var(--color-tan-400) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  var(--color-tan-100) 0%,var(--color-tan-200) 67%,var(--color-tan-200) 91%,var(--color-tan-400) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f4ec', endColorstr='#e4d2a0',GradientType=0 ); /* IE6-9 */
-    color: #10155E;
+    color: var(--color-dark-blue);
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 10px;
-    border: 1px solid #DEC78A;
+    border: 1px solid var(--color-tan-800);
     position: relative;
     width: 73px;
     text-align: left;
@@ -73,19 +89,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #fgl-language-selector li.fgl-translate-button a:hover {
-    background-color: #F7F4EC;
-    border-bottom-color: #F7F4EC;
+    background-color: var(--color-tan-100);
+    border-bottom-color: var(--color-tan-100);
 }
 
 #fgl-language-selector li ul.sub-menu {
     z-index: 999;
     position: relative;
     top: 2px;
-    background-color: #F7F4EC;
+    background-color: var(--color-tan-100);
     width: 85px;
     padding:0;
     margin:0;
-    border: 1px solid #DEC78A;
+    border: 1px solid var(--color-tan-800);
     border-radius: 10px;
 }
 
@@ -100,7 +116,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #fgl-language-selector li ul.sub-menu li a:hover {
-    color: #32378D;
+    color: var(--color-primary);
     text-decoration: underline;
 }
 
@@ -156,6 +172,7 @@ ul li.mobile-menu-translate {display: none;}
         top:0;
     }
     #fgl-language-selector li.fgl-translate-button a {
+    font-size: 12px;
         width: calc(100% - 12px);
         text-align: left;
         padding: 15px 0 15px 12px;
@@ -190,13 +207,14 @@ ul li.mobile-menu-translate {display: none;}
     top:-3px;
 }
 a.header-signup-button {
+    font-size: 12px;
     display: inline-block;
-    background: rgb(215,172,5); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(215,172,5,1) 0%, rgba(191,160,5,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(215,172,5,1) 0%,rgba(191,160,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(215,172,5,1) 0%,rgba(191,160,5,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: var(--color-yellow); /* Old browsers */
+    background: -moz-linear-gradient(top, var(--color-yellow) 0%, rgba(191,160,5,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, var(--color-yellow) 0%,rgba(191,160,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, var(--color-yellow) 0%,rgba(191,160,5,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7ac05', endColorstr='#bfa005',GradientType=0 ); /* IE6-9 */
-    color: #fff !important;
+    color: var(--color-white) !important;
     border-radius: 10px;
     padding: 8px 12px;
     text-decoration: none !important;
@@ -290,9 +308,9 @@ ul#nav>li:last-child {
 #header .nav-about-us-funding-status a,
 #header .nav-news-funding-status a,
 #header .nav-meetings-events-funding-status a {
-    border: 1px solid #10155e;
+    border: 1px solid var(--color-dark-blue);
     border-radius: 5px;
-    color: #10155e;
+    color: var(--color-dark-blue);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 8px;
@@ -336,6 +354,7 @@ ul#nav>li:last-child {
 }
 
 #mobile-header-utilities a.header-signup-button {
+    font-size: 12px;
     display: block;
     padding: 14px 0;
 }
@@ -612,10 +631,10 @@ div#phaseMap .phasesMapRollover:hover {
 }
 
 .tabsPanel.eventsPanel .mec-event-list-classic .mec-event-article {
-    color: #10155e;
+    color: var(--color-dark-blue);
     margin: 0px;
     padding: 17px 57px 12px 34px;
-    border-bottom: solid 1px #b9b2a1;
+    border-bottom: solid 1px var(--color-gray-border);
     font-size: 12px;
 }
 
@@ -711,8 +730,8 @@ div#leftCornerBox>img {
 }
 
 #breadcrumbs a {
-    background-color: #10155e;
-    color: #ffffff;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
     text-decoration: none;
     padding: 2px 6px 2px 6px;
     margin-bottom: 30px;
@@ -738,9 +757,9 @@ div#leftCornerBox>img {
 
 
 .funding a {
-    border: 1px solid #10155e;
+    border: 1px solid var(--color-dark-blue);
     border-radius: 5px;
-    color: #10155e;
+    color: var(--color-dark-blue);
     padding: 10px;
     text-decoration: none;
     z-index: 999;
@@ -837,11 +856,11 @@ FOOTER
 
 #footer a.footer-button {
     background: #3e44ad; /* Old browsers */
-    background: -moz-linear-gradient(top,  #3e44ad 0%, #32378d 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #3e44ad 0%,#32378d 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #3e44ad 0%,#32378d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top,  #3e44ad 0%, var(--color-primary) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #3e44ad 0%,var(--color-primary) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #3e44ad 0%,var(--color-primary) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e44ad', endColorstr='#32378d',GradientType=0 ); /* IE6-9 */
-    color: #F1E6C8;
+    color: var(--color-tan-200);
     border-radius: 8px;
     padding: 0 8px;
     height: 30px;
@@ -851,19 +870,19 @@ FOOTER
     text-decoration: none;
     display: block;
     text-align: center;
-    border: 1px solid #10155E;
+    border: 1px solid var(--color-dark-blue);
 }
 
 #footer a.footer-button:hover {
-    background: #32378D;
-    background-color: #32378D;
-    border-color: #32378D;
+    background: var(--color-primary);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
     background
 }
 
 #footer a.footer-button.footer-i-will-ride {
     font-weight: 600;
-    color: #323984;
+    color: var(--color-primary);
     padding-left: 28px;
     background: transparent;
     position: relative;
@@ -874,7 +893,7 @@ FOOTER
 }
 
 #footer a.footer-button.footer-i-will-ride:hover {
-    background-color: #F1E6C8;
+    background-color: var(--color-tan-200);
 }
 
 #footer .footer-social a.footer-button {
@@ -913,7 +932,7 @@ FOOTER
         line-height: 30px !important;
         position: relative;
         top: -8px;
-        font-size: 11px;
+        font-size: 12px;
     }
 
 
@@ -1090,15 +1109,15 @@ FOOTER
 
     .breadcrumbs a:link,
     .breadcrumbs a:visited {
-        color: #11155f;
+        color: var(--color-dark-blue);
         font-weight: bold;
         padding: 4px 0;
     }
 
     .breadcrumbs ul li:first-child a:link,
     .breadcrumbs ul li:first-child a:visited {
-        background-color: #11155f;
-        color: #fff;
+        background-color: var(--color-dark-blue);
+        color: var(--color-white);
         padding: 4px;
         text-decoration: none;
     }
@@ -1180,7 +1199,7 @@ FOOTER
         width: 100%;
         padding: 4px 2px 2px 3px;
         margin-bottom: 0.5em;
-        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/form-text-bg.gif') #ffffff repeat-x;
+        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/form-text-bg.gif') var(--color-white) repeat-x;
         border: solid 1px #c6c6c6;
         font-size: 13px;
         line-height: 1.4em;
@@ -1244,7 +1263,7 @@ FOOTER
         text-align: center;
         /*background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/body-bg.jpg') center top #ffffff; */
         font: 13px verdana, arial, helvetica;
-        background: #fff!important;
+        background: var(--color-white)!important;
     }
     #container {
         /*position: absolute;*/
@@ -1255,7 +1274,7 @@ FOOTER
         width: 100%;
         text-align: left;
         line-height: 1.4em;
-        color: #10155e;
+        color: var(--color-dark-blue);
         background-image: url('images/skins-oranges-mobile-bg.jpg');
         background-repeat: no-repeat;
         background-position: left top;
@@ -1264,7 +1283,7 @@ FOOTER
     #header {
         margin: 0;
         padding: 0 2% 2% 2%;
-        background-color: #fff;
+        background-color: var(--color-white);
         align: center;
     }
     #mobile-header-utilities {
@@ -1280,8 +1299,8 @@ FOOTER
     #mobile-header-utilities a.mobile-funding-status-button {
         display: block;
         max-width: 300px;
-        border: 1px solid #10155C;
-        color: #10155C;
+        border: 1px solid var(--color-dark-blue);
+        color: var(--color-dark-blue);
         text-decoration: none;
         font-size: 15px;
         text-align: center;
@@ -1290,7 +1309,7 @@ FOOTER
         border-radius: 5px;
     }
     #contentArea {
-        background-color: #fff;
+        background-color: var(--color-white);
     }
     #contentArea:after {
         content:'';
@@ -1375,14 +1394,14 @@ FOOTER
     }
 
     #scotch-panel {
-        background-color: #F1E6C8;
+        background-color: var(--color-tan-200);
     }
 
     .scotch-is-showing #scotch-panel {
             -webkit-box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.25);
             -moz-box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.25);
         box-shadow: -2px 0px 14px 0px rgba(0,0,0,0.25);
-        border-left: 1px solid #DEC78A;
+        border-left: 1px solid var(--color-tan-800);
     }
 
     /* UL */
@@ -1401,17 +1420,17 @@ FOOTER
     }
 
     ul#mobile-nav li a {
-        color: #10155E;
+        color: var(--color-dark-blue);
         text-decoration: none;
         padding: 0 15px;
         display: block;
         line-height: 40px;
-        background: rgb(228,210,160); /* Old browsers */
-        background: -moz-linear-gradient(left, rgba(228,210,160,1) 0%, rgba(241,230,200,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(228,210,160,1) 0%,rgba(241,230,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(228,210,160,1) 0%,rgba(241,230,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: var(--color-tan-400); /* Old browsers */
+        background: -moz-linear-gradient(left, var(--color-tan-400) 0%, var(--color-tan-200) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, var(--color-tan-400) 0%,var(--color-tan-200) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, var(--color-tan-400) 0%,var(--color-tan-200) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4d2a0', endColorstr='#f1e6c8',GradientType=1 ); /* IE6-9 */
-        border-bottom: 1px solid #DEC78A;
+        border-bottom: 1px solid var(--color-tan-800);
     }
 
     ul#mobile-nav li a:after {
@@ -1430,11 +1449,11 @@ FOOTER
     ul#mobile-nav li ul {
         display: none;
         padding: 15px;
-        border-bottom: 1px solid #DEC78A;
+        border-bottom: 1px solid var(--color-tan-800);
     }
 
     ul#mobile-nav li ul li a {
-        background: #F1E6C8 !important;
+        background: var(--color-tan-200) !important;
     }
 
     ul#mobile-nav li.menu-item-has-children {
@@ -1454,12 +1473,12 @@ FOOTER
         position: absolute;
         right:0;
         top: 0;
-        border-left: 1px solid #DEC78A;
-        border-bottom: 1px solid #DEC78A;
+        border-left: 1px solid var(--color-tan-800);
+        border-bottom: 1px solid var(--color-tan-800);
     }
 
     ul#mobile-nav li.menu-item-has-children.current-menu-parent span.mobile-menu-toggle {
-        border-bottom-color: #F1E6C8;
+        border-bottom-color: var(--color-tan-200);
         background-image: url('images/caret-up@2x.png');
     }
 
@@ -1480,13 +1499,13 @@ FOOTER
     /* ------------------------------------------------------------------------------------------*/
     div.tabs {
         margin: 0px;
-        color: #10155e;
+        color: var(--color-dark-blue);
         width: 100%;
         position: relative;
     }
     div.tabs li a:link,
     div.tabs li a:visited {
-        color: #10155e;
+        color: var(--color-dark-blue);
         text-decoration: none;
     }
     div.tabs li a:hover {
@@ -1506,7 +1525,7 @@ FOOTER
         color: #BA8D16;
     }
     div.tabs ul.tabLabels li.ui-tabs-selected a:hover {
-        color: #10155e;
+        color: var(--color-dark-blue);
     }
     div.tabs ul.tabLabels li.tabLabel1 {
         margin: 1% 2% 1% 2%;
@@ -1648,7 +1667,7 @@ FOOTER
         margin: 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -1741,14 +1760,14 @@ FOOTER
         width: 100%;
         height: auto;
         position: relative;
-        background: #fff;
+        background: var(--color-white);
         padding-bottom: 50px;
     }
     .newsPanel li,
     .eventsPanel li {
         clear: both;
         padding-bottom: 10px;
-        border-bottom: solid 1.5px #b9b2a1;
+        border-bottom: solid 1.5px var(--color-gray-border);
         position: relative;
     }
     .newsPanel li:last-child,
@@ -1761,7 +1780,7 @@ FOOTER
         clear: both;
         position: relative;
         margin: 0px;
-        border-bottom: solid 1.5px #b9b2a1;
+        border-bottom: solid 1.5px var(--color-gray-border);
     }
     .videoPanel img {
         float: left;
@@ -1827,7 +1846,7 @@ FOOTER
         margin: 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -1868,7 +1887,7 @@ FOOTER
         margin: 0% 5% 0% 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 5px;
         border: 0px solid #5e5e5e;
@@ -1883,7 +1902,7 @@ FOOTER
         margin: 0% 5% 0% 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background: #ffffff;
+        background: var(--color-white);
         position: relative;
         margin-top: 5px;
         border: 0px solid #5e5e5e;
@@ -2025,14 +2044,14 @@ FOOTER
         display: block;
         padding: 2px 3px 0px 3px;
         text-decoration: none;
-        color: #10155e;
+        color: var(--color-dark-blue);
         height: auto;
     }
     div#subNav li a:hover {
         display: block;
         padding: 2px 3px 0px 3px;
         text-decoration: none;
-        color: #10155e;
+        color: var(--color-dark-blue);
         background:none;
     }
     div#subNav a {
@@ -2063,7 +2082,7 @@ FOOTER
         margin: 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -2209,7 +2228,7 @@ FOOTER
     }
     ol#controls li.current a {
         background: #5DC9E1;
-        color: #fff;
+        color: var(--color-white);
     }
     ol#controls li a:focus,
     #prevBtn a:focus,
@@ -2224,7 +2243,7 @@ FOOTER
     /* ------------------------------------------------------------------------------------------*/
     div#cityTabs {
         margin: 0px;
-        color: #10155e;
+        color: var(--color-dark-blue);
         width: 100%;
         position: relative;
         float: left;
@@ -2236,7 +2255,7 @@ FOOTER
         margin: 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -2267,7 +2286,7 @@ FOOTER
         word-wrap: break-word;
         float: left;
         margin: 2%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -2286,7 +2305,7 @@ FOOTER
         margin: 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background: #ffffff;
+        background: var(--color-white);
         position: relative;
         margin-top: 5px;
         border: 0px solid #5e5e5e;
@@ -2307,7 +2326,7 @@ FOOTER
         margin: 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 5px;
         border: 0px solid #5e5e5e;
@@ -2365,7 +2384,7 @@ FOOTER
         margin: 0% 5% 0% 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 5px;
         border: 0px solid #5e5e5e;
@@ -2410,7 +2429,7 @@ FOOTER
         margin: 0 auto;
     }
     tr.calRow td {
-        border-top: solid 1px #c2c2c2;
+        border-top: solid 1px var(--color-gray-300);
         float: left;
     }
     tr.calFirstRow {
@@ -2418,7 +2437,7 @@ FOOTER
         float: left;
     }
     table#calendarTable td {
-        border-left: solid 1px #c2c2c2;
+        border-left: solid 1px var(--color-gray-300);
         float: left;
     }
     table#calendarTable tr.calendarDaysHeader td,
@@ -2524,7 +2543,7 @@ FOOTER
         margin: 0% 5% 0% 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 5px;
         border: 0px solid #5e5e5e;
@@ -2606,7 +2625,7 @@ FOOTER
         margin: 0% 5% 0% 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 5px;
         border: 0px solid #5e5e5e;
@@ -2623,7 +2642,7 @@ FOOTER
         margin: 5%;
         padding: 3%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -2695,7 +2714,7 @@ FOOTER
         margin: 5%;
         padding: 3%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -2744,7 +2763,7 @@ FOOTER
         overflow: auto;
         margin: 0px;
         padding: 7px 20px 7px 20px;
-        border-bottom: solid 1px #b9b2a1;
+        border-bottom: solid 1px var(--color-gray-border);
     }
     #videosListing li:last-child {
         padding-bottom: 8px;
@@ -2754,7 +2773,7 @@ FOOTER
     #videosListing li a:visited,
     #videoArchive a:link,
     #videoArchive a:visited {
-        color: #10155e;
+        color: var(--color-dark-blue);
         text-decoration: none;
     }
     #videosListing li a:link.underline,
@@ -2883,7 +2902,7 @@ FOOTER
     div#phasePageMap {
         float: none;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--color-white);
         background-image: none;
         position: relative;
         margin-top: 5px;
@@ -2900,7 +2919,7 @@ FOOTER
     }
     div#phaseTabs {
         margin: 0px;
-        color: #10155e;
+        color: var(--color-dark-blue);
         width: 100%;
         position: relative;
         float: left;
@@ -2919,7 +2938,7 @@ FOOTER
         margin: 5%;
         padding: 2% 4% 2% 4%;
         width: 82%;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         position: relative;
         margin-top: 15px;
         border: 0px solid #5e5e5e;
@@ -2997,10 +3016,10 @@ FOOTER
         position: relative;
         width: 100%;
         padding: 0 0 40px 0px;
-        color: #10155e;
+        color: var(--color-dark-blue);
         margin-top: 0px;
         height: auto;
-        background: #fff;
+        background: var(--color-white);
     }
 
     #footer .footer-buttons,
@@ -3188,7 +3207,7 @@ FOOTER
     }
     ul#nav a:link,
     ul#nav a:visited {
-        color: #10155e;
+        color: var(--color-dark-blue);
         text-decoration: none;
     }
     ul#nav>li{
@@ -3197,7 +3216,7 @@ FOOTER
     ul#nav>li>a {
         display: block;
         padding: 15px 0px 15px 0px;
-        color: #10155e;
+        color: var(--color-dark-blue);
     }
     ul#nav a,
     ul#nav a:hover {
@@ -3325,13 +3344,13 @@ FOOTER
         color: #000;
     }
     #mainContent #sidebar #SBvids h3 {
-        color: #fff;
+        color: var(--color-white);
     }
     #monthlyArchive li {
         list-style: none;
     }
     #monthlyArchive ul>li {
-        color: #fff;
+        color: var(--color-white);
         padding: 0px;
     }
     #mainContent #sidebar #monthlyArchive ul li ul {
@@ -3372,7 +3391,7 @@ FOOTER
     }
     #monthlyArchive .blogMonths>li .blogTitles {
         display: block;
-        background: #fff!important;
+        background: var(--color-white)!important;
     }
     #monthlyArchive .blogMonths .monthExtended .blogTitles {
         display: block;
@@ -3382,7 +3401,7 @@ FOOTER
         padding: 0;
         background: none;
         float: none;
-        color: #fff;
+        color: var(--color-white);
     }
     #mainContent #sidebar ul li.extended>a,
     #mainContent #sidebar ul li.extended>a:hover,
@@ -3409,11 +3428,11 @@ FOOTER
         border-top: none;
     }
     #mainContent #sidebar ul li li.monthExtended li {
-        background: #fff;
+        background: var(--color-white);
     }
     #mainContent #sidebar ul li li li a {
         text-transform: none;
-        background: #fff;
+        background: var(--color-white);
         color: #000000 !important;
         position: relative;
     }
@@ -3441,7 +3460,7 @@ FOOTER
     }
     /* #mainContent #sidebar ul li.blogYear { border-top:3px solid #fff;} */
     #monthlyArchive li.extended {
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid var(--color-white);
     }
     #mainContent #monthlyArchive li.extended+li {
         border-top: none;
@@ -3583,6 +3602,7 @@ input[type="reset"],
 .footer-button,
 .footer-button.footer-i-will-ride,
 .header-signup-button,
-.fgl-translate-button a {
+.fgl-translate-button a,
+div.tabs ul.tabLabels a {
     font-family: 'Barlow', Arial, sans-serif;
 }
