@@ -163,7 +163,8 @@ add_action('widgets_init', 'foothill_gold_line_widgets_init');
  * Enqueue scripts and styles.
  */
 function foothill_gold_line_scripts() {
-    wp_enqueue_style('foothill-gold-line-style', get_stylesheet_uri(), array(), '1.12');
+    wp_enqueue_style('foothill-gold-line-barlow', 'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap', array(), null);
+    wp_enqueue_style('foothill-gold-line-style', get_stylesheet_uri(), array('foothill-gold-line-barlow'), '1.13');
 
     wp_enqueue_script('foothill-gold-line-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 

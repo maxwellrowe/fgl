@@ -3567,3 +3567,22 @@ FOOTER
 }
 
 /**/
+/* Shared heading and button typography, after the legacy responsive styles. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#site-title,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.wp-block-button__link,
+.footer-button,
+.footer-button.footer-i-will-ride,
+.header-signup-button,
+.fgl-translate-button a {
+    font-family: 'Barlow', Arial, sans-serif;
+}
