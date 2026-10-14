@@ -253,7 +253,7 @@
 
                     <div class="header-signup"><a href="<?php bloginfo(
                       "url"
-                    ); ?>/dual_content/sign-up-for-e-news/" class="header-signup-button">Sign Up for Project Updates</a></div>
+                    ); ?>/dual_content/sign-up-for-e-news/" class="header-signup-button fgl-button fgl-button--primary">Sign Up for Project Updates</a></div>
                     <!-- Language Switcher  via WP Menu -->
                     <?php wp_nav_menu([
                       "theme_location" => "language-selector",
@@ -288,7 +288,7 @@
 		                <div style="width: 70%; float: left;">
 			                <a href="<?php bloginfo(
                      "url"
-                   ); ?>/dual_content/sign-up-for-e-news/" class="header-signup-button">Sign Up for Project Updates</a>
+                   ); ?>/dual_content/sign-up-for-e-news/" class="header-signup-button fgl-button fgl-button--primary">Sign Up for Project Updates</a>
 		                </div>
 		                <div style="width: 30%; float: right; position: relative;">
 			            	  <!-- Language Switcher  via WP Menu -->

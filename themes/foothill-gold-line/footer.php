@@ -23,9 +23,12 @@
 
 		        <ul id="footerLeftIconList">
 
-			         <?php while ( have_rows('footer_left','option') ) : the_row(); ?>
+			         <?php while ( have_rows('footer_left','option') ) : the_row();
+                            $button_class = (string) get_sub_field('button_class');
+                            $button_variant = in_array('footer-i-will-ride', preg_split('/\s+/', trim($button_class)), true) ? 'light' : 'primary';
+                        ?>
 
-			         	<li><a href="<?php the_sub_field('link'); ?>" class="footer-button <?php the_sub_field('button_class'); ?>"><?php the_sub_field('button_text'); ?></a></li>
+                        <li><a href="<?php the_sub_field('link'); ?>" class="footer-button fgl-button fgl-button--<?php echo esc_attr($button_variant); ?> <?php echo esc_attr($button_class); ?>"><?php the_sub_field('button_text'); ?></a></li>
 
 					 <?php endwhile; ?>
 

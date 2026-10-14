@@ -164,7 +164,7 @@ add_action('widgets_init', 'foothill_gold_line_widgets_init');
  */
 function foothill_gold_line_scripts() {
     wp_enqueue_style('foothill-gold-line-barlow', 'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap', array(), null);
-    wp_enqueue_style('foothill-gold-line-style', get_stylesheet_uri(), array('foothill-gold-line-barlow'), '1.17');
+    wp_enqueue_style('foothill-gold-line-style', get_stylesheet_uri(), array('foothill-gold-line-barlow'), '1.19');
 
     wp_enqueue_script('foothill-gold-line-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
@@ -307,3 +307,13 @@ function my_breadcrumb($theme_location = 'main', $separator = ' &gt; ') {
     }
     echo implode($separator, $crumbs);
 }
+
+/** Apply the shared tan button style to the language menu trigger. */
+function foothill_gold_line_language_button_attributes($atts, $item, $args, $depth) {
+    if (isset($args->theme_location) && 'language-selector' === $args->theme_location
+        && 0 === $depth && in_array('fgl-translate-button', (array) $item->classes, true)) {
+        $atts['class'] = trim(($atts['class'] ?? '') . ' fgl-button fgl-button--tan');
+    }
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'foothill_gold_line_language_button_attributes', 10, 4);

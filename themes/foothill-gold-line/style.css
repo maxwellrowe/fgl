@@ -55,23 +55,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #fgl-language-selector li.fgl-translate-button a {
-    background: var(--color-tan-100); /* Old browsers */
-    background: -moz-linear-gradient(top,  var(--color-tan-100) 0%, var(--color-tan-200) 67%, var(--color-tan-200) 91%, var(--color-tan-400) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  var(--color-tan-100) 0%,var(--color-tan-200) 67%,var(--color-tan-200) 91%,var(--color-tan-400) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  var(--color-tan-100) 0%,var(--color-tan-200) 67%,var(--color-tan-200) 91%,var(--color-tan-400) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f4ec', endColorstr='#e4d2a0',GradientType=0 ); /* IE6-9 */
-    color: var(--color-dark-blue);
-    font-weight: bold;
-    font-size: 12px;
-    border-radius: 10px;
-    border: 1px solid var(--color-tan-800);
     position: relative;
-    width: 73px;
-    text-align: left;
-    padding: 6px 0 6px 12px;
-    text-decoration: none;
-    transition: all .2s ease-in-out;
-    display: block;
 }
 
 #fgl-language-selector li.fgl-translate-button > a:after {
@@ -89,8 +73,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #fgl-language-selector li.fgl-translate-button a:hover {
-    background-color: var(--color-tan-100);
-    border-bottom-color: var(--color-tan-100);
+    /* Hover appearance is provided by the shared button variant. */
 }
 
 #fgl-language-selector li ul.sub-menu {
@@ -172,11 +155,8 @@ ul li.mobile-menu-translate {display: none;}
         top:0;
     }
     #fgl-language-selector li.fgl-translate-button a {
-    font-size: 12px;
-        width: calc(100% - 12px);
-        text-align: left;
-        padding: 15px 0 15px 12px;
-    }
+    position: relative;
+}
     #fgl-language-selector li.fgl-translate-button > a:after {
         top: 20px;
         right: 12px;
@@ -207,25 +187,10 @@ ul li.mobile-menu-translate {display: none;}
     top:-3px;
 }
 a.header-signup-button {
-    font-size: 12px;
-    display: inline-block;
-    background: var(--color-yellow); /* Old browsers */
-    background: -moz-linear-gradient(top, var(--color-yellow) 0%, rgba(191,160,5,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, var(--color-yellow) 0%,rgba(191,160,5,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, var(--color-yellow) 0%,rgba(191,160,5,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7ac05', endColorstr='#bfa005',GradientType=0 ); /* IE6-9 */
-    color: var(--color-white) !important;
-    border-radius: 10px;
-    padding: 8px 12px;
-    text-decoration: none !important;
-    font-weight: bold;
+    vertical-align: middle;
 }
 a.header-signup-button:hover {
-    background: rgb(193,159,5); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(193,159,5,1) 0%, rgba(163,136,4,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(193,159,5,1) 0%,rgba(163,136,4,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(193,159,5,1) 0%,rgba(163,136,4,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19f05', endColorstr='#a38804',GradientType=0 ); /* IE6-9 */
+    /* Hover appearance is provided by the shared button variant. */
 }
 .page-404-searchform {
     position: relative;
@@ -354,9 +319,7 @@ ul#nav>li:last-child {
 }
 
 #mobile-header-utilities a.header-signup-button {
-    font-size: 12px;
-    display: block;
-    padding: 14px 0;
+    vertical-align: middle;
 }
 
 .container {
@@ -854,7 +817,7 @@ FOOTER
     display: inline-block;
 }
 
-#footer a.footer-button {
+#footer .footer-social a.footer-button {
     background: #3e44ad; /* Old browsers */
     background: -moz-linear-gradient(top,  #3e44ad 0%, var(--color-primary) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #3e44ad 0%,var(--color-primary) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -873,27 +836,18 @@ FOOTER
     border: 1px solid var(--color-dark-blue);
 }
 
-#footer a.footer-button:hover {
+#footer .footer-social a.footer-button:hover {
     background: var(--color-primary);
     background-color: var(--color-primary);
     border-color: var(--color-primary);
-    background
 }
 
 #footer a.footer-button.footer-i-will-ride {
-    font-weight: 600;
-    color: var(--color-primary);
-    padding-left: 28px;
-    background: transparent;
     position: relative;
-    background-image: url('images/cropped-FGL_Mark.png');
-    background-repeat: no-repeat;
-    background-position: left 4px center;
-    background-size: 18px 18px;
 }
 
 #footer a.footer-button.footer-i-will-ride:hover {
-    background-color: var(--color-tan-200);
+    /* Hover appearance is provided by the light variant. */
 }
 
 #footer .footer-social a.footer-button {
@@ -920,20 +874,13 @@ FOOTER
 
     }
     body.translatepress-es_MX #footer .footer-buttons ul#footerLeftIconList:first-child a.footer-button {
-        max-width: 150px;
-        line-height: 1.2;
-        padding-top: 4px;
-        padding-bottom: 4px;
-    }
+    max-width: 150px;
+    white-space: normal;
+}
 
     body.translatepress-es_MX #footer a.footer-button.footer-i-will-ride {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        line-height: 30px !important;
-        position: relative;
-        top: -8px;
-        font-size: 12px;
-    }
+    position: relative;
+}
 
 
 }
@@ -3665,4 +3612,89 @@ select {
 #searchForm #search-box:focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
+}
+
+/* Shared buttons: appearance is independent of header/footer placement. */
+.fgl-button {
+    --button-background: linear-gradient(to bottom, var(--color-primary) 0%, var(--color-primary) 78.846%, var(--color-dark-blue) 100%);
+    --button-color: var(--color-tan-200);
+    --button-border: var(--color-dark-blue);
+    --button-hover: var(--color-dark-blue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid var(--button-border);
+    border-radius: 8px;
+    background: var(--button-background);
+    color: var(--button-color);
+    font-family: 'Barlow', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease;
+}
+.fgl-button--primary {
+    --button-color: var(--color-tan-200);
+}
+.fgl-button--tan {
+    --button-background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-200) 78.846%, var(--color-tan-400) 100%);
+    --button-color: var(--color-dark-blue);
+    --button-border: var(--color-tan-800);
+    --button-hover: var(--color-tan-400);
+}
+.fgl-button--light {
+    --button-background: var(--color-white);
+    --button-color: var(--color-dark-blue);
+    --button-border: var(--color-primary);
+    --button-hover: var(--color-tan-200);
+}
+.fgl-button:link,
+.fgl-button:visited {
+    color: var(--button-color);
+}
+.fgl-button:hover,
+.fgl-button:active {
+    background: var(--button-hover);
+    color: var(--button-color);
+    text-decoration: none;
+}
+.fgl-button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+#footer .footer-buttons .fgl-button {
+    display: flex;
+}
+#footer .footer-i-will-ride.fgl-button::before {
+    content: '';
+    flex: 0 0 14px;
+    width: 14px;
+    height: 14px;
+    background: url('images/button-mark.png') center / contain no-repeat;
+}
+#fgl-language-selector li.fgl-translate-button > a.fgl-button {
+    padding: 8px 12px;
+    width: auto;
+    display: inline-flex;
+}
+#fgl-language-selector li.fgl-translate-button > a.fgl-button::after {
+    position: static;
+    flex: 0 0 8px;
+}
+#mobile-header-utilities a.header-signup-button.fgl-button {
+    display: flex;
+    padding: 8px 12px;
+}
+@media screen and (max-width: 900px) {
+    #fgl-language-selector li.fgl-translate-button > a.fgl-button {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 }
