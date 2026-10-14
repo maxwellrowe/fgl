@@ -1,1 +1,13 @@
-<?php// Exit if accessed directlyif (!defined('ABSPATH'))    exit;/** * Search Form Template * * @link           http://codex.wordpress.org/Function_Reference/get_search_form */?><form id="searchForm" method="post" id="searchform" action="<?php echo home_url('/'); ?>">    <input type="text" name="s" class="field" id="search-box"  placeholder="<?php esc_attr_e('search', 'foothill-gold-line'); ?>" onfocus="if (this.value == 'search') {                            this.value = '';                        }" onblur="if (this.value == '') {                                    this.value = 'search';                                }"></form>
+<?php
+// Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+?>
+<form id="searchForm" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+    <span class="search-icon" aria-hidden="true"></span>
+    <input type="search" name="s" class="field" id="search-box"
+        value="<?php echo get_search_query(); ?>"
+        aria-label="<?php esc_attr_e( 'Search', 'foothill-gold-line' ); ?>"
+        placeholder="<?php esc_attr_e( 'search', 'foothill-gold-line' ); ?>" />
+</form>
