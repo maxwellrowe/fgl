@@ -1,0 +1,51 @@
+name: Deploy WordPress via SFTP
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'themes/**'
+      - 'plugins/events/**'
+      - 'plugins/construction-maps/**'
+      - 'scripts/deploy-sftp.py'
+      - '.github/workflows/deploy-sftp.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-sftp
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Check PHP syntax
+        run: |
+          set -euo pipefail
+          find themes plugins/events plugins/construction-maps \
+            -type f -name '*.php' -print0 | xargs -0 -r -n 1 php -l
+
+      - name: Install SFTP client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes python3-paramiko
+
+      - name: Deploy to WP Engine
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_REMOTE_PATH: ${{ secrets.SFTP_REMOTE_PATH }}
+          SFTP_KNOWN_HOSTS: ${{ secrets.SFTP_KNOWN_HOSTS }}
+        run: /usr/bin/python3 scripts/deploy-sftp.py

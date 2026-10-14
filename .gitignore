@@ -10,6 +10,8 @@ wp-config.php
 
 # Dependencies and local tooling
 node_modules/
+__pycache__/
+*.pyc
 .idea/
 .vscode/
 

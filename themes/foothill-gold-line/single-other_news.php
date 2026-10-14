@@ -16,8 +16,8 @@ get_header();
     <h2 style="text-transform: capitalize"><?php echo $post_type_object->label; ?></h2>
     <?php echo get_the_date(); ?>
     <h3><?php the_title(); ?></h3>
-    <?php echo echo get_field("article_main_body"); ?>
-    <p><?php echo echo get_field("article_teaser"); ?></p>
+    <?php echo get_field("article_main_body"); ?>
+    <p><?php echo get_field("article_teaser"); ?></p>
 </div>
 <?php
 
