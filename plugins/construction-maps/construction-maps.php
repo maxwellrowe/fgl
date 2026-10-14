@@ -12,6 +12,7 @@ Author URI: https://mackeycreativelab.com
 	/*Include custom post type and taxonomies*/
 	include( plugin_dir_path( __FILE__ ) . 'cm-post-tax.php');
 	include( plugin_dir_path( __FILE__ ) . 'cm-acf-options.php');
+	include( plugin_dir_path( __FILE__ ) . 'cm-settings.php');
 	
 	// Enqueue Scripts and Styles
 	function construction_maps_enqueue_script() {   
@@ -29,7 +30,10 @@ Author URI: https://mackeycreativelab.com
 	
 	// Add Google Maps API Key
 	function my_acf_google_map_api( $api ){
-	    $api['key'] = 'AIzaSyBPnA68Dhw8VMqZgqdcJpCQaofUICAGQgE';
+	    $key = get_option( 'construction_maps_api_key', '' );
+	    if ( is_string( $key ) && '' !== $key ) {
+	        $api['key'] = $key;
+	    }
 	    return $api;
 	}
 	add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
