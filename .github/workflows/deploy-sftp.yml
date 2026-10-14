@@ -46,6 +46,6 @@ jobs:
           SFTP_PORT: ${{ secrets.WPE_SFTP_PORT }}
           SFTP_USERNAME: ${{ secrets.WPE_SFTP_USERNAME }}
           SFTP_PASSWORD: ${{ secrets.WPE_SFTP_PASSWORD }}
-          SFTP_REMOTE_PATH: ${{ secrets.WPE_SFTP_REMOTE_PATH }}
+          SFTP_REMOTE_PATH: ${{ secrets.SFTP_REMOTE_PATH }}
           SFTP_KNOWN_HOSTS: ${{ secrets.WPE_SFTP_KNOWN_HOSTS }}
         run: /usr/bin/python3 scripts/deploy-sftp.py
