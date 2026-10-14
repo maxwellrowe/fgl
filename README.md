@@ -28,12 +28,12 @@ Configure these repository Actions secrets:
 
 | Secret | Value |
 | --- | --- |
-| `SFTP_HOST` | SFTP hostname, without a protocol prefix |
-| `SFTP_PORT` | SFTP port; defaults to `22` if empty |
-| `SFTP_USERNAME` | SFTP username |
-| `SFTP_PASSWORD` | SFTP password |
-| `SFTP_REMOTE_PATH` | Existing remote `wp-content` directory containing `themes` and `plugins` |
-| `SFTP_KNOWN_HOSTS` | Verified OpenSSH known_hosts entries for the server |
+| `WPE_SFTP_HOST` | SFTP hostname, without a protocol prefix |
+| `WPE_SFTP_PORT` | SFTP port; defaults to `22` if empty |
+| `WPE_SFTP_USERNAME` | SFTP username |
+| `WPE_SFTP_PASSWORD` | SFTP password |
+| `WPE_SFTP_REMOTE_PATH` | Existing remote `wp-content` directory containing `themes` and `plugins` |
+| `WPE_SFTP_KNOWN_HOSTS` | Verified OpenSSH known_hosts entries for the server |
 
 For a nonstandard port, the known_hosts entry starts with `[hostname]:port`.
 Obtain the server's host key through a trusted connection or your hosting
