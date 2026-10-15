@@ -3253,9 +3253,6 @@ FOOTER
         max-width: 100% !important;
         height: auto !important;
     }
-    #header #search{
-        display: none;
-    }
     .custom-logo-link{
         height: 90px;
         display: inline-block;
@@ -3268,14 +3265,8 @@ FOOTER
     #header .header-logo{
         position: relative;
     }
-    #header .header-logo #LogoText{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-90%);
-        right: 0;
-        left: 100px;
-        text-align: left;
-        width: auto;
+    .header-top__logo#LogoText {
+        display: none;
     }
     #prevBtn, #nextBtn, #slider1next, #slider1prev{
         top: 50%;
