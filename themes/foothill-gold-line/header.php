@@ -326,7 +326,7 @@
                         "menu_id" => "nav",
                         "menu_class" => "clearfix menu",
                     ]); ?>
-                </div>
+                </nav>
             </header>
 
             <div id="contentArea">
