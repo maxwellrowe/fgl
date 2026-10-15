@@ -1392,191 +1392,6 @@ FOOTER
     }
 
 
-    /* OLD -------- TABS =tabs */
-    /* ------------------------------------------------------------------------------------------*/
-    div.tabs {
-        margin: 0px;
-        color: var(--color-dark-blue);
-        width: 100%;
-        position: relative;
-    }
-    div.tabs li a:link,
-    div.tabs li a:visited {
-        color: var(--color-dark-blue);
-        text-decoration: none;
-    }
-    div.tabs li a:hover {
-        align: center;
-        color: #BA8D16;
-    }
-    ul.tabLabels li {
-        text-align: center;
-        position: relative;
-        float: center;
-        margin: 5%;
-    }
-    div.tabs ul.tabLabels a {
-        font: bold 15px verdana;
-    }
-    div.tabs ul.tabLabels a:hover {
-        color: #BA8D16;
-    }
-    div.tabs ul.tabLabels li.ui-tabs-selected a:hover {
-        color: var(--color-dark-blue);
-    }
-    div.tabs ul.tabLabels li.tabLabel1 {
-        margin: 1% 2% 1% 2%;
-        padding: 3%;
-        width: 90%;
-    }
-    div.tabs ul.tabLabels li.tabLabel2 {
-        margin: 1% 2% 1% 2%;
-        padding: 3%;
-        width: 90%;
-    }
-    div.tabs ul.tabLabels li.tabLabel3 {
-        margin: 1% 2% 0% 2%;
-        padding: 3% 3% 3% 3%;
-        width: 90%;
-    }
-    div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected {
-        background: rgb(234,234,234); /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(208,208,208,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-9 */
-        -moz-border-radius-topright: 10px;
-        margin-bottom: 2px;
-        /* for any version of Firefox */
-        -webkit-border-top-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-topleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-top-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-left-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomright: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-left-radius: 10px;
-        /* for browsers who support CSS3 */
-    }
-    div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected {
-        background: rgb(234,234,234); /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(208,208,208,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-9 */
-        -moz-border-radius-topright: 10px;
-        margin-bottom: 2px;
-        /* for any version of Firefox */
-        -webkit-border-top-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-topleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-top-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-left-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomright: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-left-radius: 10px;
-        /* for browsers who support CSS3 */
-    }
-    div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected {
-        background: rgb(234,234,234); /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(208,208,208,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(208,208,208,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#d0d0d0',GradientType=0 ); /* IE6-9 */
-        -moz-border-radius-topright: 10px;
-        margin-bottom: 2px;
-        /* for any version of Firefox */
-        -webkit-border-top-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-topleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-top-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-left-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomright: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-left-radius: 10px;
-        /* for browsers who support CSS3 */
-    }
-    div.tabsPanel {
-        float: left;
-        margin: 5%;
-        padding: 2% 4% 2% 4%;
-        width: 82%;
-        background-color: var(--color-white);
-        position: relative;
-        margin-top: 15px;
-        border: 0px solid #5e5e5e;
-        -moz-box-shadow: 0px 0px 3px 3px #e0dcdc;
-        -webkit-box-shadow: 0px 0px 3px 3px #e0dcdc;
-        box-shadow: 0px 0px 3px 3px #e0dcdc;
-        margin-bottom: 5px;
-        height: auto;
-    }
-    div.tabsPanel li {
-        line-height: 1.4em;
-    }
     .ui-tabs {
         position: relative;
         zoom: 1;
@@ -1610,9 +1425,7 @@ FOOTER
         height: auto;
         box-sizing: border-box;
     }
-    #cityTabs .tabLabels{
-        flex-wrap: wrap;
-    }
+
     .ui-tabs .ui-tabs-nav li {
         list-style: none;
         center: left;
@@ -2177,7 +1990,7 @@ FOOTER
     div#cityTabs.IFSTab {
         width: 467px;
         height: 100%;
-        background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif') no-repeat;
+        background: var(--color-tan-100);
     }
     div.btmContent {
         word-wrap: break-word;
@@ -3729,4 +3542,89 @@ a.fgl-button {text-decoration: none;}
 }
 @media (prefers-reduced-motion: reduce) {
     .desktop-navigation #nav .desktop-submenu-toggle .fa { transition: none; }
+}
+
+/* Shared desktop/mobile tab presentation. */
+div.tabs {
+    position: relative;
+    max-width: 100%;
+    height: 288px;
+}
+div.tabs ul.tabLabels {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+div.tabs ul.tabLabels::before,
+div.tabs ul.tabLabels::after {
+    display: none;
+}
+div.tabs ul.tabLabels li[class] {
+    display: flex;
+    flex: 1 1 0;
+    float: none;
+    top: 0;
+    min-width: 0;
+    width: auto;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--color-gray-border);
+    border-bottom: 1px solid var(--color-gray-border) !important;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(to bottom, var(--color-white) 0%, var(--color-gray-300) 100%);
+    filter: none;
+    white-space: normal;
+}
+div.tabs ul.tabLabels li[class].ui-tabs-selected,
+div.tabs ul.tabLabels li[class].ui-tabs-active,
+div.tabs ul.tabLabels li[class].ui-state-active {
+    background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-400) 100%);
+}
+div.tabs ul.tabLabels li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 6px;
+    font-family: 'Barlow', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.05;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    color: var(--color-dark-blue);
+    text-decoration: none;
+}
+div.tabs ul.tabLabels li a:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: -3px;
+}
+div.tabs > div.tabsPanel {
+    top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* City/phase panels follow the 30px tab row in normal flow. */
+div.tabs > div.cityTabsPanel,
+div.tabs > div.phaseTabsPanel {
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+@media screen and (max-width: 899px) {
+    div.tabs {
+        width: 100%;
+    }
 }

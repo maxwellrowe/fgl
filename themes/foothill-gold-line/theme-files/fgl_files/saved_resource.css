@@ -336,13 +336,13 @@ div.tabs ul.tabLabels li.ui-tabs-selected a:hover { color: var(--color-dark-blue
 div.tabs ul.tabLabels li.tabLabel1	{ width: 156px; }
 div.tabs ul.tabLabels li.tabLabel2	{ width: 155px; }
 div.tabs ul.tabLabels li.tabLabel3	{ width: 156px; }
-div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-1-active.jpg') no-repeat; }
-div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-2-active.jpg') no-repeat; }
-div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-3-active.jpg') no-repeat; }
+div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
+div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
+div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
 div.tabsPanel
 {
 	position: absolute;
-	top: 24px;
+	top: 30px;
 	left: 0px;
 	width: 467px;
 	height: 258px;
@@ -725,7 +725,7 @@ div#cityTabs
 	top: 0px;
 	right: 0px;
 	height: 348px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/city-tabs-bg.gif') no-repeat;
+	background: var(--color-tan-100);
 }
 div.cityTabsPanel
 {
@@ -749,7 +749,7 @@ div#cityTabs.IFSTab
 {
 	width: 467px;
 	height: 536px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif') no-repeat;
+	background: var(--color-tan-100);
 }
 div.btmContent
 {
@@ -1480,7 +1480,7 @@ div#phaseTabs
 	top: 0px;
 	right: 0px;
 	height: 496px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-tabs-bg.jpg') no-repeat;
+	background: var(--color-tan-100);
 }
 div.phaseTabsPanel
 {
@@ -2197,13 +2197,13 @@ div.tabs ul.tabLabels li.ui-tabs-selected a:hover { color: var(--color-dark-blue
 div.tabs ul.tabLabels li.tabLabel1	{ width: 156px; }
 div.tabs ul.tabLabels li.tabLabel2	{ width: 155px; }
 div.tabs ul.tabLabels li.tabLabel3	{ width: 156px; }
-div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-1-active.jpg') no-repeat; }
-div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-2-active.jpg') no-repeat; }
-div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-3-active.jpg') no-repeat; }
+div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
+div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
+div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
 div.tabsPanel
 {
 	position: absolute;
-	top: 24px;
+	top: 30px;
 	left: 0px;
 	width: 467px;
 	height: 258px;
@@ -2593,7 +2593,7 @@ div#cityTabs
 	top: 0px;
 	right: 0px;
 	height: 348px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/city-tabs-bg.gif') no-repeat;
+	background: var(--color-tan-100);
 }
 div.cityTabsPanel
 {
@@ -2617,7 +2617,7 @@ div#cityTabs.IFSTab
 {
 	width: 467px;
 	height: 536px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif') no-repeat;
+	background: var(--color-tan-100);
 }
 div.btmContent
 {
@@ -3351,11 +3351,11 @@ div#phaseTabs
 	top: 0px;
 	right: 0px;
 	height: 496px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-tabs-bg.jpg') no-repeat;
+	background: var(--color-tan-100);
 }
 div#phaseTabs.phaseTabsDualContent {
 	height: 535px;
-	background: url('phase-tabs-bg-large.jpg') no-repeat;
+	background: var(--color-tan-100);
 }
 div.phaseTabsPanel
 {
@@ -4075,13 +4075,13 @@ div.tabs ul.tabLabels li.ui-tabs-selected a:hover { color: var(--color-dark-blue
 div.tabs ul.tabLabels li.tabLabel1	{ width: 156px; }
 div.tabs ul.tabLabels li.tabLabel2	{ width: 155px; }
 div.tabs ul.tabLabels li.tabLabel3	{ width: 156px; }
-div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-1-active.jpg') no-repeat; }
-div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-2-active.jpg') no-repeat; }
-div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/3tab-3-active.jpg') no-repeat; }
+div.tabs ul.tabLabels li.tabLabel1.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
+div.tabs ul.tabLabels li.tabLabel2.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
+div.tabs ul.tabLabels li.tabLabel3.ui-tabs-selected { background: linear-gradient(to bottom, var(--color-tan-200), var(--color-tan-400)); }
 div.tabsPanel
 {
 	position: absolute;
-	top: 24px;
+	top: 30px;
 	left: 0px;
 	width: 467px;
 	height: 258px;
@@ -4464,7 +4464,7 @@ div#cityTabs
 	top: 0px;
 	right: 0px;
 	height: 348px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/city-tabs-bg.gif') no-repeat;
+	background: var(--color-tan-100);
 }
 div.cityTabsPanel
 {
@@ -4488,7 +4488,7 @@ div#cityTabs.IFSTab
 {
 	width: 467px;
 	height: 536px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/ifs-city-tabs-bg.gif') no-repeat;
+	background: var(--color-tan-100);
 }
 div.btmContent
 {
@@ -5182,7 +5182,7 @@ div#phaseTabs
 	top: 0px;
 	right: 0px;
 	height: 496px;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/phase-tabs-bg.jpg') no-repeat;
+	background: var(--color-tan-100);
 }
 div.phaseTabsPanel
 {

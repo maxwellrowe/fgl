@@ -22,7 +22,7 @@
         } ?></title>
         <meta name="keywords" content="los angeles metro, metro gold line, foothill extension">
         <meta name="description" content="The Foothill Extension will continue the Metro Gold Line light-rail line from East Pasadena to Montclair.">
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource.css?v=1.18">
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/saved_resource.css?v=<?php echo filemtime(get_stylesheet_directory() . '/theme-files/fgl_files/saved_resource.css'); ?>">
 
         <link rel="shortcut icon" href="">
 

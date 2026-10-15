@@ -164,6 +164,7 @@ add_action('widgets_init', 'foothill_gold_line_widgets_init');
  */
 function foothill_gold_line_scripts() {
     // This web-font kit has v4 icon-name and FontAwesome font-face shims enabled.
+    /* Kit within info@maxwellrowe.com FA account */
     wp_enqueue_script('foothill-gold-line-fontawesome', 'https://kit.fontawesome.com/11c423b977.js', array(), null, false);
     wp_enqueue_style('foothill-gold-line-barlow', 'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap', array(), null);
     wp_enqueue_style('foothill-gold-line-style', get_stylesheet_uri(), array('foothill-gold-line-barlow'), (string) filemtime(get_stylesheet_directory() . '/style.css'));
