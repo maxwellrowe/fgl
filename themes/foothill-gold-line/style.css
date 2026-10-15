@@ -185,7 +185,7 @@ ul li.mobile-menu-translate {display: none;}
     justify-content: space-between;
 }
 
-.header-top.header-top__end {
+.header-top .header-top__end {
     display: flex;
     align-items: center;
     justify-content: end;
