@@ -159,12 +159,6 @@ ul li.mobile-menu-translate {display: none;}
 @media screen and (max-width: 900px) {
     #translate-mobile-only {display: block;}
     ul li.mobile-menu-translate {display: block;}
-
-    #fgl-language-selector {
-        width: 90%;
-        right:0;
-        top:0;
-    }
     #fgl-language-selector li.fgl-translate-button a {
     position: relative;
 }
@@ -178,6 +172,11 @@ ul li.mobile-menu-translate {display: none;}
     #fgl-language-selector li ul.sub-menu li a {
         width: calc(100% - 12px);
         padding: 12px 0 12px 12px;
+    }
+
+    .header-top,
+    .header-top .header-top__end {
+        justify-content: center;
     }
 }
 
