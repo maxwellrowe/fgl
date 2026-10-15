@@ -37,6 +37,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .desktop-navigation {
     background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-200) 80%, var(--color-tan-400) 100%);
+    border-radius: 8px;
 }
 
 /* Language Selector */
@@ -217,55 +218,16 @@ div#subNav ul{
 div#subNav.constphases-mobile-nav {
     display: none;
 }
-#nav>.menu-item.current-menu-ancestor,
-#nav>.menu-item.current-menu-item {
-    background: url("https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg");
-    border-radius: 7px 7px 0 0;
-}
 
-#nav .menu-item.current-menu-item {
-    font-weight: 700;
-}
 
-#nav>.menu-item .sub-menu {
-    /*    height: 40px;*/
-}
 
-#nav>.menu-item.current-menu-ancestor .sub-menu,
-#nav .menu-item.current-menu-item .sub-menu {
-    display: block;
-}
 
-#nav>.nav-cities-stations.menu-item.current-menu-item .sub-menu,
-#nav>.nav-cities-stations.menu-item:hover .sub-menu,
-#nav>.nav-cities-stations.menu-item.current-menu-ancestor .sub-menu {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 7px;
-    height: 40px;
-}
 
-#nav>.nav-cities-stations.menu-item .sub-menu>li {
-    flex: 1 1 11%;
-    padding-right: 3px;
-}
 
-#nav>.nav-cities-stations.menu-item .sub-menu>li a {
-    white-space: nowrap;
-}
 
-#nav>.nav-cities-stations.menu-item .sub-menu>li {
-    flex: 1 1 11%;
-    padding-right: 3px;
-}
 
-#nav>.menu-item:hover .sub-menu {
-    z-index: 105;
-}
 
-ul#nav>li:last-child {
-    margin-right: 0;
-}
+
 
 #header .nav-construction-phases-funding-status,
 #header .nav-contact-us-funding-status,
@@ -375,32 +337,11 @@ ul#nav>li:last-child {
     margin: 0;
 }
 
-#nav.menu>li:first-child {
-    margin-left: 0;
-}
 
-#nav.menu>li.menu-item-has-children:first-child {
-    border-top-left-radius: 0;
-}
 
-#nav.menu>li.menu-item-has-children:last-child {
-    border-top-right-radius: 0;
-}
 
-.single-mec-events #nav.menu .menu-item-2025,
-.error404 #nav.menu>li:first-child,
-.home #nav.menu>li:first-child {
-    background: url(https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg);
-}
 
-.single-mec-events #nav.menu .menu-item-2025 ul {
-    display: block;
-    background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-bg.jpg') no-repeat;
-}
 
-#nav.menu>li:first-child>.sub-menu {
-    display: block;
-}
 
 table.biosTable td.bioPictureCell {
     width: 110px;
@@ -1298,9 +1239,6 @@ FOOTER
         display: none;
     }
 
-    #nav {
-        display: none;
-    }
 
 
 
@@ -3107,35 +3045,10 @@ FOOTER
     .ui-accordion .ui-accordion-content-active {
         display: block;
     }
-    /* NAVIGATION =nav */
-    /* ------------------------------------------------------------------------------------------*/
-    ul#nav {
-        position: relative;
-        top: 5px;
-        width: 100%;
-        text-align: center;
-        line-height: none;
-        margin-bottom: 5px;
-        left: 0;
-        height: auto;
-        border: none;
-    }
-    ul#nav > li.menu-item > a{
-        background: #DBC37B;
-        border-radius: 9px;
-    }
-    ul#nav > li.menu-item.current-menu-parent > a{
-        border-radius: 9px 9px 0 0;
-    }
-    ul#nav li .sub-menu{
-        position: relative;
-        z-index: 20;
-        width: 100%;
-        height: auto;
-        padding: 0 0 25px 0!important;
-        top: 0;
-        padding-bottom: 20px;
-    }
+
+
+
+
     div#contentArea div.headlinesPage{
         padding-left: 20px;
         padding-right: 20px;
@@ -3151,126 +3064,19 @@ FOOTER
     .accordion {
         padding-left: 50px;
     }
-    #nav>.nav-cities-stations.menu-item .sub-menu>li{
-        flex: 1 1 100%;
-    }
-    #nav>.nav-cities-stations.menu-item.current-menu-item .sub-menu, #nav>.nav-cities-stations.menu-item:hover .sub-menu, #nav>.nav-cities-stations.menu-item.current-menu-ancestor .sub-menu{
-        height: auto;
-    }
-    ul#nav li .sub-menu > li{
-        width: 100%;
-    }
-    ul#nav a:link,
-    ul#nav a:visited {
-        color: var(--color-dark-blue);
-        text-decoration: none;
-    }
-    ul#nav>li{
-        width: 100%;
-    }
-    ul#nav>li>a {
-        display: block;
-        padding: 15px 0px 15px 0px;
-        color: var(--color-dark-blue);
-    }
-    ul#nav a,
-    ul#nav a:hover {
-        color: #bb8d09;
-    }
-    ul#nav li {
-        font: bold 15px verdana, arial;
-        background: #ddc27b;
-        color: #bb8d09;
-        margin-bottom: 2px;
-        -moz-border-radius-topright: 10px;
-        /* for any version of Firefox */
-        -webkit-border-top-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-topleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-top-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-top-left-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomright: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-right-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-right-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-right-radius: 10px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomleft: 10px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-left-radius: 10px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-left-radius: 10px;
-        /* for Konqueror (linux browser) */
-        border-bottom-left-radius: 10px;
-        /* for browsers who support CSS3 */
-    }
-    ul#nav li ul li.here,
-    ul#nav li ul li.parent-here {
-        font-weight: bold;
-        color: #bb8d09;
-    }
-    ul#nav>li.parent-here>li.class {
-        font-weight: bold;
-        color: #bb8d09;
-    }
-    /* Cut off the menu after 2 levels */
-    ul#nav>li>ul ul {
-        display: none !important;
-    }
-    ul#nav li ul{
-        background: #ede3c0;
-    }
-    ul#nav li ul li {
-        font-weight: normal;
-        height: 1em;
-        margin: 0px;
-        padding: 15px 0px 15px 0px;
-        font-size: 15px;
-        background: #ede3c0;
-        -moz-border-radius-topright: 0px;
-        /* for any version of Firefox */
-        -webkit-border-top-right-radius: 0px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-right-radius: 0px;
-        /* for Konqueror (linux browser) */
-        border-top-right-radius: 0px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-topleft: 0px;
-        /* for any version of Firefox */
-        -webkit-border-top-left-radius: 0px;
-        /* for Safari and Google Chrome */
-        -khtml-border-top-left-radius: 0px;
-        /* for Konqueror (linux browser) */
-        border-top-left-radius: 0px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomright: 0px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-right-radius: 0px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-right-radius: 0px;
-        /* for Konqueror (linux browser) */
-        border-bottom-right-radius: 0px;
-        /* for browsers who support CSS3 */
-        -moz-border-radius-bottomleft: 0px;
-        /* for any version of Firefox */
-        -webkit-border-bottom-left-radius: 0px;
-        /* for Safari and Google Chrome */
-        -khtml-border-bottom-left-radius: 0px;
-        /* for Konqueror (linux browser) */
-        border-bottom-left-radius: 0px;
-        /* for browsers who support CSS3 */
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     .scrollup {
         width: 55px;
         height: 55px;
@@ -3476,9 +3282,7 @@ FOOTER
     div#phaseTabs{
         background: none;
     }
-    #nav.menu>li:not(.current-menu-ancestor):first-child>.sub-menu{
-        display: none;
-    }
+
     #siteplan-container img{
         max-width: 100%;
         height: auto !important;

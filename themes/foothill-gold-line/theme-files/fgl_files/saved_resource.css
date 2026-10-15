@@ -251,214 +251,51 @@ goldtext{
 color: var(--color-yellow);
 }
 
-/* NAVIGATION =nav */
-/* ------------------------------------------------------------------------------------------*/
-ul#nav
-{
-	position: absolute;
-	top: 40px;
-	left: 95px;
-	width: 847px;
-	height: 104px;
-	border-top: solid 1px var(--color-gray-300);
-}
-	ul#nav a:link, ul#nav a:visited
-	{
-		color: var(--color-dark-blue);
-		text-decoration: none;
-	}
-	ul#nav > li > a
-	{
-		display: block;
-		padding: 12px 22px 14px 22px;
-		color: var(--color-dark-blue);
-	}
-	ul#nav a:hover
-	{
-		color: #bb8d09;
-
-	}
 
 
-	ul#nav li
-	{
-		float: left;
-		margin-left: 2px;
-		margin-right: 1px;
-		font: bold 13px verdana,arial;
 
-	}
-	ul#nav li#nav-contact-us
-	{
-		position: absolute;
-		right: 0px;
-		margin-right: 0px;
-		padding-right: 0px;
-		z-index: 102;
-	}
+
+
 
 p .city {
 width: 20%;
 }
-	ul#nav li#nav-contact-us.here, ul#nav li#nav-contact-us.parent-here
-	{
-		z-index: 100;
-	}
-	ul#nav > li.last
-	{
-		float: right;
-		margin-right: 0px;
-		padding-right: 0px
-	}
-/* General css for Top Nav Items */
-ul#nav > li
-{
-	font: bold 13px;
-	font-family: verdana;
-}
-ul#nav li#nav-construction-phases		{ margin-left: 0px; }
-
-ul#nav li#nav-construction-phases-construction-updates a
-{
-
-	color: var(--color-dark-blue);
-	border: solid 1px var(--color-dark-blue); padding: 4px;
-	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
-	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-top-right-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
-	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-top-left-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-bottomright: 8px;	/* for any version of Firefox */
-	-webkit-border-bottom-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-bottom-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-bottom-right-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-bottomleft: 8px;	/* for any version of Firefox */
-	-webkit-border-bottom-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-bottom-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-bottom-left-radius: 8px; /* for browsers who support CSS3 */
-}
-ul#nav li#nav-construction-phases-construction-updates a:hover		{ color: #bb8d09; }
-ul#nav > li:hover
-{
 
 
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
-}
-ul#nav > li.parent-here, ul#nav > li.here, div.homePage li#nav-construction-phases
-{
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
-}
-ul#nav > li.parent-here > li.class
-{
-	font-weight: bold;
-}
-/* Rounded Right Corners for Menu Items */
-li#nav-construction-phases, li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us
-{
-	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
-	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-top-right-radius: 8px; /* for browsers who support CSS3 */
-}
-/* Rounded Left Corners for Menu Items */
-li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us, li#nav-contact-us
-{
-	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
-	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-top-left-radius: 8px; /* for browsers who support CSS3 */
-}
-ul#nav li ul
-{
-	position: absolute;
-	top: 37px;
-	left: 0px;
-	width: 825px;
-	height: 32px;
-	margin: 0px;
-	padding: 15px 0px 0px 22px;
-	z-index: 102;
-	display: none;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-bg.jpg') no-repeat;
-}
-ul#nav li#nav-contact-us ul
-{
-	/*left: -742px;*/ /* was -724px */
-	left: auto;
-	right: 0;
-}
-ul#nav li:hover ul, ul#nav li:hover #funding
-{
-	display: block;
-	z-index: 102;
-}
 
 
-ul#nav > li.parent-here ul, ul#nav > li.here ul, div.homePage li#nav-construction-phases ul
-{
-	display: block;
-	z-index: 100;
-}
-ul#nav li ul li
-{
-	font-weight: normal;
-	height: 1em;
-	margin: 0px;
-	padding: 0px 22px 0.4em 0px;
-	font-size: 12px;
-}
-ul#nav > li ul li.last
-{
-	padding-right: 0px;
-}
-ul#nav li ul li.here, ul#nav li ul li.parent-here
-{
-	font-weight: bold;
-	background: none;
-}
-/* Cut off the menu after 2 levels */
-ul#nav > li > ul ul
-{
-	display: none !important;
-}
-/* Special Look for Cities/Stations sub-nav */
-ul#nav li#nav-cities-stations ul
-{
-	height: 40px;
-	padding-top: 7px;
-}
-ul#nav li#nav-cities-stations li
-{
-	padding-right: 0px;
-	padding-left: 0px;
-	width: 105px;
-}
-ul#nav li#nav-cities-stations li#nav-cities-stations-pasadena	{ width: 94px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-san-dimas	{ width: 94px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-south-pasadena	{ width: 116px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-azusa	{ width: 115px; }
 
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-arcadia		{ width: 92px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-pomona		{ width: 105px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-irwindale		{ width: 105px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-ontario		{ width: 95px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-gold-line-bridge { width: 95px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-claremont		{ width: 110px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-duarte		{ width: 88px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-montclair		{ width: 88px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-la-verne		{ width: 93px; }
 
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-glendora	{ width: 95px; }
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-operations-campus		{ width: 110px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TABS =tabs */
 /* ------------------------------------------------------------------------------------------*/
@@ -1979,26 +1816,8 @@ goldtext{
 color: var(--color-yellow);
 }
 
-#nav-construction-phases-funding-status, #nav-contact-us-funding-status, #nav-about-us-funding-status, #nav-news-funding-status, #nav-meetings-events-funding-status{
-float: right!important;
-margin-right: 22px!important;
-}
-#nav-construction-phases-funding-status{
-float: right!important;
-margin-right: 0px!important;
-}
 
-#nav-construction-phases-funding-status a, #nav-contact-us-funding-status a, #nav-about-us-funding-status a, #nav-news-funding-status a, #nav-meetings-events-funding-status a{
-border: 1px solid var(--color-dark-blue);
-border-radius: 5px;
-color: var(--color-dark-blue);
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 8px;
-padding-bottom: 8px;
-z-index: 109;
 
-}
 
 /* Legacy screen styles: retain original cascade order. */
 @media screen {
@@ -2292,217 +2111,52 @@ color: var(--color-yellow);
 	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/search-bg.gif');
 }
 
-/* NAVIGATION =nav */
-/* ------------------------------------------------------------------------------------------*/
-ul#nav
-{
-	position: absolute;
-	top: 40px;
-	left: 95px;
-	width: 846.5px;
-	height: 104px;
-	border-top: solid 1px var(--color-gray-300);
-}
-	ul#nav a:link, ul#nav a:visited
-	{
-		color: var(--color-dark-blue);
-		text-decoration: none;
-	}
-	ul#nav > li > a
-	{
-		display: block;
-		padding: 12px 16px 14px 16px;
-		color: var(--color-dark-blue);
-	}
-	ul#nav > li:last-child > a {
-		padding-left: 18px;
-		padding-right: 19px;
-	}
-	ul#nav a:hover
-	{
-		color: #bb8d09;
-
-	}
 
 
-	ul#nav li
-	{
-		float: left;
-		margin-left: 2px;
-		margin-right: 1px;
-		font: bold 13px verdana,arial;
 
-	}
-	ul#nav li#nav-contact-us
-	{
-		position: absolute;
-		right: 0px;
-		margin-right: 0px;
-		padding-right: 0px;
-		z-index: 102;
-	}
+
+
+
 
 p .city {
 width: 20%;
 }
-	ul#nav li#nav-contact-us.here, ul#nav li#nav-contact-us.parent-here
-	{
-		z-index: 100;
-	}
-	ul#nav > li.last
-	{
-		float: right;
-		margin-right: 0px;
-		padding-right: 0px
-	}
-/* General css for Top Nav Items */
-ul#nav > li
-{
-	font: bold 13px;
-	font-family: verdana;
-}
-ul#nav li#nav-construction-phases		{ margin-left: 0px; }
-
-ul#nav li#nav-construction-phases-construction-updates a
-{
-
-	color: var(--color-dark-blue);
-	border: solid 1px var(--color-dark-blue); padding: 4px;
-	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
-	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-top-right-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
-	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-top-left-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-bottomright: 8px;	/* for any version of Firefox */
-	-webkit-border-bottom-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-bottom-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-bottom-right-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-bottomleft: 8px;	/* for any version of Firefox */
-	-webkit-border-bottom-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-bottom-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-bottom-left-radius: 8px; /* for browsers who support CSS3 */
-}
-ul#nav li#nav-construction-phases-construction-updates a:hover		{ color: #bb8d09; }
-ul#nav > li:hover
-{
-	border-radius: 7px 7px 0 0;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
-}
-ul#nav > li.parent-here, ul#nav > li.here, div.homePage li#nav-construction-phases
-{
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
-}
-ul#nav > li.parent-here > li.class
-{
-	font-weight: bold;
-}
-/* Rounded Right Corners for Menu Items */
-li#nav-construction-phases, li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us
-{
-	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
-	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-top-right-radius: 8px; /* for browsers who support CSS3 */
-}
-/* Rounded Left Corners for Menu Items */
-li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us, li#nav-contact-us
-{
-	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
-	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-top-left-radius: 8px; /* for browsers who support CSS3 */
-}
-ul#nav li ul
-{
-	position: absolute;
-	top: 37px;
-	left: 0px;
-	width: 824px;
-	height: 32px;
-	margin: 0px;
-	padding: 15px 0px 0px 22px;
-	z-index: 102;
-	display: none;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-bg.jpg') no-repeat;
-}
-ul#nav li#nav-contact-us ul
-{
-	/*left: -742px;*/ /* was -724px */
-	left: auto;
-	right: 0;
-}
-ul#nav li:hover ul, ul#nav li:hover #funding
-{
-	display: block;
-	z-index: 102;
-}
 
 
-ul#nav > li.parent-here ul, ul#nav > li.here ul, div.homePage li#nav-construction-phases ul
-{
-	display: block;
-	z-index: 100;
-}
-ul#nav li ul li
-{
-	font-weight: normal;
-	height: 1em;
-	margin: 0px;
-	padding: 0px 22px 0.4em 0px;
-	font-size: 12px;
-}
-ul#nav > li ul li.last
-{
-	padding-right: 0px;
-}
-ul#nav li ul li.here, ul#nav li ul li.parent-here
-{
-	font-weight: bold;
-	background: none;
-}
-/* Cut off the menu after 2 levels */
-ul#nav > li > ul ul
-{
-	display: none !important;
-}
-/* Special Look for Cities/Stations sub-nav */
-ul#nav li#nav-cities-stations ul
-{
-	height: 40px;
-	padding-top: 7px;
-}
-ul#nav li#nav-cities-stations li
-{
-	padding-right: 0px;
-	padding-left: 0px;
-	width: 105px;
-}
-ul#nav li#nav-cities-stations li#nav-cities-stations-pasadena	{ width: 94px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-san-dimas	{ width: 94px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-south-pasadena	{ width: 116px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-azusa	{ width: 115px; }
 
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-arcadia		{ width: 92px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-pomona		{ width: 105px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-irwindale		{ width: 105px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-ontario		{ width: 95px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-gold-line-bridge { width: 95px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-claremont		{ width: 110px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-duarte		{ width: 88px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-montclair		{ width: 88px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-la-verne		{ width: 93px; }
 
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-glendora	{ width: 95px; }
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-operations-campus		{ width: 110px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TABS =tabs */
 /* ------------------------------------------------------------------------------------------*/
@@ -4040,26 +3694,8 @@ goldtext{
 color: var(--color-yellow);
 }
 
-#nav-construction-phases-funding-status, #nav-contact-us-funding-status, #nav-about-us-funding-status, #nav-news-funding-status, #nav-meetings-events-funding-status{
-float: right!important;
-margin-right: 22px!important;
-}
-#nav-construction-phases-funding-status{
-float: right!important;
-margin-right: 0px!important;
-}
 
-#nav-construction-phases-funding-status a, #nav-contact-us-funding-status a, #nav-about-us-funding-status a, #nav-news-funding-status a, #nav-meetings-events-funding-status a{
-border: 1px solid var(--color-dark-blue);
-border-radius: 5px;
-color: var(--color-dark-blue);
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 8px;
-padding-bottom: 8px;
-z-index: 109;
 
-}
 }
 
 
@@ -4358,200 +3994,47 @@ z-index: 9999999999;
 	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/search-bg.gif');
 }
 
-/* NAVIGATION =nav */
-/* ------------------------------------------------------------------------------------------*/
-ul#nav
-{
-	position: absolute;
-	top: 40px;
-	left: 95px;
-	width: 847px;
-	height: 84px;
-	border-top: solid 1px var(--color-gray-300);
-}
-	ul#nav a:link, ul#nav a:visited
-	{
-		color: var(--color-dark-blue);
-		text-decoration: none;
-	}
-	ul#nav > li > a
-	{
-		display: block;
-		padding: 12px 22px 14px 22px;
-		color: var(--color-dark-blue);
-	}
-	ul#nav a:hover
-	{
-		color: #bb8d09;
-	}
-	ul#nav li
-	{
-		float: left;
-		margin-left: 2px;
-		margin-right: 1px;
-		font: bold 13px verdana,arial;
-	}
-	ul#nav li#nav-contact-us
-	{
-		position: absolute;
-		right: 0px;
-		margin-right: 0px;
-		padding-right: 0px;
-		z-index: 102;
-	}
-	ul#nav li#nav-contact-us.here, ul#nav li#nav-contact-us.parent-here
-	{
-		z-index: 100;
-	}
-	ul#nav > li.last
-	{
-		float: right;
-		margin-right: 0px;
-		padding-right: 0px
-	}
-/* General css for Top Nav Items */
-ul#nav > li
-{
-	font: bold 13px;
-	font-family: verdana;
-}
-ul#nav li#nav-construction-phases		{ margin-left: 0px; }
-ul#nav li#nav-construction-phases-construction-updates a
-{
-	color: var(--color-dark-blue);
-	border: solid 1px var(--color-dark-blue); padding: 4px;
-	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
-	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-top-right-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
-	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-top-left-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-bottomright: 8px;	/* for any version of Firefox */
-	-webkit-border-bottom-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-bottom-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-bottom-right-radius: 8px; /* for browsers who support CSS3 */
-	-moz-border-radius-bottomleft: 8px;	/* for any version of Firefox */
-	-webkit-border-bottom-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-bottom-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-bottom-left-radius: 8px; /* for browsers who support CSS3 */
-}
-ul#nav li#nav-construction-phases-construction-updates a:hover		{ color: #bb8d09; }
-ul#nav > li:hover
-{
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
-}
-ul#nav > li.parent-here, ul#nav > li.here, div.homePage li#nav-construction-phases
-{
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-main-btn-bg.jpg') repeat-x;
-}
-ul#nav > li.parent-here > li.class
-{
-	font-weight: bold;
-}
-/* Rounded Right Corners for Menu Items */
-li#nav-construction-phases, li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us
-{
-	-moz-border-radius-topright: 8px;	/* for any version of Firefox */
-	-webkit-border-top-right-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-right-radius: 8px;	/* for Konqueror (linux browser) */
-    border-top-right-radius: 8px; /* for browsers who support CSS3 */
-}
-/* Rounded Left Corners for Menu Items */
-li#nav-cities-stations, li#nav-meetings-events, li#nav-news, li#nav-about-us, li#nav-contact-us
-{
-	-moz-border-radius-topleft: 8px;	/* for any version of Firefox */
-	-webkit-border-top-left-radius: 8px;	/* for Safari and Google Chrome */
-	-khtml-border-top-left-radius: 8px; /* for Konqueror (linux browser) */
-    border-top-left-radius: 8px; /* for browsers who support CSS3 */
-}
-ul#nav li ul
-{
-	position: absolute;
-	top: 37px;
-	left: 0px;
-	width: 825px;
-	height: 32px;
-	margin: 0px;
-	padding: 15px 0px 0px 22px;
-	z-index: 100;
-	display: none;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/nav-sub-bg.jpg') no-repeat;
-}
-ul#nav li#nav-contact-us ul
-{
-	/*left: -742px;*/ /* was -724px */
-	left: auto;
-	right: 0;
-}
-ul#nav li:hover ul
-{
-	display: block;
-	z-index: 102;
-}
-ul#nav > li.parent-here ul, ul#nav > li.here ul, div.homePage li#nav-construction-phases ul
-{
-	display: block;
-	z-index: 101;
-}
-ul#nav li ul li
-{
-	font-weight: normal;
-	height: 1em;
-	margin: 0px;
-	padding: 0px 22px 0.4em 0px;
-	font-size: 12px;
-}
-ul#nav > li ul li.last
-{
-	padding-right: 0px;
-}
-ul#nav li ul li.here, ul#nav li ul li.parent-here
-{
-	font-weight: bold;
-	background: none;
-}
-/* Cut off the menu after 2 levels */
-ul#nav > li > ul ul
-{
-	display: none !important;
-}
-/* Special Look for Cities/Stations sub-nav */
-ul#nav li#nav-cities-stations ul
-{
-	height: 40px;
-	padding-top: 7px;
-}
-ul#nav li#nav-cities-stations li
-{
-	padding-right: 0px;
-	padding-left: 0px;
-	width: 105px;
-}
-ul#nav li#nav-cities-stations li#nav-cities-stations-pasadena	{ width: 94px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-san-dimas	{ width: 94px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-south-pasadena	{ width: 116px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-azusa	{ width: 115px; }
 
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-arcadia		{ width: 92px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-pomona		{ width: 105px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-irwindale		{ width: 105px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-ontario		{ width: 95px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-gold-line-bridge { width: 95px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-claremont		{ width: 110px; }
-
-ul#nav li#nav-cities-stations li#nav-cities-stations-duarte		{ width: 88px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-montclair		{ width: 88px; }
-ul#nav li#nav-cities-stations li#nav-cities-stations-la-verne		{ width: 93px; }
 
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-glendora	{ width: 95px; }
 
-ul#nav li#nav-cities-stations li#nav-cities-stations-operations-campus		{ width: 110px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TABS =tabs */
 /* ------------------------------------------------------------------------------------------*/
