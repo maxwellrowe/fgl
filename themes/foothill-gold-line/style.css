@@ -236,7 +236,7 @@ div#subNav.constphases-mobile-nav {
 #header .nav-news-funding-status,
 #header .nav-meetings-events-funding-status {
     float: none!important;
-    padding: 10px;
+    padding: 10px !important;
 }
 
 #header .nav-construction-phases-funding-status a,
@@ -3639,6 +3639,9 @@ a.fgl-button {text-decoration: none;}
     }
     .desktop-navigation #nav .is-open > .desktop-submenu-toggle .fa {
         transform: rotate(180deg);
+    }
+    .desktop-navigation #nav .sub-menu .is-open > .desktop-submenu-toggle .fa {
+        transform: none;
     }
     .desktop-navigation #nav .sub-menu {
         display: none;

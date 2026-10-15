@@ -40,7 +40,8 @@
         toggle.setAttribute('aria-label', 'Toggle submenu: ' + link.textContent.trim());
         toggle.setAttribute('aria-controls', submenu.id);
         toggle.setAttribute('aria-expanded', 'false');
-        toggle.innerHTML = '<span class="fa fa-angle-down" aria-hidden="true"></span>';
+        var angle = item.parentElement === nav ? 'down' : 'right';
+        toggle.innerHTML = '<span class="fa fa-angle-' + angle + '" aria-hidden="true"></span>';
         item.insertBefore(toggle, submenu);
         var entry = { item: item, submenu: submenu, toggle: toggle };
         entries.push(entry);
