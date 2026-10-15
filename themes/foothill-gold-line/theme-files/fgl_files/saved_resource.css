@@ -215,22 +215,6 @@ body
 	line-height: 1em;
 	color: var(--color-dark-blue);
 }
-#header
-{
-	margin: 0px 0px 5px 0px;
-	padding: 0px;
-}
-#headerLogo{
-padding-top: 30px;
-position: relative;
-}
-#site-title
-{
-	position: absolute;
-	top: 0px;
-	left: 10px;
-	margin: 0px;
-	}
 .counter{
 position: absolute;
 top: -30px;
@@ -265,32 +249,6 @@ letter-spacing: 1px;
 
 goldtext{
 color: var(--color-yellow);
-}
-
-
-#LogoText{
-position: absolute;
-top: 0px;
-left: 0px;
-width: 210px;
-height: 20px;
-z-index: 9999999999;
-
-}
-#search-box
-{
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 203px;
-	height: 23px;
-	margin: 0px;
-	padding: 0px 0px 0px 25px;
-	color: #8a8989;
-	font-size: 13px;
-	font-family: verdana;
-	border: none;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/search-bg.gif');
 }
 
 /* NAVIGATION =nav */

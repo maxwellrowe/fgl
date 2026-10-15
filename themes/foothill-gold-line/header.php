@@ -243,29 +243,29 @@
         <div id="container" class="">
 
             <header id="header">
-                <div class="header-logo">
-                    <div id="LogoText">
+                <div class="header-top">
+                    <div class="header-top__logo" id="LogoText">
                         <img src="<?php bloginfo(
                             "template_directory"
                         ); ?>/images/FGL.jpg" />
                     </div>
+                    <div class="header-top__end">
+                        <div class="header-signup"><a href="<?php bloginfo(
+                            "url"
+                        ); ?>/dual_content/sign-up-for-e-news/" class="header-signup-button fgl-button fgl-button--primary">Sign Up for Project Updates</a></div>
+                        <!-- Language Switcher  via WP Menu -->
+                        <?php wp_nav_menu([
+                            "theme_location" => "language-selector",
+                            "container_class" => "fgl-language",
+                            "container" => "ul",
+                            "menu_id" => "fgl-language-selector",
+                            "menu_class" => "clearfix menu",
+                        ]); ?>
 
-                    <div class="header-signup"><a href="<?php bloginfo(
-                        "url"
-                    ); ?>/dual_content/sign-up-for-e-news/" class="header-signup-button fgl-button fgl-button--primary">Sign Up for Project Updates</a></div>
-                    <!-- Language Switcher  via WP Menu -->
-                    <?php wp_nav_menu([
-                        "theme_location" => "language-selector",
-                        "container_class" => "fgl-language",
-                        "container" => "ul",
-                        "menu_id" => "fgl-language-selector",
-                        "menu_class" => "clearfix menu",
-                    ]); ?>
-
-                    <div id="search">
-                        <?php get_search_form(); ?>
+                        <div id="search">
+                            <?php get_search_form(); ?>
+                        </div>
                     </div>
-
                 </div>
 
                 <!-- MOBILE-->

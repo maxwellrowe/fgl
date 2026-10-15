@@ -181,17 +181,12 @@ ul li.mobile-menu-translate {display: none;}
     color: #39438A;
     z-index: 0;
 }
-.header-signup {
-    position: absolute;
-    left: 341px;
-    top:-3px;
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-a.header-signup-button {
-    vertical-align: middle;
-}
-a.header-signup-button:hover {
-    /* Hover appearance is provided by the shared button variant. */
-}
+
 .page-404-searchform {
     position: relative;
     max-width: 250px;
