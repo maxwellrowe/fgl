@@ -166,6 +166,8 @@ function foothill_gold_line_scripts() {
     wp_enqueue_style('foothill-gold-line-barlow', 'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap', array(), null);
     wp_enqueue_style('foothill-gold-line-style', get_stylesheet_uri(), array('foothill-gold-line-barlow'), (string) filemtime(get_stylesheet_directory() . '/style.css'));
 
+    wp_enqueue_script('foothill-gold-line-desktop-navigation', get_template_directory_uri() . '/js/desktop-navigation.js', array(), (string) filemtime(get_template_directory() . '/js/desktop-navigation.js'), true);
+
     wp_enqueue_script('foothill-gold-line-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
     wp_enqueue_script('foothill-gold-line-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);

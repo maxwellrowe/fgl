@@ -110,9 +110,9 @@
                     distanceX: '75%',
                     enableEscapeKey: true
                 });
-                $("li.menu-item-has-children").append('<span class="mobile-menu-toggle"></span>');
+                $("#mobile-nav li.menu-item-has-children").append('<span class="mobile-menu-toggle"></span>');
                 //now toggle that menu
-                $("li.menu-item-has-children span.mobile-menu-toggle").click(function() {
+                $("#mobile-nav li.menu-item-has-children span.mobile-menu-toggle").click(function() {
                     $(this).parent('li').find('ul.sub-menu').slideToggle();
                     $(this).parent('li').toggleClass('current-menu-parent');
                     console.log('Clicked Menu');
@@ -316,7 +316,7 @@
                 <!--/mobile-header-utilities--></div>
 
                 
-                <nav class="desktop-navigation">
+                <nav class="desktop-navigation" aria-label="Primary navigation">
                     <?php the_custom_logo(); ?>
                     <!-- Desktop Menu-->
                     <?php wp_nav_menu([
@@ -324,6 +324,7 @@
                         "container_class" => "custom-menu-class",
                         "container" => "ul",
                         "menu_id" => "nav",
+                        "fallback_cb" => false,
                         "menu_class" => "clearfix menu",
                     ]); ?>
                 </nav>
