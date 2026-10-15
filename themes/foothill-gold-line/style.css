@@ -192,6 +192,7 @@ ul li.mobile-menu-translate {display: none;}
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .header-top .header-top__end {
@@ -234,8 +235,8 @@ div#subNav.constphases-mobile-nav {
 #header .nav-about-us-funding-status,
 #header .nav-news-funding-status,
 #header .nav-meetings-events-funding-status {
-    float: right!important;
-    /*margin-right: 22px!important;*/
+    float: none!important;
+    padding: 10px;
 }
 
 #header .nav-construction-phases-funding-status a,
@@ -3560,6 +3561,7 @@ a.fgl-button {text-decoration: none;}
     .desktop-navigation #nav>.menu-item .sub-menu {
         height: auto;
         width: auto;
+        min-width: 200px;
     }
     .desktop-navigation #nav,
     .desktop-navigation #nav ul {
