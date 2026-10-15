@@ -817,7 +817,7 @@ FOOTER
     display:block;
 }
 
-#footer .footer-mobile .footer-copyright {
+#footer .footer-mobile {
     display:none;
 }
 
@@ -2936,7 +2936,9 @@ FOOTER
         display:none;
     }
 
-    #footer .footer-mobile .footer-copyright {
+
+
+    #footer .footer-mobile {
         display:block;
         text-align: center;
     }
