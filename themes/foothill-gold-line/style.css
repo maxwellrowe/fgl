@@ -73,6 +73,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
     display: block;
     right: 8px;
     top: 9px;
+    transition: all .2s ease-in-out;
+}
+
+#fgl-language-selector li.fgl-translate-button > a:hover:after {
+    transform: rotate(180deg);
 }
 
 #fgl-language-selector li.fgl-translate-button a:hover {
@@ -81,8 +86,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #fgl-language-selector li ul.sub-menu {
     z-index: 999;
-    position: relative;
-    top: 2px;
+    position: absolute;
+    top: 100%;
     background-color: var(--color-tan-100);
     width: 85px;
     padding:0;
@@ -99,6 +104,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
     width: 76px;
     border:none;
     display: block;
+    text-decoration: none;
+    color: var(--color-dark-blue);
+    font-weight: 600;
 }
 
 #fgl-language-selector li ul.sub-menu li a:hover {
@@ -3680,6 +3688,9 @@ a.fgl-button {text-decoration: none;}
         text-align: left;
         white-space: normal;
         overflow-wrap: anywhere;
+    }
+    .desktop-navigation #nav .sub-menu > li.current-menu-item > a {
+        background-color: var(--color-tan-400);
     }
     .desktop-navigation #nav .sub-menu > li:hover,
     .desktop-navigation #nav .sub-menu > li:focus-within {
