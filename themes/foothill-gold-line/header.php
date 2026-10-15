@@ -244,7 +244,6 @@
 
             <header id="header">
                 <div class="header-logo">
-                    <?php the_custom_logo(); ?>
                     <div id="LogoText">
                         <img src="<?php bloginfo(
                             "template_directory"
@@ -317,15 +316,17 @@
                 <!--/mobile-header-utilities--></div>
 
                 
-
-                <!-- Desktop Menu-->
-                <?php wp_nav_menu([
-                    "theme_location" => "menu-1",
-                    "container_class" => "custom-menu-class",
-                    "container" => "ul",
-                    "menu_id" => "nav",
-                    "menu_class" => "clearfix menu",
-                ]); ?>
+                <nav class="desktop-navigation">
+                    <?php the_custom_logo(); ?>
+                    <!-- Desktop Menu-->
+                    <?php wp_nav_menu([
+                        "theme_location" => "menu-1",
+                        "container_class" => "custom-menu-class",
+                        "container" => "ul",
+                        "menu_id" => "nav",
+                        "menu_class" => "clearfix menu",
+                    ]); ?>
+                </div>
             </header>
 
             <div id="contentArea">
