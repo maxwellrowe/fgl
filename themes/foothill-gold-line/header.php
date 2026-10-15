@@ -47,9 +47,6 @@
             gtag('config', 'G-RFZBLY18NG');
         </script>
 
-        <!-- Font Awesome -->
-        <script src="https://use.fontawesome.com/824dc1fb78.js"></script>
-
         <script type="text/javascript" async="" src="<?php echo get_stylesheet_directory_uri(); ?>/theme-files/fgl_files/ga.js"></script>
         <script type="text/javascript" charset="utf-8">
             //<![CDATA[

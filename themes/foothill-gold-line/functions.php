@@ -163,6 +163,8 @@ add_action('widgets_init', 'foothill_gold_line_widgets_init');
  * Enqueue scripts and styles.
  */
 function foothill_gold_line_scripts() {
+    // This web-font kit has v4 icon-name and FontAwesome font-face shims enabled.
+    wp_enqueue_script('foothill-gold-line-fontawesome', 'https://kit.fontawesome.com/11c423b977.js', array(), null, false);
     wp_enqueue_style('foothill-gold-line-barlow', 'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap', array(), null);
     wp_enqueue_style('foothill-gold-line-style', get_stylesheet_uri(), array('foothill-gold-line-barlow'), (string) filemtime(get_stylesheet_directory() . '/style.css'));
 
@@ -178,6 +180,15 @@ function foothill_gold_line_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'foothill_gold_line_scripts');
+
+/** Include the cross-origin attribute required by the Font Awesome kit embed. */
+function foothill_gold_line_fontawesome_script_tag($tag, $handle) {
+    if ('foothill-gold-line-fontawesome' === $handle && false === strpos($tag, 'crossorigin=')) {
+        $tag = preg_replace('/<script\b/', '<script crossorigin="anonymous"', $tag, 1);
+    }
+    return $tag;
+}
+add_filter('script_loader_tag', 'foothill_gold_line_fontawesome_script_tag', 10, 2);
 
 /**
  * Implement the Custom Header feature.
