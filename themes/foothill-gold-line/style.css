@@ -3557,6 +3557,10 @@ a.fgl-button {text-decoration: none;}
         max-width: 100%;
         object-fit: contain;
     }
+    .desktop-navigation #nav>.menu-item .sub-menu {
+        height: auto;
+        width: auto;
+    }
     .desktop-navigation #nav,
     .desktop-navigation #nav ul {
         list-style: none;
