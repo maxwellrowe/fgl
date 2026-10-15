@@ -2278,9 +2278,6 @@ color: var(--color-yellow);
 
 
 #LogoText{
-position: absolute;
-top: 0px;
-left: 0px;
 width: 210px;
 height: 20px;
 z-index: 9999999999;

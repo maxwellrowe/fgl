@@ -37,9 +37,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* Language Selector */
 #fgl-language-selector {
-    position: absolute;
-    right: 237px;
-    top: 0;
+    position: relative;
 }
 
 #fgl-language-selector .sub-menu {
@@ -185,6 +183,12 @@ ul li.mobile-menu-translate {display: none;}
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-top.header-top__end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .page-404-searchform {
@@ -3570,11 +3574,7 @@ select {
 }
 
 #searchForm {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 228px;
-    height: 25px;
+    position: relative;
 }
 
 #searchForm #search-box {
