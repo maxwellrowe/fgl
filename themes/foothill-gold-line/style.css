@@ -179,6 +179,10 @@ ul li.mobile-menu-translate {display: none;}
     color: #39438A;
     z-index: 0;
 }
+#header #LogoText img {
+    max-width: 280x;
+    height: auto;
+}
 .header-top {
     display: flex;
     align-items: center;

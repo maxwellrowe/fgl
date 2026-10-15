@@ -2276,13 +2276,6 @@ goldtext{
 color: var(--color-yellow);
 }
 
-
-#LogoText{
-width: 210px;
-height: 20px;
-z-index: 9999999999;
-
-}
 #search-box
 {
 	position: absolute;
