@@ -284,37 +284,6 @@
                     ); ?>/images/menu-close-icon@2x.png" class="mobile-toggler-open" /></a>
 
                 <!--/mobile-header--></div>
-
-                <div id="mobile-header-utilities">
-
-                    <div style="width: 100%;">
-                        <div style="width: 70%; float: left;">
-                            <a href="<?php bloginfo(
-                                "url"
-                            ); ?>/dual_content/sign-up-for-e-news/" class="header-signup-button fgl-button fgl-button--primary">Sign Up for Project Updates</a>
-                        </div>
-                        <div style="width: 30%; float: right; position: relative;">
-                            <!-- Language Switcher  via WP Menu -->
-                            <?php wp_nav_menu([
-                                "theme_location" => "language-selector",
-                                "container_class" => "fgl-language",
-                                "container" => "ul",
-                                "menu_id" => "fgl-language-selector",
-                                "menu_class" => "clearfix menu",
-                            ]); ?>
-                        </div>
-                    </div>
-
-
-                    <!-- Breadcrumbs-->
-                    <div class="breadcrumbs" style="clear: both;">
-                        <ul>
-                            <?php my_breadcrumb("sitemap"); ?>
-                        </ul>
-                    <!--/breadcrumbs--></div>
-
-                <!--/mobile-header-utilities--></div>
-
                 
                 <nav class="desktop-navigation" aria-label="Primary navigation">
                     <?php the_custom_logo(); ?>
