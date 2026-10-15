@@ -952,10 +952,6 @@ FOOTER
     ul {
         list-style: none;
     }
-    strong {
-        line-height: 1.4em;
-        font-size: 13px;
-    }
     blockquote,
     q {
         quotes: """"
@@ -2943,8 +2939,18 @@ FOOTER
         text-align: center;
     }
 
+    #footer .footer-mobile a {
+        display: inline-block;
+        margin: 8px 0;
+    }
+    
     #footer .footer-mobile .footer-copyright p {
         text-align: center;
+    }
+
+    #footer .footer-mobile .footer-copyright a {
+        display: inline;
+        margin: 0;
     }
 
     .mobile-arrow-up {
