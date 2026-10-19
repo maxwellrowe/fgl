@@ -1462,6 +1462,10 @@ FOOTER
         padding: 10px;
         margin-top:0;
         background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-300) 100%);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border: 1px solid var(--color-tan-800);
+        border-top-width: 0;
 
     }
     .ui-tabs .ui-tabs-hide {
