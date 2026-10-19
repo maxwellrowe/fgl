@@ -1459,8 +1459,10 @@ FOOTER
         background: none;
     }
     body.home .ui-tabs .ui-tabs-panel {
-        padding-top:0;
-        margin-top:-10px;
+        padding: 10px;
+        margin-top:0;
+        background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-300) 100%);
+
     }
     .ui-tabs .ui-tabs-hide {
         display: none !important;
@@ -1474,6 +1476,8 @@ FOOTER
         float: none;
         margin: 0 auto;
         width: calc(100% - 30px);
+        border-radius: 8px;
+        background: transparent;
     }
     .newsPanel li,
     .eventsPanel li {
