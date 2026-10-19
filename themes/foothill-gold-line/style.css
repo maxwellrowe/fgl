@@ -855,7 +855,7 @@ FOOTER
 
 @media screen and (max-width: 900px){
 
-/*@charset "UTF-8";*/
+    /*@charset "UTF-8";*/
     /* CSS RESET =reset */
     /* ------------------------------------------------------------------------------------------*/
     html,
@@ -1470,7 +1470,10 @@ FOOTER
     div#homeTabs {
         width: 100%;
         position: relative;
-        padding-bottom: 50px;
+        padding-bottom: 0;
+        float: none;
+        margin: 0 auto;
+        width: calc(100% - 30px);
     }
     .newsPanel li,
     .eventsPanel li {
@@ -1510,7 +1513,7 @@ FOOTER
     div#homeRightContent {
 /*        min-height: 300px;*/
         width: 100%;
-        float: left;
+        float: none;
         position: relative;
         margin-top: 0px;
         margin-bottom: 10px;
