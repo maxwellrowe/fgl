@@ -161,8 +161,8 @@ ul li.mobile-menu-translate {display: none;}
     #translate-mobile-only {display: block;}
     ul li.mobile-menu-translate {display: block;}
     #fgl-language-selector li.fgl-translate-button a {
-    position: relative;
-}
+        position: relative;
+    }
     #fgl-language-selector li.fgl-translate-button > a:after {
         top: 20px;
         right: 12px;
@@ -177,7 +177,7 @@ ul li.mobile-menu-translate {display: none;}
 
     .header-top,
     .header-top .header-top__end {
-        justify-content: center;
+        justify-content: end !important;
     }
 }
 
