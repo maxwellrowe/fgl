@@ -24,6 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     --color-yellow: #DCA90E;
     --color-tan-800: #DEC78A;
     --color-tan-400: #E4D2A0;
+    --color-tan-300: #EBDCB4;
     --color-tan-200: #F1E6C8;
     --color-gray-300: #C2C2C2;
     --color-white: #FFFFFF;
@@ -1468,9 +1469,7 @@ FOOTER
     /* ------------------------------------------------------------------------------------------*/
     div#homeTabs {
         width: 100%;
-        height: auto;
         position: relative;
-        background: var(--color-white);
         padding-bottom: 50px;
     }
     .newsPanel li,

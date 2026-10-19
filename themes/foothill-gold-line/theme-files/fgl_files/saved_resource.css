@@ -367,7 +367,7 @@ div.tabsPanel li
 div#homeTabs
 {
 	position: relative;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-tab-section.jpg') no-repeat;
+	background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-300) 100%);
 }
 .newsPanel li, .eventsPanel li
 {
@@ -2228,7 +2228,7 @@ div.tabsPanel li
 div#homeTabs
 {
 	position: relative;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-tab-section.jpg') no-repeat;
+	background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-300) 100%);
 }
 .newsPanel li, .eventsPanel li
 {
@@ -4106,7 +4106,7 @@ div.tabsPanel li
 div#homeTabs
 {
 	position: relative;
-	background: url('https://foothillgoldline.org/wp-content/uploads/converted-images/home-tab-section.jpg') no-repeat;
+	background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-300) 100%);
 }
 .newsPanel li, .eventsPanel li
 {
