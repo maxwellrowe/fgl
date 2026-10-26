@@ -309,7 +309,48 @@ endwhile;
 
 </div>
 
-Hello world!
+<div class="home-updates">
+  <div class="home-updates__construction-updates">
+
+  </div>
+  <div class="home-updates__enews">
+    <?php
+    $signup_page_id = get_queried_object_id();
+    $signup_defaults = array(
+        'title' => 'Sign Up for E-News',
+        'link' => 'https://public.govdelivery.com/accounts/CAFGL/subscribers/qualify',
+        'form_label' => 'Email Address',
+        'form_placeholder' => 'Enter your email address',
+        'button_text' => 'Submit',
+    );
+    $signup = array();
+    foreach ( $signup_defaults as $key => $default ) {
+        $value = get_field( 'homepage_sign_up_' . $key, $signup_page_id );
+        $signup[$key] = is_string( $value ) && '' !== trim( $value ) ? $value : $default;
+    }
+    $signup_action = esc_url( $signup['link'], array( 'https', 'http' ) );
+    if ( ! $signup_action ) {
+        $signup_action = esc_url( $signup_defaults['link'] );
+    }
+    ?>
+    <form id="GD-snippet-form" accept-charset="UTF-8" action="<?php echo $signup_action; ?>" method="post">
+      <input name="utf8" type="hidden" value="✓">
+      <input name="authenticity_token" type="hidden" value="Pm6QGyCs4cutPrVvzS5oPCEyGMTI38rMd9/WXRd/a+Y=">
+      <fieldset>
+        <legend><?php echo esc_html( $signup['title'] ); ?></legend>
+        <p id="home-enews-description">Sign up to receive important updates from the Construction Authority.</p>
+        <div class="home-enews-field">
+          <label for="home-enews-email"><?php echo esc_html( $signup['form_label'] ); ?> <span class="home-enews-required">(required)</span></label>
+          <input id="home-enews-email" name="email" type="email" autocomplete="email" required
+            placeholder="<?php echo esc_attr( $signup['form_placeholder'] ); ?>" aria-describedby="home-enews-description">
+        </div>
+        <div class="button_panel">
+          <input class="fgl-button fgl-button--primary" name="commit" type="submit" value="<?php echo esc_attr( $signup['button_text'] ); ?>">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
 
 <?php
 get_footer();

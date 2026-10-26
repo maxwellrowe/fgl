@@ -3215,8 +3215,30 @@ textarea,
 select {
     border: 1px solid var(--color-gray-300);
     border-radius: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    background: var(--color-white);
+    color: var(--color-dark-blue);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+form :is(input:not([type]), input[type="text"], input[type="search"], input[type="email"], input[type="url"], input[type="tel"], input[type="password"], input[type="number"], input[type="date"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="time"], textarea, select) {
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 8px;
+    background: var(--color-white);
+    color: var(--color-dark-blue);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+form :is(input, textarea, select):focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 
 #searchForm {
@@ -3256,6 +3278,7 @@ select {
 }
 
 /* Shared buttons: appearance is independent of header/footer placement. */
+form :is(button, input[type="submit"], input[type="button"], input[type="reset"]):not(.fgl-button),
 .fgl-button {
     --button-background: linear-gradient(to bottom, var(--color-primary) 0%, var(--color-primary) 78.846%, var(--color-dark-blue) 100%);
     --button-color: var(--color-tan-200);
@@ -3302,17 +3325,21 @@ a.fgl-button {text-decoration: none;}
 .fgl-button:visited {
     color: var(--button-color);
 }
+form :is(button, input[type="submit"], input[type="button"], input[type="reset"]):not(.fgl-button):hover,
+form :is(button, input[type="submit"], input[type="button"], input[type="reset"]):not(.fgl-button):active,
 .fgl-button:hover,
 .fgl-button:active {
     box-shadow: inset 0 0 0 100vmax var(--button-hover);
     color: var(--button-color);
     text-decoration: none;
 }
+form :is(button, input[type="submit"], input[type="button"], input[type="reset"]):not(.fgl-button):focus-visible,
 .fgl-button:focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 3px;
 }
 @media (prefers-reduced-motion: reduce) {
+    form :is(button, input[type="submit"], input[type="button"], input[type="reset"]):not(.fgl-button),
     .fgl-button {
         transition: none;
     }
@@ -3703,4 +3730,57 @@ div.tabs > div.phaseTabsPanel {
     outline: 2px solid var(--color-white);
     outline-offset: 2px;
     box-shadow: 0 0 0 4px var(--color-primary);
+}
+
+/* Homepage GovDelivery signup uses the shared form fields and buttons above. */
+.home-updates__enews {
+    clear: both;
+    padding: 24px;
+    background: var(--color-tan-200);
+    border: 1px solid var(--color-tan-800);
+    border-radius: 9px;
+}
+
+.home-updates__enews fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.home-updates__enews legend {
+    float: none;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0;
+    color: var(--color-primary);
+    font-family: 'Barlow', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-updates__enews p {
+    margin: 0 0 16px;
+    line-height: 1.5;
+}
+
+.home-updates__enews label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.home-updates__enews .home-enews-required {
+    font-weight: 400;
+}
+
+.home-updates__enews input[type="email"] {
+    width: 100%;
+    margin: 0;
+}
+
+.home-updates__enews .button_panel {
+    margin-top: 12px;
 }
