@@ -15,7 +15,7 @@ get_header();
 					<table id="past-construction-table">
 						<thead>
 							<tr>
-								<th>Notice Published</th>
+								<th>Date</th>
 								<th>Notice</th>
 								<th><span class="cm-download-short">PDF</span><span class="cm-download-long">Download</span></th>
 							</tr>

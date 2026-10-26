@@ -157,7 +157,7 @@ a#past-construction-table_previous {
 	background: -webkit-linear-gradient(top, #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%);
 	background: linear-gradient(to bottom, #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f4ec', endColorstr='#e4d2a0',GradientType=0 );
-	color: #10155E;
+	color: #10155E Impo !important;
 	font-weight: bold;
 	font-size: 10px;
 	border-radius: 10px;
