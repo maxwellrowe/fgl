@@ -1,0 +1,143 @@
+/* Plugin overrides load after Bootstrap. Keep changes scoped to the widget.
+ * ACF supplies validated color/size variables after this file.
+ * Bootstrap utility overrides may require !important because utilities use it.
+ */
+body.const-update-widget {
+    --cnw-background: #fff;
+    --cnw-heading-color: #10155e;
+    --cnw-text-color: #10155e;
+    --cnw-border-color: transparent;
+    --cnw-border-width: 0px;
+    --cnw-heading-size: 18px;
+    --cnw-text-size: 13px;
+    --cnw-padding: 2rem;
+    --cnw-divider: #707070;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+    background: var(--cnw-background);
+    border: var(--cnw-border-width) solid var(--cnw-border-color);
+    color: var(--cnw-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--cnw-text-size);
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+body.const-update-widget #construction-updates {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: var(--cnw-padding);
+    font-size: var(--cnw-text-size);
+}
+
+body.const-update-widget #construction-updates-height-controller {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    padding-bottom: 0;
+}
+
+body.const-update-widget .embed-widget-logo {
+    display: block;
+    width: 275px;
+    max-width: 100%;
+    height: auto;
+}
+
+body.const-update-widget #construction-updates h2,
+body.const-update-widget #construction-updates h3 {
+    color: var(--cnw-heading-color);
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: none;
+    text-decoration: none;
+    cursor: text;
+}
+
+body.const-update-widget #construction-updates h2 {
+    font-size: var(--cnw-heading-size);
+}
+
+body.const-update-widget #construction-updates h3 {
+    margin: 1rem 0 0;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--cnw-divider);
+    font-size: 1.25em;
+}
+
+body.const-update-widget #construction-updates ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+body.const-update-widget #construction-updates li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body.const-update-widget #construction-updates a.const-update-widget-link {
+    position: relative;
+    display: block;
+    min-height: 55px;
+    padding: .5rem 1.5rem .5rem .5rem;
+    border-bottom: 1px solid var(--cnw-divider);
+    color: var(--cnw-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+body.const-update-widget a.const-update-widget-link::after {
+    content: '\203a';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+body.const-update-widget #construction-updates a:hover {
+    text-decoration: underline;
+}
+
+body.const-update-widget a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+body.const-update-widget .construction-notice-item-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+    margin-top: .5rem;
+}
+
+body.const-update-widget .construction-notice-item-icon img {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+}
+
+body.const-update-widget #construction-updates-past-link {
+    position: static;
+    display: block;
+    height: auto;
+    background: transparent;
+    color: var(--cnw-text-color);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 360px) {
+    body.const-update-widget {
+        --cnw-padding: 1rem;
+    }
+}
