@@ -375,17 +375,17 @@ endwhile;
     }
     ?>
     <div class="section-heading">
-      <h2><span class="fa-regular fa-envelope"></span> <?php echo esc_html( $signup['title'] ); ?></h2>
-      <a href="<?php echo esc_html( $signup['link'] ); ?>">Latest News</a>
+      <h2 id="home-enews-title"><span class="fa-regular fa-envelope" aria-hidden="true"></span> <?php echo esc_html( $signup['title'] ); ?></h2>
+      <a href="<?php echo esc_url( $signup['link'] ); ?>" class="fgl-button fgl-button--tan">Latest News</a>
     </div>
-    <form id="GD-snippet-form" accept-charset="UTF-8" action="<?php echo $signup_action; ?>" method="post">
+    <form id="GD-snippet-form" aria-labelledby="home-enews-title" accept-charset="UTF-8" action="<?php echo $signup_action; ?>" method="post">
       <input name="utf8" type="hidden" value="✓">
       <input name="authenticity_token" type="hidden" value="Pm6QGyCs4cutPrVvzS5oPCEyGMTI38rMd9/WXRd/a+Y=">
       <fieldset>
+        <label for="home-enews-email"><?php echo esc_html( $signup['form_label'] ); ?> <span class="home-enews-required">(required)</span></label>
         <div class="home-enews-field">
-          <label for="home-enews-email"><?php echo esc_html( $signup['form_label'] ); ?> <span class="home-enews-required">(required)</span></label>
           <input id="home-enews-email" name="email" type="email" autocomplete="email" required
-            placeholder="<?php echo esc_attr( $signup['form_placeholder'] ); ?>" aria-describedby="home-enews-description">
+            placeholder="<?php echo esc_attr( $signup['form_placeholder'] ); ?>">
         </div>
         <div class="button_panel">
           <input class="fgl-button fgl-button--primary" name="commit" type="submit" value="<?php echo esc_attr( $signup['button_text'] ); ?>">

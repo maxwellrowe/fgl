@@ -3735,10 +3735,19 @@ div.tabs > div.phaseTabsPanel {
 /* Homepage GovDelivery signup uses the shared form fields and buttons above. */
 .home-updates__enews {
     clear: both;
-    padding: 24px;
+    padding: 0;
     background: var(--color-tan-200);
     border: 1px solid var(--color-tan-800);
     border-radius: 9px;
+}
+
+.home-updates__enews form {
+    margin: 0;
+    padding: 24px;
+}
+
+.home-updates__enews > .section-heading {
+    border-radius: 8px 8px 0 0;
 }
 
 .home-updates__enews fieldset {
@@ -3767,6 +3776,7 @@ div.tabs > div.phaseTabsPanel {
 
 .home-updates__enews label {
     display: block;
+    text-align: center;
     margin-bottom: 6px;
     font-weight: 600;
     line-height: 1.5;
@@ -3777,6 +3787,7 @@ div.tabs > div.phaseTabsPanel {
 }
 
 .home-updates__enews input[type="email"] {
+    font-size: 12px;
     width: 100%;
     margin: 0;
 }
@@ -3798,10 +3809,12 @@ div.tabs > div.phaseTabsPanel {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
-    padding: 14px;
+    padding: 8px;
     border-radius: 9px 9px 0 0;
     background: var(--color-primary);
     color: var(--color-white);
+    width: calc(100% - 14px);
+
 }
 
 .home-updates__construction-updates .home-construction-heading h2 {
@@ -3811,7 +3824,7 @@ div.tabs > div.phaseTabsPanel {
     margin: 0;
     padding: 0;
     color: inherit;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.3;
 }
 
@@ -3844,4 +3857,53 @@ body.page-template-page-home #container {
     max-width: 942px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Shared section headings. */
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    box-sizing: border-box;
+    padding: 8px;
+    background: var(--color-tan-400);
+    color: var(--color-dark-blue);
+}
+
+.section-heading :is(h1, h2, h3, h4, h5, h6) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.section-heading :is(.fa, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands, .svg-inline--fa) {
+    font-size: 14px;
+}
+
+@media (min-width: 943px) {
+    .home-updates__enews fieldset {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 8px 12px;
+    }
+
+    .home-updates__enews label {
+        grid-column: 1 / -1;
+        margin: 0;
+    }
+
+    .home-updates__enews .home-enews-field {
+        min-width: 0;
+    }
+
+    .home-updates__enews .button_panel {
+        margin: 0;
+    }
 }
