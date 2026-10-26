@@ -3698,7 +3698,7 @@ div.tabs > div.phaseTabsPanel {
     font-family: 'Font Awesome 7 Free', 'Font Awesome 6 Free', 'Font Awesome 5 Free';
     font-weight: 900;
     font-style: normal;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 1;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -3911,6 +3911,7 @@ body.page-template-page-home #container {
 /* Homepage update panels: one column on mobile, equal columns from 600px. */
 .home-updates {
     clear: both;
+    gap: 10px;
     border-top: 1px solid var(--color-tan-400);
     padding-top: 8px;
     margin-top: 8px;
@@ -3928,4 +3929,31 @@ body.page-template-page-home #container {
         box-sizing: border-box;
         margin-bottom: 0;
     }
+}
+
+body.page-template-page-home #past-construction-notices-wrapper {
+    margin-top: 0;
+}
+
+/* Homepage panels keep their headings above independently scrollable content. */
+body.page-template-page-home #past-construction-table.dataTable.no-footer {
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+}
+
+body.page-template-page-home #past-construction-table_wrapper {
+    box-sizing: border-box;
+    height: 175px;
+    overflow-y: auto;
+    border: 1px solid var(--color-primary);
+    border-top-width: 0;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+body.page-template-page-home .home-updates__enews form {
+    box-sizing: border-box;
+    height: 175px;
+    overflow-y: auto;
 }
