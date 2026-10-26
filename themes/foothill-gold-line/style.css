@@ -3957,3 +3957,7 @@ body.page-template-page-home .home-updates__enews form {
     height: 175px;
     overflow-y: auto;
 }
+
+#homeTabs > div.tabsPanel {
+    height: 248px;
+}
