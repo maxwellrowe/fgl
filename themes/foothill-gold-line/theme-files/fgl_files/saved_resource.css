@@ -324,7 +324,7 @@ div.tabsPanel li
 div#homeTabs
 {
 	position: relative;
-	background: linear-gradient(to bottom, var(--color-tan-200) 0%, var(--color-tan-300) 100%);
+	background: transparent;
 }
 .newsPanel li, .eventsPanel li
 {

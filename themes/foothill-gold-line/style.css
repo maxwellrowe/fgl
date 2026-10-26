@@ -3624,6 +3624,11 @@ div.tabs > div.tabsPanel {
     top: 30px;
     width: 100%;
     box-sizing: border-box;
+    background: var(--color-tan-200);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border: 1px solid var(--color-tan-800);
+    border-top-width: 0;
 }
 /* City/phase panels follow the 30px tab row in normal flow. */
 div.tabs > div.cityTabsPanel,
