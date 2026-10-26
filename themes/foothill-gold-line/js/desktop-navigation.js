@@ -2,7 +2,10 @@
 (function () {
     'use strict';
     var nav = document.querySelector('.desktop-navigation #nav');
-    if (!nav) return;
+    // Some page integrations execute this script more than once on the same DOM.
+    // Keep both the buttons and their event listeners single-instance.
+    if (!nav || nav.fglDropdownsInitialized) return;
+    nav.fglDropdownsInitialized = true;
     var desktop = window.matchMedia('(min-width: 900px)');
     var entries = [];
 
@@ -34,7 +37,12 @@
         var link = Array.from(item.children).find(function (child) { return child.matches('a'); });
         if (!submenu || !link) return;
         submenu.id = 'desktop-submenu-' + index;
-        var toggle = document.createElement('button');
+        // Only inspect this item's own controls, not a nested child's toggle.
+        var toggles = Array.from(item.children).filter(function (child) {
+            return child.matches('button.desktop-submenu-toggle');
+        });
+        var toggle = toggles.shift() || document.createElement('button');
+        toggles.forEach(function (duplicate) { duplicate.remove(); });
         toggle.type = 'button';
         toggle.className = 'desktop-submenu-toggle';
         toggle.setAttribute('aria-label', 'Toggle submenu: ' + link.textContent.trim());
