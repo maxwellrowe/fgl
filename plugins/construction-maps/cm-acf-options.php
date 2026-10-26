@@ -1,4 +1,5 @@
 <?php 
+	/*Removed  for FGL main site Oct 2026
 	if( function_exists('acf_add_options_page') ) {
 		acf_add_options_sub_page(array(
 	        'page_title'     => 'Map Settings',
@@ -11,4 +12,5 @@
 	        'parent_slug'    => 'edit.php?post_type=construction_notice',
 	    ));
 	}
+	*/
 ?>

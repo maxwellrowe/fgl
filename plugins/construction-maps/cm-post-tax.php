@@ -37,6 +37,43 @@
 	add_action( 'init', 'cptui_register_my_cpts_construction_notice' );
 	
 	
+	// CTP for Widget Builder
+	function cptui_register_my_cpts_construction_widget() {
+		$labels = [
+			"name" => __( "Construction Widgets", "foothill-gold-line" ),
+			"singular_name" => __( "Construction Widget", "foothill-gold-line" ),
+		];
+	
+		$args = [
+			"label" => __( "Construction Widgets", "foothill-gold-line" ),
+			"labels" => $labels,
+			"description" => "",
+			"public" => true,
+			"publicly_queryable" => true,
+			"show_ui" => true,
+			"show_in_rest" => true,
+			"rest_base" => "construction_widget",
+			"rest_controller_class" => "WP_REST_Posts_Controller",
+			"has_archive" => false,
+			"show_in_menu" => true,
+			"show_in_nav_menus" => true,
+			"delete_with_user" => false,
+			"exclude_from_search" => false,
+			"capability_type" => "post",
+			"map_meta_cap" => true,
+			"hierarchical" => false,
+			"rewrite" => [ "slug" => "construction_widget", "with_front" => true ],
+			"query_var" => true,
+			"menu_position" => 10,
+			"menu_icon" => "dashicons-rest-api",
+			"supports" => [ "title", "editor", "revisions" ],
+		];
+	
+		register_post_type( "construction_widget", $args );
+	}
+	
+	add_action( 'init', 'cptui_register_my_cpts_construction_widget' );
+	
 	// Type of Construction Taxonomy
 	function cptui_register_my_taxes_construction_type() {
 		$labels = [
@@ -94,6 +131,35 @@
 		register_taxonomy( "city", [ "construction_notice" ], $args );
 	}
 	add_action( 'init', 'cptui_register_my_taxes_city' );
+	
+	// Construction Notice Status
+	function cptui_register_my_taxes_status() {
+		$labels = [
+			"name" => __( "Status", "foothill-gold-line" ),
+			"singular_name" => __( "Status", "foothill-gold-line" ),
+			"add_new_item" => __("Add New Status", "foothill-gold-line" ),
+		];
+	
+		$args = [
+			"label" => __( "Status", "foothill-gold-line" ),
+			"labels" => $labels,
+			"public" => true,
+			"publicly_queryable" => true,
+			"hierarchical" => true,
+			"show_ui" => true,
+			"show_in_menu" => true,
+			"show_in_nav_menus" => true,
+			"query_var" => true,
+			"rewrite" => [ 'slug' => 'status', 'with_front' => true, ],
+			"show_admin_column" => false,
+			"show_in_rest" => true,
+			"rest_base" => "status",
+			"rest_controller_class" => "WP_REST_Terms_Controller",
+			"show_in_quick_edit" => false,
+			];
+		register_taxonomy( "status", [ "construction_notice" ], $args );
+	}
+	add_action( 'init', 'cptui_register_my_taxes_status' );
 
 	
 ?>
