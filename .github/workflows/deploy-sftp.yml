@@ -7,6 +7,7 @@ on:
       - 'themes/**'
       - 'plugins/events/**'
       - 'plugins/construction-maps/**'
+      - 'plugins/construction-notice-widgets/**'
       - 'scripts/deploy-sftp.py'
       - '.github/workflows/deploy-sftp.yml'
   workflow_dispatch:
@@ -32,7 +33,7 @@ jobs:
       - name: Check PHP syntax
         run: |
           set -euo pipefail
-          find themes plugins/events plugins/construction-maps \
+          find themes plugins/events plugins/construction-maps plugins/construction-notice-widgets \
             -type f -name '*.php' -print0 | xargs -0 -r -n 1 php -l
 
       - name: Install SFTP client

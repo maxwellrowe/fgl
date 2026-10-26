@@ -20,7 +20,8 @@ are not included in this repository.
 ## SFTP deployment
 
 `.github/workflows/deploy-sftp.yml` deploys pushes to `main` that change
-`themes/`, `plugins/events/`, `plugins/construction-maps/`, or the deployment
+`themes/`, `plugins/events/`, `plugins/construction-maps/`,
+`plugins/construction-notice-widgets/`, or the deployment
 workflow/script. It can also be run from GitHub Actions using **Run workflow**
 on `main`. PHP syntax is checked before connecting to the server.
 
@@ -40,7 +41,7 @@ Obtain the server's host key through a trusted connection or your hosting
 provider and verify its fingerprint before saving it. Unknown or changed host
 keys stop deployment before password authentication.
 
-Every deployment uploads all Git-tracked files under the three selected paths,
+Every deployment uploads all Git-tracked files under the four selected paths,
 including all themes. Other plugins, uploads, database content, and WordPress
 core are outside the deployment scope. Remote files are never deleted, so
 removed or renamed files must be cleaned up separately when appropriate.

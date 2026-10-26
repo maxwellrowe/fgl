@@ -12,7 +12,12 @@ import paramiko
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEPLOY_PATHS = ("themes", "plugins/events", "plugins/construction-maps")
+DEPLOY_PATHS = (
+    "themes",
+    "plugins/events",
+    "plugins/construction-maps",
+    "plugins/construction-notice-widgets",
+)
 
 
 def required(name):
