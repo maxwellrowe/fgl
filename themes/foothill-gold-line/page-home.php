@@ -309,7 +309,8 @@ endwhile;
 
 </div>
 
+Hello world!
+
 <?php
-get_sidebar("index-2");
 get_footer();
 
