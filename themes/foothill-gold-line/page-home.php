@@ -289,8 +289,8 @@ endwhile;
 </div>
 <div id="homeRightContent">
 
-    <span id="prevBtn" style="display: block;"><a href="#prev"></a></span>
-    <span id="nextBtn" style="display: block;"><a href="#next"></a></span>
+    <span id="prevBtn" style="display: block;"><a href="#prev" aria-label="Previous slide"></a></span>
+    <span id="nextBtn" style="display: block;"><a href="#next" aria-label="Next slide"></a></span>
     <div class="mediaBox" style="width: 466px; height: 278px; overflow: hidden;">
         <?php if (get_field("home_image_gallery")) {
           $home_gallery = get_field("home_image_gallery");

@@ -3643,3 +3643,64 @@ div.tabs > div.phaseTabsPanel {
         width: 100%;
     }
 }
+
+/* Shared gallery arrows: Font Awesome carets replace the legacy image buttons. */
+#prevBtn a,
+#nextBtn a,
+#slider1prev a,
+#slider1next a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-indent: 0;
+    text-decoration: none;
+}
+
+#prevBtn a::before,
+#slider1prev a::before,
+#nextBtn a::before,
+#slider1next a::before {
+    font-family: 'Font Awesome 7 Free', 'Font Awesome 6 Free', 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#prevBtn a::before,
+#slider1prev a::before {
+    content: '\f0d9';
+}
+
+#nextBtn a::before,
+#slider1next a::before {
+    content: '\f0da';
+}
+
+#prevBtn a:hover,
+#nextBtn a:hover,
+#slider1prev a:hover,
+#slider1next a:hover {
+    color: var(--color-white);
+    background: var(--color-dark-blue);
+    text-decoration: none;
+}
+
+#prevBtn a:focus-visible,
+#nextBtn a:focus-visible,
+#slider1prev a:focus-visible,
+#slider1next a:focus-visible {
+    outline: 2px solid var(--color-white);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--color-primary);
+}

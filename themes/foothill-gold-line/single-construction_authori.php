@@ -13,8 +13,8 @@ get_header();
     <?php echo get_field("authority_main_body"); ?>
 </div>
 <div class="container full-width-mobile mobile-gallery" style="position: relative; width: 467px; height: 348px; float: right;">
-    <span id="prevBtn" style="display: none;"><a href="#prev"></a></span>
-    <span id="nextBtn" style="display: none;"><a href="#next"></a></span>
+    <span id="prevBtn" style="display: none;"><a href="#prev" aria-label="Previous slide"></a></span>
+    <span id="nextBtn" style="display: none;"><a href="#next" aria-label="Next slide"></a></span>
     <div class="mediaBox right">
         <?php
         if ($gallery_imgs = get_field("authority_beforeafter_gallery")) {

@@ -2,8 +2,8 @@
 get_header();
 ?>
 <div id="leftCornerBox" style="overflow: hidden;">
-	<span id="prevBtn" style="display: block;"><a href="#prev"></a></span>
-	<span id="nextBtn" style="display: block;"><a href="#next"></a></span>
+	<span id="prevBtn" style="display: block;"><a href="#prev" aria-label="Previous slide"></a></span>
+	<span id="nextBtn" style="display: block;"><a href="#next" aria-label="Next slide"></a></span>
 	<div class="mediaBox">
 	    <?php
 	    if ($gallery_imgs = get_field("photo_gallery")) {

@@ -18,8 +18,8 @@ get_header();
 </style>
 <div class="relative-block">
 	<div id="leftCornerBox" style="overflow: hidden;">
-		<span id="prevBtn" style="display: block;"><a href="#prev"></a></span>
-		<span id="nextBtn" style="display: block;"><a href="#next"></a></span>
+		<span id="prevBtn" style="display: block;"><a href="#prev" aria-label="Previous slide"></a></span>
+		<span id="nextBtn" style="display: block;"><a href="#next" aria-label="Next slide"></a></span>
 		<div class="mediaBox">
 		    <?php
 		    if ($gallery_imgs = get_field("station_photo_gallery")) {
@@ -124,8 +124,8 @@ get_header();
         <div class="cityTabsPanel artPanel ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide" id="tabs-2">
             <?php if (get_field('station_art_gallery')) { ?>
                 <div id="station_art_gallery" style="overflow: hidden; margin-bottom: 12px; position:relative;">
-                    <span id="prevBtn" style="display: block;"><a id="artStationPrev" href="#prev"></a></span>
-                    <span id="nextBtn" style="display: block; left: auto; right: 10px;"><a id="artStationNext" href="#next"></a></span>
+                    <span id="prevBtn" style="display: block;"><a id="artStationPrev" href="#prev" aria-label="Previous slide"></a></span>
+                    <span id="nextBtn" style="display: block; left: auto; right: 10px;"><a id="artStationNext" href="#next" aria-label="Next slide"></a></span>
                     <div class="stationArtMediaBox cycle-slideshow" data-cycle-timeout="0" data-cycle-prev="#artStationPrev" data-cycle-next="#artStationNext" data-cycle-fx="scrollHorz">
                         <?php
                         if ($gallery_imgs = get_field("station_art_gallery")) {
