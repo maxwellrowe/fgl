@@ -148,7 +148,7 @@ require __DIR__ . '/header-construction_widget.php'; ?>
 						<?php } ?>
 					</div>
 					<?php wp_reset_postdata(); ?>
-					<a href="<?php bloginfo('url'); ?>" target="_PARENT" id="construction-updates-past-link" class="pb-3"><?php echo esc_html(get_field('widget_view_all_link_copy', $widget_id)); ?> <span class="fa fa-arrow-right"></span></a>
+					<a href="<?php echo esc_url( cnw_get_view_all_url() ); ?>" target="_parent" id="construction-updates-past-link" class="pb-3"><?php echo esc_html(get_field('widget_view_all_link_copy', $widget_id)); ?> <span class="fa fa-arrow-right"></span></a>
 				</div>
 
 <?php

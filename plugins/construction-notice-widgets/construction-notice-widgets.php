@@ -10,6 +10,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+require_once __DIR__ . '/includes/settings.php';
+
 /** Register construction notice widgets. */
 function cnw_register_post_type() {
     register_post_type( 'construction_widget', array(
