@@ -1,4 +1,9 @@
 /* Past Notices */
+body.page-template-construction_notices div#content {
+	padding: 0;
+	background: transparent;
+}
+
 #content #past-construction-notices-wrapper #past-construction-table td {
 	display: table-cell;
 }
@@ -18,10 +23,15 @@
     color: #fff;
 	border: 1px solid var(--color-primary);
 	border-bottom-width: 0;
+	width: calc(100% - 28px);
 }
 
 #past-construction-table_wrapper {
 	position: relative;
+}
+
+.construction-notices-inner {
+	padding-right: 2px;
 }
 
 #past-construction-table_length,
