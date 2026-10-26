@@ -11,7 +11,7 @@
 	line-height: 1.2;
 	margin-bottom:0px;
 	background: var(--color-primary);
-    padding: 10px;
+    padding: 14px;
     margin: 0;
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
@@ -22,10 +22,6 @@
 
 #past-construction-table_wrapper {
 	position: relative;
-	border: 1px solid var(--color-primary);
-    border-bottom-right-radius: 9px;
-    border-bottom-left-radius: 9px;
-    border-top-width: 0;
 }
 
 #past-construction-table_length,
@@ -54,12 +50,12 @@
 }
 
 #past-construction-notices-wrapper #past-construction-table_length {
-	color:#10155E;
+	color:#fff;
 }
 
 #past-construction-notices-wrapper #past-construction-table_filter label {
 	font-weight: bold;
-	color:#10155E;
+	color:#fff;
 }
 
 #past-construction-notices-wrapper #past-construction-table_filter input[type="search"] {
@@ -183,7 +179,7 @@ a#past-construction-table_previous {
 
 a#past-construction-table_next:hover,
 a#past-construction-table_previous:hover {
-	background-color: var(color-tan-400);
+	background: var(color-tan-400);
 }
 
 a#past-construction-table_next.disabled,
@@ -234,14 +230,14 @@ a#past-construction-table_next:after {
 	}
 	
 	#past-construction-table_length {
-		top: -35px;
+		top: -38px;
 		right: 260px;
 		margin-bottom: 0;
 	}
 	
 	#past-construction-table_filter {
-		top: -35px;
-		right:0;
+		top: -38px;
+		right:4px;
 	}
 	#past-construction-table a span.cm-download-button,
 	#past-construction-table thead th span.cm-download-short {
