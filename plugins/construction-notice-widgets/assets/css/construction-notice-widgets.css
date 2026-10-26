@@ -2,6 +2,10 @@
  * ACF supplies validated color/size variables after this file.
  * Bootstrap utility overrides may require !important because utilities use it.
  */
+body.custom-background.const-update-widget {
+    background-image: none !important;
+}
+
 body.const-update-widget {
     --cnw-background: #fff;
     --cnw-heading-color: #10155e;
