@@ -131,9 +131,18 @@ require __DIR__ . '/header-construction_widget.php'; ?>
 											else :
 											endif;
 											$uniqueTerms = array_unique($theTermIds);
+                                            // Support all ACF File return formats: URL, attachment ID, or array.
+                                            $notice_pdf = get_field( 'construction_upload_pdf', get_the_ID() );
+                                            if ( is_array( $notice_pdf ) ) {
+                                                $notice_pdf = $notice_pdf['url'] ?? '';
+                                            } elseif ( is_numeric( $notice_pdf ) ) {
+                                                $notice_pdf = wp_get_attachment_url( (int) $notice_pdf );
+                                            }
+                                            $notice_pdf_url = is_string( $notice_pdf ) ? esc_url( $notice_pdf, array( 'http', 'https' ) ) : '';
+
 											
 										?>      
-											<li id="noticeId<?php the_ID(); ?>" class="noticeId<?php the_ID(); ?> <?php echo esc_attr($termLocationCity); ?>" data-lat="<?php echo esc_attr($constNoticeItemLocation['lat'] ?? ''); ?>" data-lng="<?php echo esc_attr($constNoticeItemLocation['lng'] ?? ''); ?>"><a href="https://construction.foothillgoldline.org?notice=<?php the_ID(); ?>" target="_PARENT" class="const-update-widget-link"><?php the_title(); ?><br /><span class="construction-notice-item-icon">
+											<li id="noticeId<?php the_ID(); ?>" class="noticeId<?php the_ID(); ?> <?php echo esc_attr($termLocationCity); ?>" data-lat="<?php echo esc_attr($constNoticeItemLocation['lat'] ?? ''); ?>" data-lng="<?php echo esc_attr($constNoticeItemLocation['lng'] ?? ''); ?>"><a<?php if ( $notice_pdf_url ) : ?> href="<?php echo $notice_pdf_url; ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr( sprintf( __( '%s (PDF, opens in a new tab)', 'construction-notice-widgets' ), get_the_title() ) ); ?>"<?php endif; ?> class="const-update-widget-link"><?php the_title(); ?><br /><span class="construction-notice-item-icon">
 											
 											<?php foreach( $uniqueTerms as $theTermId): ?>
 												<img src="<?php the_field('construction_type_icon', 'term_' . $theTermId); ?>" alt="<?php the_title(); ?>" />
