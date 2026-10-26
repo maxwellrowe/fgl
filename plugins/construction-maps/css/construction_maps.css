@@ -16,6 +16,8 @@
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
     color: #fff;
+	border: 1px solid var(--color-primary);
+	border-bottom-width: 0;
 }
 
 #past-construction-table_wrapper {
@@ -145,7 +147,11 @@
 }
 
 #past-construction-table.dataTable.no-footer {
-	border-bottom:none;
+	border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    overflow: hidden;
+    border: 1px solid var(--color-primary);
+    border-top-width: 0;
 }
 
 #past-construction-table_paginate {
@@ -167,11 +173,17 @@ a#past-construction-table_previous {
 	background: -webkit-linear-gradient(top, #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%);
 	background: linear-gradient(to bottom, #f7f4ec 0%,#f1e6c8 67%,#f1e6c8 91%,#e4d2a0 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f4ec', endColorstr='#e4d2a0',GradientType=0 );
-	color: #10155E Impo !important;
+	color: #10155E !important;
 	font-weight: bold;
 	font-size: 10px;
 	border-radius: 10px;
 	border: 1px solid #DEC78A;
+	transition: all .2s ease-in-out;
+}
+
+a#past-construction-table_next:hover,
+a#past-construction-table_previous:hover {
+	background-color: var(color-tan-400);
 }
 
 a#past-construction-table_next.disabled,
