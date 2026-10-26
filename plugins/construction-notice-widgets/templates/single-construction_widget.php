@@ -109,6 +109,9 @@ require __DIR__ . '/header-construction_widget.php'; ?>
 											if( have_rows('location') ):
 												while( have_rows('location') ) : the_row();
 													$theTypeTerms = get_sub_field('construction_type');
+                                                if ( $theTypeTerms instanceof WP_Term || is_numeric( $theTypeTerms ) ) {
+                                                    $theTypeTerms = array( $theTypeTerms );
+                                                }
 													
 													foreach( (array) $theTypeTerms as $theTypeTerm):
 														// Push terms
@@ -130,7 +133,12 @@ require __DIR__ . '/header-construction_widget.php'; ?>
 												endwhile;
 											else :
 											endif;
-											$uniqueTerms = array_unique($theTermIds);
+											// Also support notices whose types are assigned directly as taxonomy terms.
+                                            $assigned_type_ids = wp_get_post_terms( get_the_ID(), 'construction_type', array( 'fields' => 'ids' ) );
+                                            if ( ! is_wp_error( $assigned_type_ids ) ) {
+                                                $theTermIds = array_merge( $theTermIds, $assigned_type_ids );
+                                            }
+                                            $uniqueTerms = array_unique($theTermIds);
                                             // Support all ACF File return formats: URL, attachment ID, or array.
                                             $notice_pdf = get_field( 'construction_upload_pdf', get_the_ID() );
                                             if ( is_array( $notice_pdf ) ) {
@@ -142,11 +150,29 @@ require __DIR__ . '/header-construction_widget.php'; ?>
 
 											
 										?>      
-											<li id="noticeId<?php the_ID(); ?>" class="noticeId<?php the_ID(); ?> <?php echo esc_attr($termLocationCity); ?>" data-lat="<?php echo esc_attr($constNoticeItemLocation['lat'] ?? ''); ?>" data-lng="<?php echo esc_attr($constNoticeItemLocation['lng'] ?? ''); ?>"><a<?php if ( $notice_pdf_url ) : ?> href="<?php echo $notice_pdf_url; ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr( sprintf( __( '%s (PDF, opens in a new tab)', 'construction-notice-widgets' ), get_the_title() ) ); ?>"<?php endif; ?> class="const-update-widget-link"><?php the_title(); ?><br /><span class="construction-notice-item-icon">
+											<li id="noticeId<?php the_ID(); ?>" class="noticeId<?php the_ID(); ?> <?php echo esc_attr($termLocationCity); ?>" data-lat="<?php echo esc_attr($constNoticeItemLocation['lat'] ?? ''); ?>" data-lng="<?php echo esc_attr($constNoticeItemLocation['lng'] ?? ''); ?>"><a<?php if ( $notice_pdf_url ) : ?> href="<?php echo $notice_pdf_url; ?>" target="_blank" rel="noopener noreferrer"<?php endif; ?> class="const-update-widget-link"><?php the_title(); ?><?php if ( $notice_pdf_url ) : ?><span class="visually-hidden"> <?php esc_html_e( '(PDF, opens in a new tab)', 'construction-notice-widgets' ); ?></span><?php endif; ?><br /><span class="construction-notice-item-icon">
 											
-											<?php foreach( $uniqueTerms as $theTermId): ?>
-												<img src="<?php the_field('construction_type_icon', 'term_' . $theTermId); ?>" alt="<?php the_title(); ?>" />
-											<?php endforeach; ?>
+											<?php foreach ( $uniqueTerms as $theTermId ) :
+                                                $type_term = get_term( $theTermId, 'construction_type' );
+                                                if ( ! $type_term || is_wp_error( $type_term ) ) {
+                                                    continue;
+                                                }
+                                                $type_icon = get_field( 'construction_type_icon', 'term_' . $theTermId );
+                                                if ( is_array( $type_icon ) ) {
+                                                    $type_icon = $type_icon['url'] ?? ( $type_icon['ID'] ?? 0 );
+                                                }
+                                                if ( is_numeric( $type_icon ) ) {
+                                                    $type_icon = wp_get_attachment_image_url( (int) $type_icon, 'thumbnail' );
+                                                }
+                                                $type_icon_url = is_string( $type_icon ) ? esc_url( $type_icon, array( 'http', 'https' ) ) : '';
+                                                ?>
+                                                <span class="construction-notice-type">
+                                                    <?php if ( $type_icon_url ) : ?>
+                                                        <img src="<?php echo $type_icon_url; ?>" alt="" aria-hidden="true" />
+                                                    <?php endif; ?>
+                                                    <span class="visually-hidden"><?php echo esc_html( $type_term->name ); ?></span>
+                                                </span>
+                                            <?php endforeach; ?>
 											</span></a></li>   
 										<?php } ?>
 									<?php endforeach; ?>
