@@ -3813,7 +3813,7 @@ div.tabs > div.phaseTabsPanel {
     border-radius: 9px 9px 0 0;
     background: var(--color-primary);
     color: var(--color-white);
-    width: calc(100% - 14px);
+    width: auto;
 
 }
 
