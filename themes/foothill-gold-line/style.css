@@ -3907,3 +3907,25 @@ body.page-template-page-home #container {
         margin: 0;
     }
 }
+
+/* Homepage update panels: one column on mobile, equal columns from 600px. */
+.home-updates {
+    clear: both;
+    border-top: 1px solid var(--color-tan-400);
+    padding-top: 8px;
+    margin-top: 8px;
+}
+
+@media (min-width: 600px) {
+    .home-updates {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .home-updates > div {
+        flex: 1 1 0;
+        min-width: 0;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+}
