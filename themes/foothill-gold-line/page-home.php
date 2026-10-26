@@ -310,9 +310,50 @@ endwhile;
 </div>
 
 <div class="home-updates">
+  <?php
+  $alerts_page_id = get_queried_object_id();
+  $alerts_hidden = get_field( 'homepage_construction_alerts_hide', $alerts_page_id );
+  $alerts_title = get_field( 'homepage_construction_alerts_title', $alerts_page_id ) ?: 'Construction Updates';
+  $alerts_button = get_field( 'homepage_construction_alerts_button_text', $alerts_page_id ) ?: 'View All Construction Updates';
+  $alerts_url = get_field( 'homepage_construction_alerts_button_link', $alerts_page_id );
+  $alerts_url = is_string( $alerts_url ) ? esc_url( $alerts_url ) : '';
+  $alerts_notices = $alerts_hidden ? array() : get_posts( array(
+      'post_type' => 'construction_notice',
+      'posts_per_page' => -1,
+      'orderby' => 'date',
+      'order' => 'DESC',
+      'tax_query' => array(
+          array(
+              'taxonomy' => 'status',
+              'field' => 'slug',
+              'terms' => 'active',
+              'include_children' => false,
+          ),
+      ),
+      'meta_query' => array(
+          array(
+              'key' => 'make_this_notice_sticky',
+              'value' => '1',
+              'compare' => '=',
+          ),
+      ),
+  ) );
+  ?>
+  <?php if ( ! $alerts_hidden && $alerts_notices ) : ?>
   <div class="home-updates__construction-updates">
-
+    <div id="past-construction-notices-wrapper">
+      <div class="construction-notices-inner">
+        <div class="home-construction-heading">
+          <h2><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i><span><?php echo esc_html( $alerts_title ); ?></span></h2>
+          <?php if ( $alerts_url ) : ?>
+            <a class="fgl-button fgl-button--tan" href="<?php echo $alerts_url; ?>"><?php echo esc_html( $alerts_button ); ?></a>
+          <?php endif; ?>
+        </div>
+        <?php get_template_part( 'template-parts/construction-notices-table', null, array( 'homepage' => true, 'notices' => $alerts_notices ) ); ?>
+      </div>
+    </div>
   </div>
+  <?php endif; ?>
   <div class="home-updates__enews">
     <?php
     $signup_page_id = get_queried_object_id();
@@ -333,12 +374,14 @@ endwhile;
         $signup_action = esc_url( $signup_defaults['link'] );
     }
     ?>
+    <div class="section-heading">
+      <h2><span class="fa-regular fa-envelope"></span> <?php echo esc_html( $signup['title'] ); ?></h2>
+      <a href="<?php echo esc_html( $signup['link'] ); ?>">Latest News</a>
+    </div>
     <form id="GD-snippet-form" accept-charset="UTF-8" action="<?php echo $signup_action; ?>" method="post">
       <input name="utf8" type="hidden" value="✓">
       <input name="authenticity_token" type="hidden" value="Pm6QGyCs4cutPrVvzS5oPCEyGMTI38rMd9/WXRd/a+Y=">
       <fieldset>
-        <legend><?php echo esc_html( $signup['title'] ); ?></legend>
-        <p id="home-enews-description">Sign up to receive important updates from the Construction Authority.</p>
         <div class="home-enews-field">
           <label for="home-enews-email"><?php echo esc_html( $signup['form_label'] ); ?> <span class="home-enews-required">(required)</span></label>
           <input id="home-enews-email" name="email" type="email" autocomplete="email" required
@@ -350,6 +393,12 @@ endwhile;
       </fieldset>
     </form>
   </div>
+</div>
+
+<div class="home-stations">
+  <div class="section-heading">
+      <h2>23 Stations Completed On Time, On Budget</h2>
+    </div>
 </div>
 
 <?php

@@ -1,8 +1,13 @@
 // Datatables for Past Notices
 jQuery(document).ready(function() {
-	jQuery('#past-construction-table').DataTable({
+	var table = jQuery('#past-construction-table');
+	if (!table.length || !jQuery.fn.DataTable) return;
+	var isHomepage = table.attr('data-homepage') === 'true';
+	table.DataTable({
 		'ordering': false,
-		'paging': true,
+		'paging': !isHomepage,
+		'searching': !isHomepage,
+		'lengthChange': !isHomepage,
 		'pagingType': 'simple',
 		'lengthMenu': [ [5, 10, 25, -1], [5, 10, 25, "All"] ],
 		'pageLength': 5,

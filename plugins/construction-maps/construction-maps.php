@@ -17,14 +17,14 @@ Author URI: https://mackeycreativelab.com
 	// Enqueue Scripts and Styles
 	function construction_maps_enqueue_script() {   
 		wp_enqueue_script( 'cm-datatables', 'https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js', array('jquery'), '1.0', true );
-		wp_enqueue_script( 'cm-js', plugin_dir_url( __FILE__ ) . 'js/construction_maps.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'cm-js', plugin_dir_url( __FILE__ ) . 'js/construction_maps.js', array('jquery', 'cm-datatables'), (string) filemtime( plugin_dir_path( __FILE__ ) . 'js/construction_maps.js' ), true );
 	}
 	add_action('wp_enqueue_scripts', 'construction_maps_enqueue_script');
 	
 	function construction_maps_equeue_styles() {
 		wp_enqueue_style('cm_font','https://use.typekit.net/goi8bom.css');
 		wp_enqueue_style('cm_datatables','https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css');
-		wp_enqueue_style( 'cm-css', plugins_url( '/css/construction_maps.css', __FILE__ ) );
+		wp_enqueue_style( 'cm-css', plugins_url( '/css/construction_maps.css', __FILE__ ), array('cm_datatables'), (string) filemtime( plugin_dir_path( __FILE__ ) . 'css/construction_maps.css' ) );
 	}
 	add_action( 'wp_enqueue_scripts', 'construction_maps_equeue_styles' );
 	

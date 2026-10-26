@@ -113,7 +113,8 @@ body.page-template-construction_notices div#content {
 	color: var(--color-dark-blue);
 }
 
-#past-construction-table h2 {
+#past-construction-table h2,
+#past-construction-table h3 {
 	font-size: 13px;
 	margin-bottom: 5px;
 	margin-top:0;
