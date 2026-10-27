@@ -17,6 +17,7 @@ DEPLOY_PATHS = (
     "plugins/events",
     "plugins/construction-maps",
     "plugins/construction-notice-widgets",
+    "plugins/stations-widget",
 )
 
 
