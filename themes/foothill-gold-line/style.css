@@ -3975,3 +3975,35 @@ body.page-template-page-home .home-updates__enews form {
 div#homeTabs {
     height: auto;
 }
+
+@media screen and (max-width: 899px) {
+    #container {
+        padding-top: 8px;
+    }
+
+    div#contentArea {
+        width: auto;
+        max-width: 100%;
+    }
+
+    body.page-template-page-home #homeTabs,
+    body.page-template-page-home .home-updates,
+    body.page-template-page-home .home-stations {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    /* Keep the active panel in flow so it contributes to the tabs' height. */
+    body.page-template-page-home #homeTabs > .tabLabels {
+        display: flow-root;
+    }
+
+    body.page-template-page-home #homeTabs > div.tabsPanel {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
