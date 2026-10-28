@@ -3908,6 +3908,15 @@ body.page-template-page-home #container {
     }
 }
 
+/* Contain the floated tabs/gallery so the following section's margin applies. */
+.home-feature-panels {
+    display: flow-root;
+}
+
+.home-stations {
+    margin-top: 8px;
+}
+
 /* Homepage update panels: one column on mobile, equal columns from 600px. */
 .home-updates {
     clear: both;

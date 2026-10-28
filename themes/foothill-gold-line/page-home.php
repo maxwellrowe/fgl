@@ -45,6 +45,7 @@ endwhile;
 </script>
 
 
+<div class="home-feature-panels">
 <div id="homeTabs" class="tabs ui-tabs ui-widget ui-widget-content ui-corner-all">
     <ul class="tabLabels ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
         <li class="tabLabel1 ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-1"><?php esc_html_e(
@@ -308,6 +309,8 @@ endwhile;
     </div>
 
 </div>
+
+</div><!-- .home-feature-panels -->
 
 <div class="home-updates">
   <?php
