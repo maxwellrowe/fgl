@@ -4080,6 +4080,10 @@ div#homeTabs {
     #contentArea div#subNav {
         margin-top: 8px;
     }
+
+    .content_type_archive {
+        width: calc(100% - 32px) !important;
+    }
 }
 
 @media screen and (max-width: 599px) {
