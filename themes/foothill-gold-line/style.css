@@ -4096,6 +4096,8 @@ div#homeTabs {
 
     div#videoArchive,
     div#videosListingArea {
+        margin: 8px auto;
+        float: none;
         background: var(--color-tan-100);
         box-shadow: none;
         padding: 12px;
@@ -4108,9 +4110,24 @@ div#homeTabs {
     }
 
     div#videosListingArea {
-        margin-top: 0;
+        margin: 0 auto 8px auto;
         border-bottom-right-radius: 9px;
         border-bottom-left-radius: 9px;
+    }
+
+    div#videosListing {
+        float: none;
+    }
+
+    div#videoBox {
+        width: calc(100% - 32px);
+    }
+
+    #videosListing li a:link,
+    #videosListing li a:visited,
+    #videoArchive a:link,
+    #videoArchive a:visited {
+        display: block;
     }
 }
 
