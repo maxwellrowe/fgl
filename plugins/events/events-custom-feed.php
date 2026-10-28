@@ -128,13 +128,3 @@
 
 		 file_put_contents ($dir.'/event_feed.json', $data);
 	}
-$post_id = get_the_ID();
-$post_type = get_post_type($post_id);
-if ($post_type != 'fglevent') {
-	add_action('acf/save_post', 'the_feed');
-} else {
-	add_action('trash_fglevent', 'the_feed');
-	add_action('untrashed_post', 'the_feed');
-	add_action('transition_post_status', 'the_feed');
-}
-?>

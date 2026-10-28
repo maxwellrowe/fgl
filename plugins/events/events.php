@@ -17,5 +17,6 @@ Author URI: https://mackeycreativelab.com
 	include( plugin_dir_path( __FILE__ ) . 'events-board-feed.php');
 	include( plugin_dir_path( __FILE__ ) . 'events-community-feed.php');
 	include( plugin_dir_path( __FILE__ ) . 'events-jpl-feed.php');
+	include( plugin_dir_path( __FILE__ ) . 'events-feed-hooks.php');
 	
 ?>
