@@ -1,0 +1,5 @@
+#fglsw-order-table td { vertical-align: middle; }
+#fglsw-order-table input[type="number"] { width: 70px; }
+#fglsw-order-table .fglsw-order-controls:not([hidden]) { display: inline-flex; align-items: center; gap: 4px; margin-right: 8px; }
+#fglsw-order-table .fglsw-drag-handle { cursor: grab; padding: 6px; }
+#fglsw-order-table .ui-sortable-helper { background: #fff; box-shadow: 0 2px 8px #0003; }

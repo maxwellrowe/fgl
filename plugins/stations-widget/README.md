@@ -18,7 +18,7 @@ echo do_shortcode( '[stations_widget]' );
 2. Under **Stations → Phases**, create the actual route phases. Do not add a “None” phase; leave stations unassigned instead.
 3. Under **Stations → Statuses**, edit Complete, Station Construction, and Future Station to upload each status icon. The included Figma icons are defaults until replaced.
 4. Add and publish stations. The title is the station name. Enter Info, a Learn More Link, one Status, and optionally one Phase.
-5. Set numeric positions under **Stations → Route Order**. Lower numbers appear first; ties sort by title, then ID. Keep each phase’s stations together. Draft/private stations are not rendered.
+5. Under **Stations → Route Order**, drag stations using their handles or use the Move up / Move down buttons, then click **Save Route Order**. Numeric positions remain available for manual entry; lower numbers appear first and ties sort by title, then ID. Keep each phase’s stations together. Draft/private stations are not rendered.
 6. Under **Stations → Settings**, edit the heading and select the statuses shown in the legend. Construction and Future are selected on first activation. Selecting no statuses hides legend entries.
 7. Place the shortcode on the intended page. No page is modified automatically.
 

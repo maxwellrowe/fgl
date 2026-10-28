@@ -7,6 +7,15 @@ function fglsw_admin_menu() {
 }
 add_action( 'admin_menu', 'fglsw_admin_menu' );
 
+function fglsw_order_assets() {
+    $screen = get_current_screen();
+    if ( ! $screen || 'station_widget' !== $screen->post_type || 'fglsw-order' !== ( $_GET['page'] ?? '' ) ) { return; }
+    $base = dirname( __DIR__ ) . '/stations-widget.php';
+    wp_enqueue_script( 'fglsw-order', plugins_url( 'assets/js/admin-order.js', $base ), array( 'jquery-ui-sortable' ), (string) filemtime( dirname( __DIR__ ) . '/assets/js/admin-order.js' ), true );
+    wp_enqueue_style( 'fglsw-order', plugins_url( 'assets/css/admin-order.css', $base ), array(), (string) filemtime( dirname( __DIR__ ) . '/assets/css/admin-order.css' ) );
+}
+add_action( 'admin_enqueue_scripts', 'fglsw_order_assets' );
+
 function fglsw_sanitize_settings( $input ) {
     $input = is_array( $input ) ? $input : array();
     $legend = array();
@@ -49,14 +58,22 @@ function fglsw_order_page() {
     $stations = get_posts( array( 'post_type' => 'station_widget', 'post_status' => array( 'publish', 'draft', 'pending', 'private', 'future' ), 'posts_per_page' => -1, 'orderby' => array( 'menu_order' => 'ASC', 'title' => 'ASC', 'ID' => 'ASC' ) ) );
     ?>
     <div class="wrap"><h1>Route Order</h1>
-        <p>Set positions from left to right. Smaller numbers come first; ties sort by station name. Keep stations in the same phase consecutive. Stations without a phase can appear anywhere.</p>
+        <p>Drag stations into left-to-right route order, or use the Move up and Move down buttons, then click Save Route Order. You can also enter positions manually; smaller numbers come first. Keep stations in the same phase consecutive. Stations without a phase can appear anywhere.</p>
         <?php if ( isset( $_GET['saved'] ) ) : ?><div class="notice notice-success"><p>Route order saved.</p></div><?php endif; ?>
         <form action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" method="post">
             <input type="hidden" name="action" value="fglsw_save_order">
             <?php wp_nonce_field( 'fglsw_save_order' ); ?>
-            <table class="widefat striped"><thead><tr><th>Order</th><th>Station</th><th>Phase</th><th>Publication status</th></tr></thead><tbody>
+            <p id="fglsw-order-message" role="status" aria-live="polite"></p>
+            <table id="fglsw-order-table" class="widefat striped"><thead><tr><th>Order</th><th>Station</th><th>Phase</th><th>Publication status</th></tr></thead><tbody>
             <?php foreach ( $stations as $station ) : $phases = wp_get_post_terms( $station->ID, 'station_phase', array( 'fields' => 'names' ) ); ?>
-                <tr><td><input type="number" min="0" step="1" name="order[<?php echo esc_attr( $station->ID ); ?>]" value="<?php echo esc_attr( $station->menu_order ); ?>" aria-label="<?php echo esc_attr( 'Route position for ' . $station->post_title ); ?>"></td><td><a href="<?php echo esc_url( get_edit_post_link( $station->ID ) ); ?>"><?php echo esc_html( $station->post_title ); ?></a></td><td><?php echo esc_html( ! is_wp_error( $phases ) && $phases ? implode( ', ', $phases ) : 'No phase' ); ?></td><td><?php echo esc_html( $station->post_status ); ?></td></tr>
+                <tr data-station-name="<?php echo esc_attr( $station->post_title ); ?>"><td>
+                    <span class="fglsw-order-controls" hidden>
+                        <span class="fglsw-drag-handle dashicons dashicons-move" aria-hidden="true" title="Drag to reorder"></span>
+                        <button type="button" class="button fglsw-move-up" aria-label="<?php echo esc_attr( 'Move ' . $station->post_title . ' up' ); ?>">↑</button>
+                        <button type="button" class="button fglsw-move-down" aria-label="<?php echo esc_attr( 'Move ' . $station->post_title . ' down' ); ?>">↓</button>
+                    </span>
+                    <input type="number" min="0" step="1" name="order[<?php echo esc_attr( $station->ID ); ?>]" value="<?php echo esc_attr( $station->menu_order ); ?>" aria-label="<?php echo esc_attr( 'Route position for ' . $station->post_title ); ?>">
+                </td><td><a href="<?php echo esc_url( get_edit_post_link( $station->ID ) ); ?>"><?php echo esc_html( $station->post_title ); ?></a></td><td><?php echo esc_html( ! is_wp_error( $phases ) && $phases ? implode( ', ', $phases ) : 'No phase' ); ?></td><td><?php echo esc_html( $station->post_status ); ?></td></tr>
             <?php endforeach; ?>
             </tbody></table>
             <?php submit_button( 'Save Route Order' ); ?>
