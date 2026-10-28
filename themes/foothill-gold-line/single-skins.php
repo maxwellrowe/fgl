@@ -10,7 +10,7 @@
 get_header();
 ?>
 <div id="content">
-    <?php the_title( '<h3>', '</h3>' ); ?>
+    <?php the_title( '<h3 class="fgl-template-content-title">', '</h3>' ); ?>
     <div class=""><?php echo get_post_meta(get_the_ID(), 'Skin phases') ?></div>
     <div class=""><?php echo get_post_meta(get_the_ID(), 'Skin cities') ?></div>
     <div class=""><?php echo get_post_meta(get_the_ID(), 'Skin default') ?></div>

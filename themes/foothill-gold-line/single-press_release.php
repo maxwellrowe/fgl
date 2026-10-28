@@ -36,7 +36,7 @@ get_header();
         </p>
     <?php }else{
         echo get_the_date();
-        the_title("<h3>", "</h3>");
+        the_title('<h3 class="fgl-template-content-title">', "</h3>");
         echo get_field("article_main_body");
         ?>
 

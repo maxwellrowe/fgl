@@ -9,7 +9,7 @@
 get_header();
 ?>
     <div id="phasePageMap">
-        <?php the_title("<h2>", "</h2>"); ?>
+        <?php the_title('<h2 class="fgl-template-content-title">', "</h2>"); ?>
         <div id="phaseMap" class="phaseMapArea" style="background-image: url('<?php if ($image = get_field('city_stations_image')) echo $image['url']; ?>')">
             <?php
             // check if the repeater field has rows of data

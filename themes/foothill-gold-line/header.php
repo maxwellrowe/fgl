@@ -297,3 +297,4 @@
             </header>
 
             <div id="contentArea">
+                <?php get_template_part( 'template-parts/mobile-content-title' ); ?>

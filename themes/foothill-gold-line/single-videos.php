@@ -14,7 +14,7 @@ get_header();
         $post_type_object = get_post_type_object(get_post_type());
     ?>
     <h2 style="text-transform: capitalize"><?php echo $post_type_object->label; ?></h2>
-    <h3><?php the_title(); ?></h3>
+    <h3 class="fgl-template-content-title"><?php the_title(); ?></h3>
     <p>
         <strong><?php echo get_the_date(); ?></strong>
         <?php echo get_field("media_desc"); ?>
