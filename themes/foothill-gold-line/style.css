@@ -4093,6 +4093,25 @@ div#homeTabs {
         float: none;
         box-sizing: border-box;
     }
+
+    div#videoArchive,
+    div#videosListingArea {
+        background: var(--color-tan-100);
+        box-shadow: none;
+        padding: 12px;
+        width: calc(100% - 32px);
+        box-sizing: border-box;
+    }
+
+    div#videoArchive {
+        border-radius: 9px;
+    }
+
+    div#videosListingArea {
+        margin-top: 0;
+        border-bottom-right-radius: 9px;
+        border-bottom-left-radius: 9px;
+    }
 }
 
 @media screen and (max-width: 599px) {
