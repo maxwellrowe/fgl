@@ -4084,6 +4084,15 @@ div#homeTabs {
     .content_type_archive {
         width: calc(100% - 32px) !important;
     }
+
+    #container div#content {
+        box-shadow: none;
+        width: calc(100% - 32px);
+        padding: 0;
+        margin: 8px auto;
+        float: none;
+        box-sizing: border-box;
+    }
 }
 
 @media screen and (max-width: 599px) {
