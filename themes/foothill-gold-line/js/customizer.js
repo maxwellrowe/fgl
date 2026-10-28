@@ -128,9 +128,15 @@ jQuery(function ($) {
 
 // Language Selector
 jQuery(document).ready(function(){
-    jQuery('#fgl-language-selector .fgl-translate-button a[href="#"]').click(function(event) {
+    jQuery('#fgl-language-selector .fgl-translate-button > a[href="#"]').each(function() {
+        var submenu = jQuery(this).siblings('.sub-menu');
+        jQuery(this).attr('aria-expanded', submenu.is(':visible') ? 'true' : 'false');
+    }).click(function(event) {
         event.preventDefault();
-        jQuery('#fgl-language-selector .sub-menu').slideToggle('fast');
+        var button = jQuery(this);
+        var open = button.attr('aria-expanded') !== 'true';
+        button.attr('aria-expanded', open ? 'true' : 'false');
+        button.siblings('.sub-menu').stop(true, true)[open ? 'slideDown' : 'slideUp']('fast');
     });
     jQuery('li.mobile-menu-translate a').click(function(event) {
         event.preventDefault();
