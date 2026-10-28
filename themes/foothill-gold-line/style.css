@@ -4062,6 +4062,20 @@ div#homeTabs {
         border-radius: 9px;
         box-sizing: border-box;
     }
+
+    #container ol.form {
+        margin-left: 0;
+    }
+
+    div#subNav li.active a:link,
+    div#subNav li.active a:visited {
+        border-radius: 9px;
+        background: var(--color-primary);
+    }
+
+    #contentArea div#subNav {
+        margin-top: 8px;
+    }
 }
 
 @media screen and (max-width: 599px) {
