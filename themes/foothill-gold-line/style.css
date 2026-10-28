@@ -4010,7 +4010,7 @@ div#homeTabs {
 
     div#phaseTabs {
         width: calc(100% - 32px);
-        margin: 0 auto;
+        margin: 8px auto 0;
         float: none;
         height: auto;
         background: transparent;
@@ -4039,6 +4039,8 @@ div#homeTabs {
         float: none;
         box-sizing: border-box;
         background: var(--color-tan-100);
+        box-shadow: none;
+        border-radius: 9px;
     }
 
     #container #contentRight {
