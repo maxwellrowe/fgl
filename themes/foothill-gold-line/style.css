@@ -4008,20 +4008,24 @@ div#homeTabs {
         margin: 0;
     }
 
-    div#phaseTabs {
+    #contentArea div#phaseTabs,
+    #contentArea div#cityTabs {
         width: calc(100% - 32px);
         margin: 8px auto 0;
         float: none;
         height: auto;
         background: transparent;
+        box-sizing: border-box;
     }
 
-    div.tabs > div.phaseTabsPanel {
+    #contentArea #phaseTabs > div.phaseTabsPanel,
+    #contentArea #cityTabs > div.cityTabsPanel {
         float: none;
         position: relative;
         top: auto;
         left: auto;
         width: 100%;
+        height: auto;
         margin: 0;
         padding: 10px;
         box-sizing: border-box;
