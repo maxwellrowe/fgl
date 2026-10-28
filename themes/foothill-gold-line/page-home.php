@@ -396,9 +396,9 @@ endwhile;
 </div>
 
 <div class="home-stations">
-  <div class="section-heading">
-      <h2>23 Stations Completed On Time, On Budget</h2>
-    </div>
+  <?php if ( shortcode_exists( 'stations_widget' ) ) : ?>
+    <?php echo do_shortcode( '[stations_widget]' ); ?>
+  <?php endif; ?>
 </div>
 
 <?php

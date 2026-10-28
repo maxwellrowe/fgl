@@ -71,7 +71,11 @@ function fglsw_shortcode() {
     ob_start();
     ?>
     <section class="fglsw" aria-label="<?php echo esc_attr( $heading ?: 'Stations' ); ?>" id="<?php echo esc_attr( $id ); ?>">
-        <?php if ( $heading ) : ?><h2 class="fglsw-heading"><?php echo esc_html( $heading ); ?></h2><?php endif; ?>
+        <?php if ( $heading ) : ?>
+            <div class="section-heading fglsw-heading">
+                <h2><?php echo esc_html( $heading ); ?></h2>
+            </div>
+        <?php endif; ?>
         <div class="fglsw-stage">
             <div class="swiper fglsw-route" aria-label="Station route">
                 <div class="swiper-wrapper">

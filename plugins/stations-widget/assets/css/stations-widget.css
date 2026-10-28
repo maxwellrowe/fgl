@@ -16,7 +16,8 @@
 }
 .fglsw *, .fglsw *::before, .fglsw *::after { box-sizing: border-box; }
 .fglsw [hidden] { display: none !important; }
-.fglsw .fglsw-heading { margin: 0; padding: 15px 12px; border-radius: 7px 7px 0 0; background: var(--sw-tan); color: var(--sw-dark); font: 700 16px/1.3 'Barlow', Arial, sans-serif; text-align: center; }
+.fglsw .fglsw-heading { display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 8px; border-radius: 7px 7px 0 0; background: var(--sw-tan); color: var(--sw-dark); }
+.fglsw .fglsw-heading h2 { margin: 0; padding: 0; color: inherit; font: 700 14px/1.3 'Barlow', Arial, sans-serif; }
 .fglsw .fglsw-stage { position: relative; padding-top: 8px; }
 .fglsw .fglsw-route { margin: 0; overflow: hidden; padding: 0 0 8px; }
 .fglsw .fglsw-route:not(.swiper-initialized) { overflow-x: auto; }
