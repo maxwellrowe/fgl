@@ -8,6 +8,7 @@
         var triggers = Array.from(root.querySelectorAll('.fglsw-trigger'));
         var jumps = Array.from(root.querySelectorAll('.fglsw-jumps button'));
         var active = null;
+        var lastPhase = jumps[jumps.length - 1];
         function close(restore) {
             if (!active) return;
             var previous = active;
@@ -38,6 +39,7 @@
         }
         var swiper = new window.Swiper(route, {
             slidesPerView: 'auto', slidesPerGroup: 1, spaceBetween: 0,
+            initialSlide: lastPhase ? Number(lastPhase.dataset.index) : Math.max(0, triggers.length - 1),
             speed: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 300,
             watchOverflow: true,
             navigation: { prevEl: root.querySelector('.fglsw-prev'), nextEl: root.querySelector('.fglsw-next') },
@@ -51,6 +53,11 @@
             }
         });
         root.fglswSwiper = swiper;
+        // At the route end Swiper may clamp the active index to an earlier slide.
+        if (lastPhase) {
+            jumps.forEach(function (button) { button.removeAttribute('aria-current'); });
+            lastPhase.setAttribute('aria-current', 'true');
+        }
         triggers.forEach(function (button, index) {
             button.addEventListener('click', function () {
                 if (!swiper.allowClick) return;

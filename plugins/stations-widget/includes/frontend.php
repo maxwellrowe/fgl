@@ -100,8 +100,8 @@ function fglsw_shortcode() {
                 <?php endforeach; ?>
                 </div>
             </div>
-            <button class="fglsw-arrow fglsw-prev" type="button" aria-label="Previous station"><span aria-hidden="true">‹</span></button>
-            <button class="fglsw-arrow fglsw-next" type="button" aria-label="Next station"><span aria-hidden="true">›</span></button>
+            <button class="fglsw-arrow fglsw-prev" type="button" aria-label="Previous station"><span class="fa-solid fa-angle-left" aria-hidden="true"></span></button>
+            <button class="fglsw-arrow fglsw-next" type="button" aria-label="Next station"><span class="fa-solid fa-angle-right" aria-hidden="true"></span></button>
             <?php foreach ( $route as $station ) : $popup_id = $id . '-station-' . $station['id']; ?>
                 <div class="fglsw-popover" id="<?php echo esc_attr( $popup_id ); ?>" role="dialog" aria-modal="false" aria-labelledby="<?php echo esc_attr( $popup_id . '-title' ); ?>" hidden>
                     <button class="fglsw-close" type="button" aria-label="Close station details">×</button>
