@@ -20,7 +20,7 @@ body.const-update-widget {
     padding: 0;
     min-width: 0;
     min-height: 0;
-    background: var(--cnw-background);
+    background: var(--cnw-background) !important;
     border: var(--cnw-border-width) solid var(--cnw-border-color);
     color: var(--cnw-text-color);
     font-family: Arial, Helvetica, sans-serif;
